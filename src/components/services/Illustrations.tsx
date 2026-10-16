@@ -1,5 +1,3 @@
-import { Search } from "lucide-react";
-
 /** Static wireframe of a website layout — an illustration, not a real project. */
 export function WebsiteIllustration() {
   return (
@@ -32,39 +30,6 @@ export function WebsiteIllustration() {
         </div>
       </div>
       <figcaption className="mt-3 text-center text-xs text-muted">Illustration of a typical business website layout</figcaption>
-    </figure>
-  );
-}
-
-/** Static illustration of how a search ad appears — not real campaign data. */
-export function SearchAdIllustration() {
-  return (
-    <figure>
-      <div aria-hidden="true" className="rounded-[var(--radius-panel)] bg-lavender p-5 sm:p-8">
-        <div className="rounded-2xl border border-ink/15 bg-white p-5 sm:p-6">
-          <div className="flex items-center gap-3 rounded-full border border-line px-4 py-3">
-            <Search className="h-4 w-4 text-muted" />
-            <span className="text-sm text-ink">your service near me</span>
-          </div>
-          <div className="mt-6 space-y-1.5">
-            <p className="text-xs text-ink">
-              <span className="font-semibold">Sponsored</span> · yourbusiness.com
-            </p>
-            <p className="font-display text-lg font-semibold leading-snug text-ink">
-              Your Service in Your City — Clear Offer, Easy Contact
-            </p>
-            <p className="text-sm leading-relaxed text-muted">
-              A short, relevant description of what you offer and why someone should contact you today.
-            </p>
-          </div>
-          <div className="mt-6 space-y-2 border-t border-line pt-5">
-            <span className="block h-2 w-1/3 rounded-full bg-stone" />
-            <span className="block h-3 w-3/4 rounded-full bg-stone" />
-            <span className="block h-2 w-full rounded-full bg-ivory" />
-          </div>
-        </div>
-      </div>
-      <figcaption className="mt-3 text-center text-xs text-muted">Illustration of a Google search ad — not real campaign data</figcaption>
     </figure>
   );
 }

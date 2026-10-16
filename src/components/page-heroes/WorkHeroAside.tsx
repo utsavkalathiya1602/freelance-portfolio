@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { ArrowUpRight, Globe, Megaphone } from "lucide-react";
 import { websiteProjects } from "@/data/projects";
-import { campaignProjects } from "@/data/campaigns";
+import { adsClients } from "@/data/clients";
 import { ProjectScreenshot } from "@/components/projects/ProjectScreenshot";
 
 /** Real screenshots of a featured live project, plus counts derived from the project data. */
@@ -49,8 +49,8 @@ export function WorkHeroAside() {
         </div>
         <div className="rounded-[var(--radius-card)] border border-ink/10 bg-lavender p-5">
           <Megaphone aria-hidden="true" className="h-5 w-5" />
-          <dt className="mt-4 text-sm font-medium text-ink/70">Ads campaign plans</dt>
-          <dd className="font-display text-4xl font-bold tracking-[-0.03em] text-ink">{campaignProjects.length}</dd>
+          <dt className="mt-4 text-sm font-medium text-ink/70">Google Ads clients</dt>
+          <dd className="font-display text-4xl font-bold tracking-[-0.03em] text-ink">{adsClients.length}</dd>
         </div>
       </dl>
     </div>

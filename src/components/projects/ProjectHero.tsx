@@ -5,25 +5,25 @@ import { formatLocation } from "@/data/work";
 import { Container } from "@/components/ui/Container";
 import { Eyebrow } from "@/components/ui/SectionHeading";
 import { Button } from "@/components/ui/Button";
-import { ProjectDisclaimer } from "./ProjectDisclaimer";
 
 export function ProjectHero({ item }: { item: WorkItem }) {
   const facts = [
     { label: "Industry", value: item.industry },
-    { label: item.kind === "website" ? "Location" : "Target market", value: formatLocation(item) },
+    { label: "Location", value: formatLocation(item) },
     { label: "Project type", value: item.projectType },
-    ...(item.kind === "campaign"
+    ...(item.kind === "ads-client"
       ? [
-          { label: "Objective", value: item.objective },
-          { label: "Currency", value: item.currency },
-        ]
-      : [
-          { label: "My role", value: item.role },
-          { label: "Services", value: item.services.join(", ") },
-        ]),
+            { label: "Campaign type", value: item.campaignType },
+            { label: "Status", value: `${item.status} client` },
+          ]
+        : [
+            { label: "My role", value: item.role },
+            { label: "Services", value: item.services.join(", ") },
+          ]),
   ];
 
-  const liveUrl = item.kind === "website" ? item.liveUrl : undefined;
+  const liveUrl = item.kind === "website" ? item.liveUrl : item.kind === "ads-client" ? item.profileUrl : undefined;
+  const liveLabel = item.kind === "ads-client" ? (item.profileLabel ?? "View business profile") : "Live demo";
   const sourceUrl = item.kind === "website" ? item.sourceUrl : undefined;
 
   return (
@@ -39,7 +39,9 @@ export function ProjectHero({ item }: { item: WorkItem }) {
 
         <div className="mt-10 grid gap-10 lg:grid-cols-[1.4fr_1fr] lg:items-start lg:gap-16">
           <div>
-            <Eyebrow>{item.kind === "website" ? "Website project" : "Google Ads campaign plan"}</Eyebrow>
+            <Eyebrow>
+              {item.kind === "website" ? "Website project" : "Google Ads · Client work"}
+            </Eyebrow>
             <h1 className="font-display text-[2.6rem] font-bold leading-[1.02] tracking-[-0.04em] text-ink text-balance sm:text-6xl lg:text-[4.2rem]">
               {item.title}
             </h1>
@@ -48,7 +50,7 @@ export function ProjectHero({ item }: { item: WorkItem }) {
               <div className="mt-8 flex flex-wrap gap-3">
                 {liveUrl ? (
                   <Button href={liveUrl} external>
-                    Live demo
+                    {liveLabel}
                     <ArrowUpRight aria-hidden="true" className="h-4 w-4" />
                   </Button>
                 ) : null}
@@ -71,8 +73,6 @@ export function ProjectHero({ item }: { item: WorkItem }) {
             ))}
           </dl>
         </div>
-
-        <ProjectDisclaimer item={item} className="mt-10" />
       </Container>
     </header>
   );

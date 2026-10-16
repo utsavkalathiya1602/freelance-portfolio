@@ -4,9 +4,12 @@ import { Section } from "@/components/ui/Section";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Button } from "@/components/ui/Button";
 import { ProjectShowcaseList } from "@/components/projects/ProjectShowcaseList";
+import { ProjectCard } from "@/components/projects/ProjectCard";
+import { adsClients } from "@/data/clients";
 
 export function FeaturedProjects() {
   const projects = websiteProjects.filter((project) => project.featured);
+  const clients = adsClients.filter((client) => client.featured);
 
   return (
     <Section tone="stone" labelledBy="work-heading">
@@ -25,6 +28,18 @@ export function FeaturedProjects() {
       <div className="mt-12">
         <ProjectShowcaseList projects={projects} />
       </div>
+      {clients.length > 0 ? (
+        <div className="mt-16">
+          <h3 className="font-display text-2xl font-bold tracking-[-0.02em] text-ink sm:text-3xl">Google Ads client work</h3>
+          <ul className="mt-8 grid gap-6 md:grid-cols-2 lg:gap-8">
+            {clients.map((client) => (
+              <li key={client.slug}>
+                <ProjectCard item={client} headingLevel="h3" />
+              </li>
+            ))}
+          </ul>
+        </div>
+      ) : null}
     </Section>
   );
 }

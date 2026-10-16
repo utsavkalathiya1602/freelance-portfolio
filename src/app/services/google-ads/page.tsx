@@ -9,10 +9,11 @@ import { ProcessSteps } from "@/components/ui/ProcessSteps";
 import { ServiceHero } from "@/components/services/ServiceHero";
 import { OfferingGrid } from "@/components/services/OfferingGrid";
 import { FAQSection } from "@/components/services/FAQSection";
-import { SearchAdIllustration } from "@/components/services/Illustrations";
+import Link from "next/link";
+import { ClientVisual } from "@/components/projects/ClientVisual";
 import { ContactCTA } from "@/components/home/ContactCTA";
 import { ProjectGrid } from "@/components/projects/ProjectGrid";
-import { campaignProjects } from "@/data/campaigns";
+import { adsClients } from "@/data/clients";
 
 const title = "Google Ads Management";
 const description =
@@ -33,7 +34,19 @@ export default function GoogleAdsPage() {
         description="I plan and set up Google Search campaigns around the services you actually want to sell, with conversion tracking in place so you can see what your budget is doing."
         primaryCta={{ label: "Discuss Your Campaign", href: "/contact" }}
         secondaryCta={{ label: "How It Works", href: "#process" }}
-        aside={<SearchAdIllustration />}
+        aside={
+          adsClients[0] ? (
+            <Link
+              href={`/work/${adsClients[0].slug}`}
+              className="block overflow-hidden rounded-[var(--radius-panel)] border border-ink/10 transition-shadow duration-200 hover:shadow-[0_18px_40px_-24px_rgba(23,23,23,0.45)]"
+            >
+              <ClientVisual client={adsClients[0]} size="hero" />
+              <span className="block bg-white px-6 py-4 text-sm font-semibold text-ink">
+                Client work: {adsClients[0].clientName} →
+              </span>
+            </Link>
+          ) : null
+        }
       />
 
       <Section labelledBy="offerings-heading">
@@ -105,17 +118,19 @@ export default function GoogleAdsPage() {
         </div>
       </Section>
 
-      <Section id="campaign-plans" tone="stone" labelledBy="plans-heading">
-        <SectionHeading
-          eyebrow="Sample campaign plans"
-          id="plans-heading"
-          title="How I plan a search campaign."
-          description="Four detailed campaign plans for fictional brands in Australia, the UK and the US. Every figure is illustrative sample data — not actual campaign results."
-        />
-        <div className="mt-12">
-          <ProjectGrid items={campaignProjects} />
-        </div>
-      </Section>
+      {adsClients.length > 0 ? (
+        <Section id="client-work" labelledBy="clients-heading">
+          <SectionHeading
+            eyebrow="Client work"
+            id="clients-heading"
+            title="Google Ads accounts I manage."
+            description="Real businesses whose Google Search advertising I manage."
+          />
+          <div className="mt-12">
+            <ProjectGrid items={adsClients} />
+          </div>
+        </Section>
+      ) : null}
 
       <FAQSection faqs={adsFaqs} />
       <ContactCTA

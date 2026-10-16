@@ -5,7 +5,7 @@ import { allWork, getRelatedWork, getWorkItem } from "@/data/work";
 import { Section } from "@/components/ui/Section";
 import { ProjectGrid } from "@/components/projects/ProjectGrid";
 import { WebsiteCaseStudy } from "@/components/projects/WebsiteCaseStudy";
-import { CampaignCaseStudy } from "@/components/projects/CampaignCaseStudy";
+import { AdsClientCaseStudy } from "@/components/projects/AdsClientCaseStudy";
 import { ContactCTA } from "@/components/home/ContactCTA";
 
 export function generateStaticParams() {
@@ -18,11 +18,11 @@ export async function generateMetadata({ params }: PageProps<"/work/[slug]">): P
   if (!item) return {};
 
   const title =
-    item.kind === "website" ? `${item.title} — Website Project` : `${item.title} — Google Ads Campaign Plan`;
+    item.kind === "website" ? `${item.title} — Website Project` : `${item.title} — Google Ads Client Work`;
   const description =
     item.kind === "website"
       ? `${item.summary} Designed and built by Utsav Kalathiya.`
-      : `${item.summary} Illustrative sample data — not actual campaign results.`;
+      : `${item.summary} Google Ads managed by Utsav Kalathiya.`;
 
   return pageMetadata({ title, description, path: `/work/${item.slug}` });
 }
@@ -36,7 +36,7 @@ export default async function WorkItemPage({ params }: PageProps<"/work/[slug]">
 
   return (
     <>
-      {item.kind === "website" ? <WebsiteCaseStudy project={item} /> : <CampaignCaseStudy campaign={item} />}
+      {item.kind === "website" ? <WebsiteCaseStudy project={item} /> : <AdsClientCaseStudy client={item} />}
 
       {related.length > 0 ? (
         <Section tone="stone" labelledBy="related-heading">
@@ -48,7 +48,7 @@ export default async function WorkItemPage({ params }: PageProps<"/work/[slug]">
       ) : null}
 
       <ContactCTA
-        heading={item.kind === "website" ? "Want a website like this?" : "Planning a Google Ads campaign?"}
+        heading={item.kind === "website" ? "Want a website like this?" : "Want more local customers from Google?"}
         text={
           item.kind === "website"
             ? "Tell me about your business and what your website needs to do. I'll suggest a structure and a realistic scope."

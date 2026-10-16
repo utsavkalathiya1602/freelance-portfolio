@@ -1,28 +1,24 @@
 /**
  * Data model for the Work section.
  *
- * Two kinds of entries:
- *  - "website":  real websites I have designed and built (with live links and real screenshots)
- *  - "campaign": Google Ads campaign plans (illustrative sample data until real results exist)
- *
- * `dataStatus` on campaigns drives the sample-data disclaimer shown on cards and pages.
+ * Two kinds of entries, both real work:
+ *  - "website":    websites I have designed and built (with live links and real screenshots)
+ *  - "ads-client": Google Ads clients I manage (facts only — no figures unless verified and approved)
  */
-
-export type CurrencyCode = "AUD" | "GBP" | "USD" | "INR";
 
 export type Location = {
   city?: string;
   country: string;
 };
 
-export type WorkCategory = "website" | "campaign";
+export type WorkCategory = "website" | "google-ads";
 
 type BaseWork = {
   slug: string;
   title: string;
   industry: string;
   location: Location;
-  /** e.g. "Live business website" or "Hypothetical Google Search campaign" */
+  /** e.g. "Live business website" or "Google Ads management · Real client" */
   projectType: string;
   summary: string;
   /** Services provided or demonstrated. */
@@ -65,44 +61,26 @@ export type WebsiteProject = BaseWork & {
   sourceUrl?: string;
 };
 
-export type CampaignInputs = {
-  /** Monthly advertising spend paid to Google, in the market currency. Excludes any fees. */
-  adSpend: number;
-  impressions: number;
-  clicks: number;
-  conversions: number;
-};
-
-export type KeywordGroup = {
-  name: string;
-  keywords: string[];
-};
-
-export type CampaignProject = BaseWork & {
-  kind: "campaign";
-  /** "illustrative" = invented sample figures. "actual" = verified account data. */
-  dataStatus: "illustrative" | "actual";
-  currency: CurrencyCode;
-  /** Fictional concept brand the plan is written for. */
-  brandName: string;
+export type AdsClientProject = BaseWork & {
+  kind: "ads-client";
+  clientName: string;
+  status: "Active" | "Completed";
   campaignType: string;
   objective: string;
-  audience: string;
-  /** What counts as one conversion in this plan. */
-  conversionDefinition: string;
-  inputs: CampaignInputs;
-  setup: { label: string; value: string }[];
-  keywordGroups: KeywordGroup[];
-  negativeKeywords: string[];
-  negativeStrategy: string;
-  headlines: string[];
-  descriptions: string[];
-  /** Display URL path used in the ad preview, e.g. "interiors/consultation". */
-  displayPath: string;
-  landingPage: string[];
-  tracking: string[];
-  optimization: string[];
-  accent: "lavender" | "lime" | "peach" | "stone";
+  /** About the client's business, written in the third person. */
+  about: string;
+  /** The situation the advertising needs to address. */
+  challenge: string;
+  goals: string[];
+  /** How the account is approached. */
+  approach: string[];
+  /** What I am responsible for in the account. */
+  responsibilities: string[];
+  /** Shown where performance figures would be, explaining why they are not published. */
+  resultsNote: string;
+  /** Public listing for the business, e.g. its Google Business Profile. */
+  profileUrl?: string;
+  profileLabel?: string;
 };
 
-export type WorkItem = WebsiteProject | CampaignProject;
+export type WorkItem = WebsiteProject | AdsClientProject;
