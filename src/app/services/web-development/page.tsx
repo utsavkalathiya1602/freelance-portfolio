@@ -11,7 +11,7 @@ import { ServiceHero } from "@/components/services/ServiceHero";
 import { OfferingGrid } from "@/components/services/OfferingGrid";
 import { FAQSection } from "@/components/services/FAQSection";
 import { WebsiteIllustration } from "@/components/services/Illustrations";
-import { ProjectGrid } from "@/components/projects/ProjectGrid";
+import { ProjectShowcaseList } from "@/components/projects/ProjectShowcaseList";
 import { ContactCTA } from "@/components/home/ContactCTA";
 
 const title = "Website Development";
@@ -21,7 +21,7 @@ const description =
 export const metadata: Metadata = pageMetadata({ title, description, path: "/services/web-development" });
 
 export default function WebDevelopmentPage() {
-  const projects = websiteProjects.slice(0, 4);
+  const projects = websiteProjects;
 
   return (
     <>
@@ -86,11 +86,11 @@ export default function WebDevelopmentPage() {
           <SectionHeading
             eyebrow="Related work"
             id="projects-heading"
-            title="Website concepts."
-            description="Concept projects for fictional brands, showing how I plan websites for different industries and markets."
+            title="Websites I've built."
+            description="Live websites for a dental clinic, a hotel and an event planning studio."
           />
           <div className="mt-12">
-            <ProjectGrid items={projects} />
+            <ProjectShowcaseList projects={projects} />
           </div>
         </Section>
       ) : null}

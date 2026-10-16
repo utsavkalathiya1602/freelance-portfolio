@@ -2,62 +2,27 @@
  * Data model for the Work section.
  *
  * Two kinds of entries:
- *  - "website":  website projects (fictional concept brands today, real client work later)
- *  - "campaign": Google Ads campaign plans (illustrative sample data today)
+ *  - "website":  real websites I have designed and built (with live links and real screenshots)
+ *  - "campaign": Google Ads campaign plans (illustrative sample data until real results exist)
  *
- * `status` drives the disclaimers shown on cards and detail pages, so a future real
- * project only needs `status: "client"` (website) or `dataStatus: "actual"` (campaign).
+ * `dataStatus` on campaigns drives the sample-data disclaimer shown on cards and pages.
  */
 
 export type CurrencyCode = "AUD" | "GBP" | "USD" | "INR";
 
-export type Market = {
-  city: string;
-  country: "Australia" | "United Kingdom" | "United States" | "India";
-  currency: CurrencyCode;
+export type Location = {
+  city?: string;
+  country: string;
 };
 
 export type WorkCategory = "website" | "campaign";
-
-/** Visual identity used to render the static concept mockups. */
-export type ConceptBrand = {
-  name: string;
-  /** Short label used in the mockup navigation. */
-  navItems: string[];
-  heroEyebrow: string;
-  heroHeadline: string;
-  heroText: string;
-  ctaLabel: string;
-  /** Which static illustration to draw in the mockup. */
-  illustration: "interior" | "renovation" | "home-services" | "landscaping" | "courtyard";
-  headingStyle: "serif" | "sans";
-  palette: {
-    background: string;
-    surface: string;
-    ink: string;
-    muted: string;
-    accent: string;
-    accentInk: string;
-    tones: [string, string, string];
-  };
-};
-
-export type PageSpec = {
-  name: string;
-  purpose: string;
-};
-
-export type ProcessStep = {
-  title: string;
-  description: string;
-};
 
 type BaseWork = {
   slug: string;
   title: string;
   industry: string;
-  market: Market;
-  /** e.g. "Fictional brand · Website concept" */
+  location: Location;
+  /** e.g. "Live business website" or "Hypothetical Google Search campaign" */
   projectType: string;
   summary: string;
   /** Services provided or demonstrated. */
@@ -65,26 +30,39 @@ type BaseWork = {
   featured: boolean;
 };
 
+export type ProjectScreenshot = {
+  /** Cloudinary public ID, e.g. "portfolio/projects/hotel-bhabha/desktop-home". */
+  publicId: string;
+  device: "desktop" | "mobile";
+  alt: string;
+  caption: string;
+};
+
+export type WebsiteSection = {
+  name: string;
+  description: string;
+};
+
 export type WebsiteProject = BaseWork & {
   kind: "website";
-  /** "concept" = fictional brand, not a client. "client" = real, verified client work. */
-  status: "concept" | "client";
-  brand: ConceptBrand;
+  /** Business the website was built for. */
+  businessName: string;
   overview: string;
-  problem: string;
+  /** What the website needed to achieve for the business. */
   goals: string[];
-  solution: string[];
-  designDecisions: string[];
-  pages: PageSpec[];
+  /** How the build addresses those goals. */
+  approach: string[];
+  /** Main sections or pages of the website. */
+  sections: WebsiteSection[];
   features: string[];
   stack: { label: string; items: string[] }[];
-  process: ProcessStep[];
-  /** Checks the build is verified against. Phrase as a plan unless they have been carried out. */
-  qualityChecklist: string[];
-  liveUrl?: string;
+  role: string;
+  /** Background colour behind screenshots on cards (any CSS colour). */
+  accent: string;
+  /** First desktop screenshot is used as the cover image. */
+  screenshots: ProjectScreenshot[];
+  liveUrl: string;
   sourceUrl?: string;
-  /** Slug of a related campaign plan. */
-  relatedCampaign?: string;
 };
 
 export type CampaignInputs = {
@@ -104,6 +82,7 @@ export type CampaignProject = BaseWork & {
   kind: "campaign";
   /** "illustrative" = invented sample figures. "actual" = verified account data. */
   dataStatus: "illustrative" | "actual";
+  currency: CurrencyCode;
   /** Fictional concept brand the plan is written for. */
   brandName: string;
   campaignType: string;
@@ -123,8 +102,6 @@ export type CampaignProject = BaseWork & {
   landingPage: string[];
   tracking: string[];
   optimization: string[];
-  /** Slug of the related website concept. */
-  relatedWebsite?: string;
   accent: "lavender" | "lime" | "peach" | "stone";
 };
 

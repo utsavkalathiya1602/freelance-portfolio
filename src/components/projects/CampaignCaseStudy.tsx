@@ -1,7 +1,5 @@
-import Link from "next/link";
-import { ArrowRight, Ban } from "lucide-react";
+import { Ban } from "lucide-react";
 import type { CampaignProject } from "@/types/project";
-import { getWebsiteProject } from "@/data/work";
 import { Section } from "@/components/ui/Section";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { ProjectHero } from "./ProjectHero";
@@ -13,7 +11,6 @@ import { AdPreview } from "./AdPreview";
 import { ProjectDisclaimer } from "./ProjectDisclaimer";
 
 export function CampaignCaseStudy({ campaign }: { campaign: CampaignProject }) {
-  const website = getWebsiteProject(campaign.relatedWebsite);
 
   return (
     <article>
@@ -21,7 +18,7 @@ export function CampaignCaseStudy({ campaign }: { campaign: CampaignProject }) {
 
       <Section labelledBy="overview-heading">
         <ProjectOverview
-          overview={`${campaign.summary} The plan is written for ${campaign.brandName}, targeting ${campaign.market.city}, ${campaign.market.country}.`}
+          overview={`${campaign.summary} The plan is written for ${campaign.brandName}, targeting ${campaign.location.city}, ${campaign.location.country}.`}
           problemTitle="Objective and target audience"
           problem={
             <div className="space-y-3">
@@ -136,15 +133,6 @@ export function CampaignCaseStudy({ campaign }: { campaign: CampaignProject }) {
           />
           <div>
             <FeatureList items={campaign.landingPage} columns={1} />
-            {website ? (
-              <Link
-                href={`/work/${website.slug}`}
-                className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-ink underline decoration-lime decoration-[3px] underline-offset-[6px] hover:decoration-ink"
-              >
-                See the related website concept: {website.title}
-                <ArrowRight aria-hidden="true" className="h-4 w-4" />
-              </Link>
-            ) : null}
           </div>
         </div>
       </Section>

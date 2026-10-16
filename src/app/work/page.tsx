@@ -4,13 +4,16 @@ import { allWork, workCategories } from "@/data/work";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { Container } from "@/components/ui/Container";
 import { ProjectGrid } from "@/components/projects/ProjectGrid";
+import { ProjectShowcaseList } from "@/components/projects/ProjectShowcaseList";
+import { websiteProjects } from "@/data/projects";
 import { ProjectFilters } from "@/components/projects/ProjectFilters";
-import { CONCEPT_LABEL, SAMPLE_DATA_LABEL } from "@/components/projects/ProjectDisclaimer";
+import { SAMPLE_DATA_LABEL } from "@/components/projects/ProjectDisclaimer";
 import { ContactCTA } from "@/components/home/ContactCTA";
+import { WorkHeroAside } from "@/components/page-heroes/WorkHeroAside";
 
 const title = "Work";
 const description =
-  "Website concepts and Google Ads campaign plans for service businesses in Australia, the United Kingdom, the United States and India.";
+  "Live websites designed and built by Utsav Kalathiya for a dental clinic, a hotel and an event studio, plus Google Ads campaign plans.";
 
 export const metadata: Metadata = pageMetadata({ title, description, path: "/work" });
 
@@ -22,7 +25,12 @@ export default function WorkPage() {
       label: category.label,
       description: category.description,
       count: items.length,
-      content: <ProjectGrid items={items} />,
+      content:
+        category.id === "website" ? (
+          <ProjectShowcaseList projects={websiteProjects} />
+        ) : (
+          <ProjectGrid items={items} />
+        ),
     };
   });
 
@@ -30,17 +38,14 @@ export default function WorkPage() {
     <>
       <PageHeader
         eyebrow="Work"
-        title="Websites and campaigns, planned in detail."
-        description="Concept websites and Google Ads campaign plans for interior design, renovation, home services and landscaping businesses — showing how I approach structure, design, development and lead generation for different markets."
+        title="Real websites, live and in use."
+        description="Websites I've designed and built for a dental clinic, a heritage hotel and an event planning studio — each one live, with real screenshots and a link to try it yourself. Plus Google Ads campaign plans showing how I approach lead generation."
+        aside={<WorkHeroAside />}
       >
-        <div className="mt-10 grid max-w-3xl gap-3 sm:grid-cols-2">
-          <p className="rounded-2xl border border-line bg-white p-4 text-sm leading-relaxed text-muted">
-            <span className="block font-semibold text-ink">{CONCEPT_LABEL}</span>
-            Website projects use fictional brands created for this portfolio.
-          </p>
+        <div className="mt-10 max-w-md">
           <p className="rounded-2xl border border-line bg-white p-4 text-sm leading-relaxed text-muted">
             <span className="block font-semibold text-ink">{SAMPLE_DATA_LABEL}</span>
-            Campaign figures are invented examples for demonstration.
+            Google Ads campaign figures are invented examples for demonstration.
           </p>
         </div>
       </PageHeader>

@@ -18,10 +18,10 @@ export async function generateMetadata({ params }: PageProps<"/work/[slug]">): P
   if (!item) return {};
 
   const title =
-    item.kind === "website" ? `${item.title} — Website Concept` : `${item.title} — Google Ads Campaign Plan`;
+    item.kind === "website" ? `${item.title} — Website Project` : `${item.title} — Google Ads Campaign Plan`;
   const description =
     item.kind === "website"
-      ? `${item.summary} Concept project for a fictional ${item.industry.toLowerCase()} brand in ${item.market.city}.`
+      ? `${item.summary} Designed and built by Utsav Kalathiya.`
       : `${item.summary} Illustrative sample data — not actual campaign results.`;
 
   return pageMetadata({ title, description, path: `/work/${item.slug}` });

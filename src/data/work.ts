@@ -6,7 +6,7 @@ export const workCategories: { id: WorkCategory; label: string; description: str
   {
     id: "website",
     label: "Website Development",
-    description: "Website concepts for service businesses in Australia, the UK, the US and India.",
+    description: "Live websites I've designed and built for businesses.",
   },
   {
     id: "campaign",
@@ -29,20 +29,11 @@ export function getCampaign(slug: string | undefined): CampaignProject | undefin
   return slug ? campaignProjects.find((item) => item.slug === slug) : undefined;
 }
 
-/** Featured websites first, then featured campaigns. */
-export function getFeaturedWork(limit = 4): WorkItem[] {
-  return allWork.filter((item) => item.featured).slice(0, limit);
-}
-
-/** Same-kind items first, then the paired item from the other category. */
+/** Other items of the same kind. */
 export function getRelatedWork(item: WorkItem, limit = 2): WorkItem[] {
-  const pairedSlug = item.kind === "website" ? item.relatedCampaign : item.relatedWebsite;
-  const paired = pairedSlug ? getWorkItem(pairedSlug) : undefined;
-  const sameKind = allWork.filter((other) => other.kind === item.kind && other.slug !== item.slug);
-  const ordered = paired ? [paired, ...sameKind] : sameKind;
-  return ordered.slice(0, limit);
+  return allWork.filter((other) => other.kind === item.kind && other.slug !== item.slug).slice(0, limit);
 }
 
-export function formatMarket(item: WorkItem): string {
-  return `${item.market.city}, ${item.market.country}`;
+export function formatLocation(item: WorkItem): string {
+  return item.location.city ? `${item.location.city}, ${item.location.country}` : item.location.country;
 }

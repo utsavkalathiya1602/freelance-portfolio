@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { ArrowLeft, ArrowUpRight, FolderGit2 } from "lucide-react";
 import type { WorkItem } from "@/types/project";
-import { formatMarket } from "@/data/work";
+import { formatLocation } from "@/data/work";
 import { Container } from "@/components/ui/Container";
 import { Eyebrow } from "@/components/ui/SectionHeading";
 import { Button } from "@/components/ui/Button";
@@ -10,14 +10,17 @@ import { ProjectDisclaimer } from "./ProjectDisclaimer";
 export function ProjectHero({ item }: { item: WorkItem }) {
   const facts = [
     { label: "Industry", value: item.industry },
-    { label: "Target market", value: formatMarket(item) },
+    { label: item.kind === "website" ? "Location" : "Target market", value: formatLocation(item) },
     { label: "Project type", value: item.projectType },
     ...(item.kind === "campaign"
       ? [
           { label: "Objective", value: item.objective },
-          { label: "Currency", value: item.market.currency },
+          { label: "Currency", value: item.currency },
         ]
-      : [{ label: "Services", value: item.services.join(", ") }]),
+      : [
+          { label: "My role", value: item.role },
+          { label: "Services", value: item.services.join(", ") },
+        ]),
   ];
 
   const liveUrl = item.kind === "website" ? item.liveUrl : undefined;
@@ -36,7 +39,7 @@ export function ProjectHero({ item }: { item: WorkItem }) {
 
         <div className="mt-10 grid gap-10 lg:grid-cols-[1.4fr_1fr] lg:items-start lg:gap-16">
           <div>
-            <Eyebrow>{item.kind === "website" ? "Website concept" : "Google Ads campaign plan"}</Eyebrow>
+            <Eyebrow>{item.kind === "website" ? "Website project" : "Google Ads campaign plan"}</Eyebrow>
             <h1 className="font-display text-[2.6rem] font-bold leading-[1.02] tracking-[-0.04em] text-ink text-balance sm:text-6xl lg:text-[4.2rem]">
               {item.title}
             </h1>

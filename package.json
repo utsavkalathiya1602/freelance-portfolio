@@ -8,7 +8,9 @@
     "start": "next start",
     "lint": "eslint",
     "verify:metrics": "node scripts/verify-metrics.mts",
-    "typecheck": "next typegen && tsc --noEmit"
+    "typecheck": "next typegen && tsc --noEmit",
+    "images:capture": "node scripts/capture-screenshots.mts",
+    "images:upload": "node --env-file=.env.local scripts/upload-images.mts"
   },
   "dependencies": {
     "lucide-react": "^1.57.0",

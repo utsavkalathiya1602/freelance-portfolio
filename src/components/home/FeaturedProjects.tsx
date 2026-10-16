@@ -1,12 +1,12 @@
 import { ArrowRight } from "lucide-react";
-import { getFeaturedWork } from "@/data/work";
+import { websiteProjects } from "@/data/projects";
 import { Section } from "@/components/ui/Section";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Button } from "@/components/ui/Button";
-import { ProjectGrid } from "@/components/projects/ProjectGrid";
+import { ProjectShowcaseList } from "@/components/projects/ProjectShowcaseList";
 
 export function FeaturedProjects() {
-  const items = getFeaturedWork(4);
+  const projects = websiteProjects.filter((project) => project.featured);
 
   return (
     <Section tone="stone" labelledBy="work-heading">
@@ -15,7 +15,7 @@ export function FeaturedProjects() {
           eyebrow="Selected work"
           id="work-heading"
           title="Work worth exploring."
-          description="Website concepts and Google Ads campaign plans that show how I approach structure, design and lead generation. Concept brands and sample figures are clearly labelled."
+          description="Live websites I've designed and built for real businesses — try them yourself."
         />
         <Button href="/work" variant="outline" className="self-start lg:self-auto">
           View all projects
@@ -23,7 +23,7 @@ export function FeaturedProjects() {
         </Button>
       </div>
       <div className="mt-12">
-        <ProjectGrid items={items} />
+        <ProjectShowcaseList projects={projects} />
       </div>
     </Section>
   );

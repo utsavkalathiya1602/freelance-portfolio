@@ -1,0 +1,92 @@
+{
+  "portfolio/projects/aarshdeep-dental-clinic/desktop-booking": {
+    "width": 1440,
+    "height": 900,
+    "version": 1792137951
+  },
+  "portfolio/projects/aarshdeep-dental-clinic/desktop-dentists": {
+    "width": 1440,
+    "height": 900,
+    "version": 1792137952
+  },
+  "portfolio/projects/aarshdeep-dental-clinic/desktop-home": {
+    "width": 1440,
+    "height": 900,
+    "version": 1792137953
+  },
+  "portfolio/projects/aarshdeep-dental-clinic/desktop-treatments": {
+    "width": 1440,
+    "height": 900,
+    "version": 1792137953
+  },
+  "portfolio/projects/aarshdeep-dental-clinic/mobile-booking": {
+    "width": 780,
+    "height": 1688,
+    "version": 1792137954
+  },
+  "portfolio/projects/aarshdeep-dental-clinic/mobile-home": {
+    "width": 780,
+    "height": 1688,
+    "version": 1792137955
+  },
+  "portfolio/projects/devam-event-studio/desktop-about": {
+    "width": 1440,
+    "height": 900,
+    "version": 1792137955
+  },
+  "portfolio/projects/devam-event-studio/desktop-home": {
+    "width": 1440,
+    "height": 900,
+    "version": 1792137956
+  },
+  "portfolio/projects/devam-event-studio/desktop-services": {
+    "width": 1440,
+    "height": 900,
+    "version": 1792137957
+  },
+  "portfolio/projects/devam-event-studio/desktop-timeline": {
+    "width": 1440,
+    "height": 900,
+    "version": 1792137958
+  },
+  "portfolio/projects/devam-event-studio/mobile-home": {
+    "width": 780,
+    "height": 1688,
+    "version": 1792137959
+  },
+  "portfolio/projects/devam-event-studio/mobile-services": {
+    "width": 780,
+    "height": 1688,
+    "version": 1792137959
+  },
+  "portfolio/projects/hotel-bhabha/desktop-dining": {
+    "width": 1440,
+    "height": 900,
+    "version": 1792137961
+  },
+  "portfolio/projects/hotel-bhabha/desktop-home": {
+    "width": 1440,
+    "height": 900,
+    "version": 1792137962
+  },
+  "portfolio/projects/hotel-bhabha/desktop-offers": {
+    "width": 1440,
+    "height": 900,
+    "version": 1792137963
+  },
+  "portfolio/projects/hotel-bhabha/desktop-rooms": {
+    "width": 1440,
+    "height": 900,
+    "version": 1792137964
+  },
+  "portfolio/projects/hotel-bhabha/mobile-home": {
+    "width": 780,
+    "height": 1688,
+    "version": 1792137965
+  },
+  "portfolio/projects/hotel-bhabha/mobile-offers": {
+    "width": 780,
+    "height": 1688,
+    "version": 1792137966
+  }
+}

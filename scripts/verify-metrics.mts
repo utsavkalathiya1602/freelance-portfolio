@@ -18,7 +18,7 @@ for (const campaign of campaignProjects) {
   const e = expected[campaign.slug];
   const ok = e && close(m.ctr, e.ctr) && close(m.averageCpc, e.cpc) && close(m.conversionRate, e.cvr) && close(m.costPerConversion, e.cpa);
   if (!ok) failures++;
-  const c = campaign.market.currency;
+  const c = campaign.currency;
   console.log(
     `${ok ? "PASS" : "FAIL"} ${campaign.slug.padEnd(20)} CTR ${formatPercent(m.ctr)} | CPC ${formatCurrency(m.averageCpc, c)} | CVR ${formatPercent(m.conversionRate)} | CPA ${formatCurrency(m.costPerConversion, c)}`,
   );

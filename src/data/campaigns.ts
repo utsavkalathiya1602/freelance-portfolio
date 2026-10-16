@@ -19,7 +19,8 @@ export const campaignProjects: CampaignProject[] = [
     title: "Interior Design Consultation",
     brandName: "Northline Interiors (fictional concept)",
     industry: "Interior design",
-    market: { city: "Melbourne", country: "Australia", currency: "AUD" },
+    location: { city: "Melbourne", country: "Australia" },
+    currency: "AUD",
     projectType: "Hypothetical Google Search campaign",
     campaignType: "Google Search",
     summary:
@@ -71,7 +72,6 @@ export const campaignProjects: CampaignProject[] = [
       "Month 2+: consider conversion-based bidding once enough conversions are recorded",
       "Ongoing: review landing-page form completion and simplify fields if needed",
     ],
-    relatedWebsite: "northline-interiors",
     accent: "lavender",
   },
   {
@@ -81,7 +81,8 @@ export const campaignProjects: CampaignProject[] = [
     title: "Kitchen & Bathroom Renovations",
     brandName: "Oak & Stone Renovations (fictional concept)",
     industry: "Home renovation",
-    market: { city: "London", country: "United Kingdom", currency: "GBP" },
+    location: { city: "London", country: "United Kingdom" },
+    currency: "GBP",
     projectType: "Hypothetical Google Search campaign",
     campaignType: "Google Search",
     summary:
@@ -132,7 +133,6 @@ export const campaignProjects: CampaignProject[] = [
       "Test service-specific headlines against generic ones",
       "Review form drop-off and shorten the form if completion is low",
     ],
-    relatedWebsite: "oak-stone-renovations",
     accent: "peach",
   },
   {
@@ -142,7 +142,8 @@ export const campaignProjects: CampaignProject[] = [
     title: "Home Services Enquiries",
     brandName: "ClearFlow Home Services (fictional concept)",
     industry: "Local home services",
-    market: { city: "Austin", country: "United States", currency: "USD" },
+    location: { city: "Austin", country: "United States" },
+    currency: "USD",
     projectType: "Hypothetical Google Search campaign",
     campaignType: "Google Search",
     summary:
@@ -192,7 +193,6 @@ export const campaignProjects: CampaignProject[] = [
       "Weekly search-terms review and negative keyword updates",
       "Test estimate-focused headlines against service-focused headlines",
     ],
-    relatedWebsite: "clearflow-home-services",
     accent: "lime",
   },
   {
@@ -202,7 +202,8 @@ export const campaignProjects: CampaignProject[] = [
     title: "Landscaping Consultation",
     brandName: "Evergreen Outdoor Living (fictional concept)",
     industry: "Landscaping & outdoor design",
-    market: { city: "Brisbane", country: "Australia", currency: "AUD" },
+    location: { city: "Brisbane", country: "Australia" },
+    currency: "AUD",
     projectType: "Hypothetical Google Search campaign",
     campaignType: "Google Search",
     summary:
@@ -252,7 +253,6 @@ export const campaignProjects: CampaignProject[] = [
       "Weekly search-terms review and negative keyword updates",
       "Adjust budget for seasonal demand after reviewing search volume trends",
     ],
-    relatedWebsite: "evergreen-outdoor-living",
     accent: "stone",
   },
 ];

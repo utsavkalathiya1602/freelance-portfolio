@@ -4,7 +4,7 @@ import { calculateMetrics, formatCurrency, formatNumber, formatPercent } from "@
 /** Funnel view and the worked calculations behind every derived metric. */
 export function CampaignPerformance({ campaign }: { campaign: CampaignProject }) {
   const { inputs } = campaign;
-  const currency = campaign.market.currency;
+  const currency = campaign.currency;
   const metrics = calculateMetrics(inputs);
   const money = (value: number) => formatCurrency(value, currency, { decimals: 0 });
 

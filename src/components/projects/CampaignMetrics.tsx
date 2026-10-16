@@ -8,7 +8,7 @@ type Tile = { label: string; value: string; hint: string; emphasis?: boolean };
 /** Custom report UI for the sample metrics. Every tile is derived from the four stored inputs. */
 export function CampaignMetrics({ campaign }: { campaign: CampaignProject }) {
   const { inputs } = campaign;
-  const currency = campaign.market.currency;
+  const currency = campaign.currency;
   const metrics = calculateMetrics(inputs);
   const isSample = campaign.dataStatus === "illustrative";
 

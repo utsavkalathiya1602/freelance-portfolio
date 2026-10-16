@@ -9,6 +9,7 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { ProcessSteps } from "@/components/ui/ProcessSteps";
 import { Button } from "@/components/ui/Button";
 import { ContactCTA } from "@/components/home/ContactCTA";
+import { AboutHeroAside } from "@/components/page-heroes/AboutHeroAside";
 
 const title = "About";
 const description =
@@ -73,6 +74,13 @@ export default function AboutPage() {
         eyebrow={`About · ${siteConfig.shortLocation}`}
         title="Hi, I'm Utsav. I build websites that do a job."
         description={`I'm an independent web developer based in ${siteConfig.location}. I help small businesses, startups and service providers with modern websites, web applications and Google Ads search campaigns.`}
+        aside={
+          <AboutHeroAside
+            currentRole={experience[0]}
+            currentStudy={education[0]}
+            stack={["React.js", "Node.js", "Express.js", "MongoDB", "Tailwind CSS", "Google Ads"]}
+          />
+        }
       />
 
       <Section labelledBy="story-heading">

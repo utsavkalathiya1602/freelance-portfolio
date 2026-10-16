@@ -2,20 +2,13 @@ import { Info } from "lucide-react";
 import type { WorkItem } from "@/types/project";
 
 export const SAMPLE_DATA_LABEL = "Illustrative sample data — not actual campaign results";
-export const CONCEPT_LABEL = "Concept project — fictional brand, not a client";
 
-/** Returns the disclaimer that applies to an item, or null for verified real work. */
+/** Returns the disclaimer that applies to an item, or null for real work and verified data. */
 export function disclaimerFor(item: WorkItem): { label: string; text: string } | null {
   if (item.kind === "campaign" && item.dataStatus === "illustrative") {
     return {
       label: SAMPLE_DATA_LABEL,
       text: `${item.brandName.replace(" (fictional concept)", "")} is a fictional concept brand. This campaign has not been run: every figure on this page is invented for demonstration and calculated from sample inputs. The budget shown is illustrative advertising spend paid to Google and does not include management or website-development fees.`,
-    };
-  }
-  if (item.kind === "website" && item.status === "concept") {
-    return {
-      label: CONCEPT_LABEL,
-      text: `${item.title} is a fictional brand created to demonstrate how I would plan and build a website for this industry and market. It is not a client and is not a real business. The visuals are static mockups rendered in code, not screenshots of a deployed site, and the technology stack is the proposed implementation.`,
     };
   }
   return null;

@@ -16,7 +16,7 @@ export function ProjectGrid({ items, headingLevel = "h3" }: ProjectGridProps) {
   }
 
   return (
-    <ul className="grid gap-6 md:grid-cols-2 lg:gap-8">
+    <ul className={`grid gap-6 md:grid-cols-2 lg:gap-8 ${items.length === 3 ? "xl:grid-cols-3" : ""}`}>
       {items.map((item) => (
         <li key={item.slug} className="min-w-0">
           <ProjectCard item={item} headingLevel={headingLevel} />

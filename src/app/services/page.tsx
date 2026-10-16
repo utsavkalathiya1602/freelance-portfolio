@@ -11,6 +11,7 @@ import { Button } from "@/components/ui/Button";
 import { ServiceCard } from "@/components/services/ServiceCard";
 import { FAQSection } from "@/components/services/FAQSection";
 import { ContactCTA } from "@/components/home/ContactCTA";
+import { ServicesHeroAside } from "@/components/page-heroes/ServicesHeroAside";
 
 const title = "Services";
 const description =
@@ -74,6 +75,7 @@ export default function ServicesPage() {
         eyebrow="Services"
         title="Websites and Google Ads, explained clearly."
         description="Compare what each service includes, who it suits and how it's priced — then start with the one that fits your business today."
+        aside={<ServicesHeroAside />}
       >
         <nav aria-label="Jump to a service" className="mt-10 flex flex-col gap-3 sm:flex-row">
           <Button href="/services/web-development" variant="outline">
