@@ -52,7 +52,7 @@ function enquiryText(enquiry: Enquiry): string {
   return [
     `Name: ${enquiry.name}`,
     enquiry.email ? `Email: ${enquiry.email}` : null,
-    enquiry.phone ? `Phone: ${enquiry.phone}` : null,
+    `Phone / WhatsApp: ${enquiry.phone}`,
     enquiry.business ? `Business: ${enquiry.business}` : null,
     `Project type: ${enquiry.projectType}`,
     enquiry.budget ? `Budget: ${enquiry.budget}` : null,
@@ -101,7 +101,7 @@ export function ContactForm() {
           replyto: enquiry.email,
           name: enquiry.name,
           email: enquiry.email,
-          phone: enquiry.phone || "—",
+          phone: enquiry.phone,
           business: enquiry.business || "—",
           project_type: enquiry.projectType,
           budget: enquiry.budget || "Prefer not to say",
@@ -176,9 +176,20 @@ export function ContactForm() {
         </div>
         <div>
           <label htmlFor="phone" className={labelClass}>
-            Phone / WhatsApp <span className="font-normal text-muted">(optional)</span>
+            Phone / WhatsApp <span className="text-muted">(required)</span>
           </label>
-          <input id="phone" name="phone" type="tel" autoComplete="tel" className={fieldClass} />
+          <input
+            id="phone"
+            name="phone"
+            type="tel"
+            autoComplete="tel"
+            inputMode="tel"
+            required
+            pattern="\+?[0-9 \-\(\)]{10,20}"
+            title="Enter a phone number with at least 10 digits, e.g. +91 98765 43210"
+            placeholder="+91 98765 43210"
+            className={fieldClass}
+          />
         </div>
         <div>
           <label htmlFor="business" className={labelClass}>
