@@ -1,0 +1,99 @@
+@import "tailwindcss";
+
+/* ------------------------------------------------------------------
+   Brand palette — the only colours used on the site.
+   ------------------------------------------------------------------ */
+:root {
+  --ivory: #f7f5ef;
+  --ink: #171717;
+  --lime: #c8f169;
+  --lavender: #d8ccff;
+  --peach: #ffd5be;
+  --stone: #e8e4da;
+  --white: #ffffff;
+  --muted: #66645e;
+  --line: #e2ded5;
+}
+
+@theme inline {
+  --color-ivory: var(--ivory);
+  --color-ink: var(--ink);
+  --color-lime: var(--lime);
+  --color-lavender: var(--lavender);
+  --color-peach: var(--peach);
+  --color-stone: var(--stone);
+  --color-white: var(--white);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+
+  --font-sans: var(--font-body), ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-display: var(--font-heading), var(--font-body), ui-sans-serif, system-ui, sans-serif;
+
+  --radius-card: 1.5rem;
+  --radius-panel: 2rem;
+}
+
+/* ------------------------------------------------------------------
+   Base
+   ------------------------------------------------------------------ */
+html {
+  /* No smooth scrolling — anchor links jump instantly. */
+  scroll-behavior: auto;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: var(--ivory);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: var(--lime);
+  color: var(--ink);
+}
+
+:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 3px;
+  border-radius: 0.375rem;
+}
+
+/* Let grid items shrink below their content width so long text never causes horizontal scroll. */
+.grid > * {
+  min-width: 0;
+}
+
+/* Anchored sections clear the sticky navbar. */
+[id] {
+  scroll-margin-top: 6rem;
+}
+
+/* ------------------------------------------------------------------
+   No-animation policy.
+   Only short colour / border / shadow transitions on hover and focus
+   are allowed (see the `transition-colors` / `transition-shadow`
+   utilities used in components). Everything else is switched off.
+   ------------------------------------------------------------------ */
+*,
+*::before,
+*::after {
+  animation: none !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0s !important;
+  }
+}
+
+/* Native <details> disclosure marker is replaced by our own icon. */
+summary {
+  list-style: none;
+}
+summary::-webkit-details-marker {
+  display: none;
+}
