@@ -28,7 +28,7 @@ const footerLinks = [
     links: [
       { label: "Website Development", href: "/services/web-development" },
       { label: "Digital Marketing", href: "/services/digital-marketing" },
-      { label: "Portfolio", href: "/work" },
+      { label: "All services", href: "/services" },
     ],
   },
 ];

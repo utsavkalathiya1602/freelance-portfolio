@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { siteConfig } from "@/config/site";
 import { pageMetadata } from "@/lib/metadata";
 import { Hero } from "@/components/home/Hero";
 import { ServicesSection } from "@/components/home/ServicesSection";
@@ -12,7 +11,7 @@ import { HomePageSchema } from "@/components/schema/HomePageSchema";
 export const metadata: Metadata = pageMetadata({
   title: "Freelance Web Developer in Surat | Utsav Kalathiya",
   description:
-    "Utsav Kalathiya — freelance web developer in Surat, Gujarat, India. Builds modern business websites, landing pages and custom web applications using React.js and MERN stack. Also runs Google Ads, Meta Ads and SEO for small businesses in Surat and across India. Hire a reliable freelance web developer today.",
+    "Freelance web developer and digital marketer in Surat. Business websites, landing pages and web apps, plus Google Ads, Meta Ads and SEO for local businesses.",
   path: "/",
   overrideTitle: "Freelance Web Developer in Surat | Utsav Kalathiya",
   keywords: [

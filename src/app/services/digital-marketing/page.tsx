@@ -23,9 +23,9 @@ import { ContactCTA } from "@/components/home/ContactCTA";
 import { ServiceSchema } from "@/components/schema/ServiceSchema";
 import { whatsappMessages } from "@/lib/whatsapp";
 
-const title = "Google Ads, Meta Ads & SEO — Digital Marketing Surat";
+const title = "Google Ads, Meta Ads & SEO in Surat";
 const description =
-  "Freelance digital marketing services in Surat, Gujarat — Google Ads management, Meta Ads (Facebook & Instagram) and local SEO / Google Business Profile optimisation for small businesses. Get found by the right customers in Surat and across India.";
+  "Google Ads, Meta Ads (Facebook & Instagram) and local SEO with Google Business Profile for small businesses in Surat, by a freelance digital marketer.";
 
 export const metadata: Metadata = pageMetadata({
   title,

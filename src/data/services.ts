@@ -8,7 +8,6 @@ import {
   LayoutTemplate,
   MapPin,
   Megaphone,
-  MonitorSmartphone,
   PenLine,
   Plug,
   RefreshCw,
@@ -80,7 +79,7 @@ export type Offering = {
 export const webOfferings: Offering[] = [
   {
     title: "Business websites",
-    description: "A clear, professional home for your business: who you are, what you offer and how to reach you.",
+    description: "A clear, professional, mobile-friendly home for your business: who you are, what you offer and how to reach you.",
     icon: LayoutTemplate,
   },
   {
@@ -102,11 +101,6 @@ export const webOfferings: Offering[] = [
     title: "Website redesigns",
     description: "Refreshing an outdated site so it is easier to use, easier to update and works properly on phones.",
     icon: RefreshCw,
-  },
-  {
-    title: "Responsive layouts",
-    description: "Pages that read and work well on small phones, tablets, laptops and large monitors.",
-    icon: MonitorSmartphone,
   },
   {
     title: "API integration",

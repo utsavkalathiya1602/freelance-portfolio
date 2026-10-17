@@ -1,4 +1,5 @@
 import { siteConfig } from "@/config/site";
+import { personRef, websiteRef } from "@/lib/schema-ids";
 
 /**
  * JSON-LD WebPage schema for the homepage.
@@ -20,22 +21,8 @@ export function HomePageSchema() {
     inLanguage: "en-IN",
     keywords:
       "freelance web developer Surat, MERN stack developer for hire, React.js developer Surat, website development for small businesses, Google Ads specialist Surat, hire web developer India",
-    isPartOf: {
-      "@type": "WebSite",
-      url,
-      name: siteConfig.name,
-    },
-    about: {
-      "@type": "Person",
-      name: siteConfig.name,
-      jobTitle: "Freelance Web Developer & Digital Marketer",
-      address: {
-        "@type": "PostalAddress",
-        addressLocality: "Surat",
-        addressRegion: "Gujarat",
-        addressCountry: "IN",
-      },
-    },
+    isPartOf: websiteRef,
+    about: personRef,
     mainEntityOfPage: url,
     speakable: {
       "@type": "SpeakableSpecification",

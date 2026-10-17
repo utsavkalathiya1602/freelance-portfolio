@@ -1,4 +1,5 @@
 import { siteConfig } from "@/config/site";
+import { personId, personRef, websiteId } from "@/lib/schema-ids";
 
 /**
  * Site-wide JSON-LD structured data rendered once in the root layout.
@@ -16,6 +17,7 @@ export function SiteSchema() {
   const personSchema = {
     "@context": "https://schema.org",
     "@type": "Person",
+    "@id": personId,
     name: siteConfig.name,
     url,
     jobTitle: "Freelance Web Developer & Digital Marketer",
@@ -91,13 +93,13 @@ export function SiteSchema() {
   const websiteSchema = {
     "@context": "https://schema.org",
     "@type": "WebSite",
+    "@id": websiteId,
     name: siteConfig.name,
     url,
     description: siteConfig.description,
-    author: {
-      "@type": "Person",
-      name: siteConfig.name,
-    },
+    inLanguage: "en-IN",
+    author: personRef,
+    publisher: personRef,
   };
 
   return (

@@ -1,4 +1,4 @@
-import { siteConfig } from "@/config/site";
+import { personRef } from "@/lib/schema-ids";
 
 type ServiceSchemaProps = {
   name: string;
@@ -27,19 +27,7 @@ export function ServiceSchema({
     description,
     url,
     serviceType,
-    provider: {
-      "@type": "Person",
-      name: siteConfig.name,
-      url: siteConfig.url,
-      telephone: siteConfig.contact.phone,
-      email: `mailto:${siteConfig.contact.email}`,
-      address: {
-        "@type": "PostalAddress",
-        addressLocality: "Surat",
-        addressRegion: "Gujarat",
-        addressCountry: "IN",
-      },
-    },
+    provider: personRef,
     areaServed: [
       { "@type": "City", name: "Surat", containedInPlace: { "@type": "State", name: "Gujarat" } },
       { "@type": "Place", name: "Varachha, Surat" },

@@ -21,13 +21,10 @@ export async function generateMetadata({ params }: PageProps<"/work/[slug]">): P
 
   const title =
     item.kind === "website"
-      ? `${item.title} — ${item.industry} Website`
+      ? `${item.title} — Website Case Study`
       : `${item.title} — Google Ads Case Study`;
 
-  const description =
-    item.kind === "website"
-      ? `${item.summary} Designed and built by Utsav Kalathiya, freelance web developer based in Surat, Gujarat, India.`
-      : `${item.summary} Google Ads managed by Utsav Kalathiya, freelance digital marketer in Surat, India.`;
+  const description = item.summary;
 
   // Build page-specific keywords from item data
   const locationStr = item.location.city

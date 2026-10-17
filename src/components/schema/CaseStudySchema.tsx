@@ -1,4 +1,5 @@
 import { siteConfig } from "@/config/site";
+import { personRef, websiteRef } from "@/lib/schema-ids";
 import type { WorkItem } from "@/types/project";
 
 /**
@@ -27,16 +28,8 @@ export function CaseStudySchema({ item }: { item: WorkItem }) {
     name,
     description,
     inLanguage: "en-IN",
-    isPartOf: {
-      "@type": "WebSite",
-      url: siteConfig.url,
-      name: siteConfig.name,
-    },
-    author: {
-      "@type": "Person",
-      name: siteConfig.name,
-      url: siteConfig.url,
-    },
+    isPartOf: websiteRef,
+    author: personRef,
   };
 
   return (

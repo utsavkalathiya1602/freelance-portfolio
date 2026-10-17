@@ -1,4 +1,5 @@
 import { siteConfig } from "@/config/site";
+import { personRef, websiteRef } from "@/lib/schema-ids";
 import { allWork } from "@/data/work";
 
 /**
@@ -20,23 +21,8 @@ export function WorkPageSchema() {
     description:
       "Portfolio of real websites and digital marketing campaigns by Utsav Kalathiya, freelance web developer and digital marketer in Surat, Gujarat, India.",
     inLanguage: "en-IN",
-    isPartOf: {
-      "@type": "WebSite",
-      url: siteConfig.url,
-      name: siteConfig.name,
-    },
-    author: {
-      "@type": "Person",
-      name: siteConfig.name,
-      url: siteConfig.url,
-      jobTitle: "Freelance Web Developer & Digital Marketer",
-      address: {
-        "@type": "PostalAddress",
-        addressLocality: "Surat",
-        addressRegion: "Gujarat",
-        addressCountry: "IN",
-      },
-    },
+    isPartOf: websiteRef,
+    author: personRef,
     mainEntity: {
       "@type": "ItemList",
       name: "Portfolio Projects",

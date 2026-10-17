@@ -1,4 +1,4 @@
-import { siteConfig } from "@/config/site";
+import { personRef, websiteRef } from "@/lib/schema-ids";
 import type { BlogPost } from "@/data/blog";
 
 type ArticleSchemaProps = {
@@ -24,28 +24,9 @@ export function ArticleSchema({ post, url }: ArticleSchemaProps) {
     datePublished: post.publishedAt,
     ...(post.updatedAt ? { dateModified: post.updatedAt } : {}),
     inLanguage: "en-IN",
-    author: {
-      "@type": "Person",
-      name: siteConfig.name,
-      url: siteConfig.url,
-      jobTitle: "Freelance Web Developer & Digital Marketer",
-      address: {
-        "@type": "PostalAddress",
-        addressLocality: "Surat",
-        addressRegion: "Gujarat",
-        addressCountry: "IN",
-      },
-    },
-    publisher: {
-      "@type": "Person",
-      name: siteConfig.name,
-      url: siteConfig.url,
-    },
-    isPartOf: {
-      "@type": "WebSite",
-      url: siteConfig.url,
-      name: siteConfig.name,
-    },
+    author: personRef,
+    publisher: personRef,
+    isPartOf: websiteRef,
     mainEntityOfPage: {
       "@type": "WebPage",
       "@id": url,

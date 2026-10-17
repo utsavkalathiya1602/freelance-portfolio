@@ -32,7 +32,7 @@ export default function Article() {
 
       <article aria-labelledby="article-heading">
         <header className="border-b border-line bg-ivory py-14 sm:py-20">
-          <Container className="max-w-3xl">
+          <Container size="narrow">
             <p className="mb-5 inline-block rounded-full bg-lime px-3 py-1 text-xs font-semibold text-ink">
               {post.tag}
             </p>
@@ -57,7 +57,7 @@ export default function Article() {
         </header>
 
         <div className="py-14 sm:py-20">
-          <Container className="max-w-3xl">
+          <Container size="narrow">
             <ArticleBody>
 
               <h2>Instagram is great for discovery. A website is for conversion.</h2>

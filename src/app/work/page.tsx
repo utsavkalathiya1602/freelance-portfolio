@@ -11,9 +11,9 @@ import { ContactCTA } from "@/components/home/ContactCTA";
 import { WorkHeroAside } from "@/components/page-heroes/WorkHeroAside";
 import { WorkPageSchema } from "@/components/schema/WorkPageSchema";
 
-const title = "Portfolio — Websites & Digital Marketing Projects";
+const title = "Portfolio — Websites & Marketing Work";
 const description =
-  "Portfolio of websites and digital marketing campaigns by Utsav Kalathiya, freelance web developer in Surat, Gujarat. Live websites for a dental clinic, a heritage hotel, an event planning studio, and a photography business — plus Google Ads management for a local store in Surat.";
+  "Live websites for a dental clinic, a heritage hotel and an event studio, plus Google Ads for a local store in Surat. Real projects by Utsav Kalathiya.";
 
 export const metadata: Metadata = pageMetadata({
   title,

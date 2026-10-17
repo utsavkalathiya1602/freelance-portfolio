@@ -33,7 +33,7 @@ export default function Article() {
       <article aria-labelledby="article-heading">
         {/* Header */}
         <header className="border-b border-line bg-ivory py-14 sm:py-20">
-          <Container className="max-w-3xl">
+          <Container size="narrow">
             <p className="mb-5 inline-block rounded-full bg-lime px-3 py-1 text-xs font-semibold text-ink">
               {post.tag}
             </p>
@@ -59,7 +59,7 @@ export default function Article() {
 
         {/* Body */}
         <div className="py-14 sm:py-20">
-          <Container className="max-w-3xl">
+          <Container size="narrow">
             <ArticleBody>
 
               <h2>The short answer</h2>
@@ -116,7 +116,7 @@ export default function Article() {
                 <li><strong>Custom web application (logins, dashboards, data):</strong> ₹60,000+</li>
               </ul>
               <p>
-                The right question is not "how much does a website cost?" but "what does my business need the website to do?" Start from there and get a written quote based on the agreed scope.
+                The right question is not &ldquo;how much does a website cost?&rdquo; but &ldquo;what does my business need the website to do?&rdquo; Start from there and get a written quote based on the agreed scope.
               </p>
 
               <h2>What to ask before hiring a developer</h2>

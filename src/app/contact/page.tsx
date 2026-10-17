@@ -7,9 +7,9 @@ import { Eyebrow } from "@/components/ui/SectionHeading";
 import { ContactForm } from "@/components/contact/ContactForm";
 import { whatsappMessages } from "@/lib/whatsapp";
 
-const title = "Contact — Hire a Freelance Web Developer in Surat";
+const title = "Contact — Hire a Web Developer in Surat";
 const description =
-  "Get in touch with Utsav Kalathiya — freelance web developer and digital marketer in Surat, Gujarat. Enquire about a business website, landing page, React.js web app, Google Ads, Meta Ads or SEO for your business. Fast response, honest advice.";
+  "Contact Utsav Kalathiya, freelance web developer and digital marketer in Surat, about a website, web app, Google Ads, Meta Ads or SEO. Quick, honest replies.";
 
 export const metadata: Metadata = pageMetadata({
   title,

@@ -17,9 +17,9 @@ import { ContactCTA } from "@/components/home/ContactCTA";
 import { whatsappMessages } from "@/lib/whatsapp";
 import { ServiceSchema } from "@/components/schema/ServiceSchema";
 
-const title = "Website Development Services — React.js & MERN Stack";
+const title = "Website Development in Surat — React.js & MERN";
 const description =
-  "Custom business websites, landing pages, and web applications built by a freelance web developer in Surat. Specialising in React.js, Node.js and MERN stack development for small businesses and service providers in Surat, Gujarat and across India.";
+  "Business websites, landing pages and custom web apps built with React.js and Node.js by a freelance web developer in Surat. Fast, mobile-friendly, easy to use.";
 
 export const metadata: Metadata = pageMetadata({
   title,

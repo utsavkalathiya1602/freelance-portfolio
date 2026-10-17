@@ -13,9 +13,9 @@ import { FAQSection } from "@/components/services/FAQSection";
 import { ContactCTA } from "@/components/home/ContactCTA";
 import { ServicesHeroAside } from "@/components/page-heroes/ServicesHeroAside";
 
-const title = "Web Development & Digital Marketing Services — Surat";
+const title = "Web Development & Digital Marketing Services";
 const description =
-  "Website development and digital marketing services by Utsav Kalathiya — freelance web developer and digital marketer in Surat, Gujarat. Custom websites using React.js and MERN stack, plus Google Ads, Meta Ads and SEO for small businesses in Surat and across India.";
+  "Website development and digital marketing in Surat: business websites, landing pages and web apps, plus Google Ads, Meta Ads and SEO for small businesses.";
 
 export const metadata: Metadata = pageMetadata({
   title,
