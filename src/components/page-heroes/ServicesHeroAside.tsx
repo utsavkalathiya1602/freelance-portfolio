@@ -56,7 +56,7 @@ export function ServicesHeroAside() {
         })}
       </ul>
 
-      <Link
+      <a
         href="#combined-heading"
         className="group flex items-center justify-between gap-4 rounded-[var(--radius-card)] bg-ink px-6 py-5 text-white transition-colors duration-150 hover:bg-ink/90"
       >
@@ -70,7 +70,7 @@ export function ServicesHeroAside() {
           </span>
         </span>
         <ArrowRight aria-hidden="true" className="h-5 w-5 shrink-0 text-lime" />
-      </Link>
+      </a>
     </div>
   );
 }

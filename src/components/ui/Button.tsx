@@ -38,7 +38,12 @@ export function Button({
   external = false,
 }: ButtonProps) {
   const classes = `${base} ${variants[variant]} ${sizes[size]} ${className}`;
-  const isPlainLink = external || /^(mailto:|tel:|https?:)/.test(href);
+  // Hash/anchor links (#section) must use a native <a> so the browser always
+  // scrolls to the target — Next.js <Link> skips navigation when the URL
+  // (including the hash) hasn't changed, which means clicking the button a
+  // second time after the user has scrolled away does nothing.
+  const isAnchorLink = href.startsWith("#");
+  const isPlainLink = isAnchorLink || external || /^(mailto:|tel:|https?:)/.test(href);
 
   if (isPlainLink) {
     return (
