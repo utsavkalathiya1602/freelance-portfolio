@@ -67,6 +67,9 @@ export const metadata: Metadata = {
     description: siteConfig.description,
     images: ["/opengraph-image"],
   },
+  verification: {
+    google: "JIu2MpvRxAiRdu1E1krA7hfVBSFJRRr6pPt4G5mwwVc",
+  },
 };
 
 export const viewport: Viewport = {
