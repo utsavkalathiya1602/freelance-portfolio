@@ -28,7 +28,7 @@ export const siteConfig = {
      * WhatsApp number in international format, digits only (e.g. "919879354064").
      * Leave empty ("") to hide every WhatsApp button on the site.
      */
-    whatsapp: "",
+    whatsapp: "919879354064",
   },
 
   /** Only add profiles that really exist. Empty strings are hidden. */

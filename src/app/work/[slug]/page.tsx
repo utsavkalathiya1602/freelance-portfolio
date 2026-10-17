@@ -7,6 +7,7 @@ import { ProjectGrid } from "@/components/projects/ProjectGrid";
 import { WebsiteCaseStudy } from "@/components/projects/WebsiteCaseStudy";
 import { AdsClientCaseStudy } from "@/components/projects/AdsClientCaseStudy";
 import { ContactCTA } from "@/components/home/ContactCTA";
+import { whatsappMessageFor } from "@/lib/whatsapp";
 
 export function generateStaticParams() {
   return allWork.map((item) => ({ slug: item.slug }));
@@ -48,6 +49,7 @@ export default async function WorkItemPage({ params }: PageProps<"/work/[slug]">
       ) : null}
 
       <ContactCTA
+        whatsappMessage={whatsappMessageFor(`/work/${item.slug}`)}
         heading={item.kind === "website" ? "Want a website like this?" : "Want more local customers from Google?"}
         text={
           item.kind === "website"

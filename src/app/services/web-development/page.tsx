@@ -13,6 +13,7 @@ import { FAQSection } from "@/components/services/FAQSection";
 import { WebsiteIllustration } from "@/components/services/Illustrations";
 import { ProjectShowcaseList } from "@/components/projects/ProjectShowcaseList";
 import { ContactCTA } from "@/components/home/ContactCTA";
+import { whatsappMessages } from "@/lib/whatsapp";
 
 const title = "Website Development";
 const description =
@@ -96,7 +97,7 @@ export default function WebDevelopmentPage() {
       ) : null}
 
       <FAQSection faqs={webFaqs} />
-      <ContactCTA heading="Ready to plan your website?" />
+      <ContactCTA heading="Ready to plan your website?" whatsappMessage={whatsappMessages.webDevelopment} />
     </>
   );
 }

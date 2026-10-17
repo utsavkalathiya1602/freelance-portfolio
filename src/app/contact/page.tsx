@@ -5,6 +5,7 @@ import { mailtoHref, phoneHref, siteConfig, whatsappHref } from "@/config/site";
 import { Container } from "@/components/ui/Container";
 import { Eyebrow } from "@/components/ui/SectionHeading";
 import { ContactForm } from "@/components/contact/ContactForm";
+import { whatsappMessages } from "@/lib/whatsapp";
 
 const title = "Contact";
 const description =
@@ -13,7 +14,7 @@ const description =
 export const metadata: Metadata = pageMetadata({ title, description, path: "/contact" });
 
 export default function ContactPage() {
-  const whatsapp = whatsappHref("Hi Utsav, I'd like to discuss a project.");
+  const whatsapp = whatsappHref(whatsappMessages.contact);
   const phone = phoneHref();
 
   const channels = [

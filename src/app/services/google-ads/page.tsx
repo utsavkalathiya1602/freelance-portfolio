@@ -12,6 +12,7 @@ import { FAQSection } from "@/components/services/FAQSection";
 import Link from "next/link";
 import { ClientVisual } from "@/components/projects/ClientVisual";
 import { ContactCTA } from "@/components/home/ContactCTA";
+import { whatsappMessages } from "@/lib/whatsapp";
 import { ProjectGrid } from "@/components/projects/ProjectGrid";
 import { adsClients } from "@/data/clients";
 
@@ -134,6 +135,7 @@ export default function GoogleAdsPage() {
 
       <FAQSection faqs={adsFaqs} />
       <ContactCTA
+        whatsappMessage={whatsappMessages.googleAds}
         heading="Thinking about Google Ads?"
         text="Tell me about your business, your area and what you'd like more of. I'll tell you honestly whether search ads are a sensible next step."
       />

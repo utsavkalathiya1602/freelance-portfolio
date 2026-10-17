@@ -3,6 +3,7 @@ import { cacheLife } from "next/cache";
 import { ArrowUpRight, Mail, MessageCircle, Phone } from "lucide-react";
 import { mailtoHref, phoneHref, siteConfig, whatsappHref } from "@/config/site";
 import { Container } from "@/components/ui/Container";
+import { whatsappMessages } from "@/lib/whatsapp";
 
 async function CopyrightYear() {
   "use cache";
@@ -32,7 +33,7 @@ const footerLinks = [
 ];
 
 export function Footer() {
-  const whatsapp = whatsappHref("Hi Utsav, I'd like to discuss a project.");
+  const whatsapp = whatsappHref(whatsappMessages.default);
   const phone = phoneHref();
   const socials = [
     { label: "LinkedIn", href: siteConfig.social.linkedin },

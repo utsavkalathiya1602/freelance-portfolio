@@ -1,18 +1,22 @@
 import { ArrowUpRight, Mail, MessageCircle } from "lucide-react";
 import { mailtoHref, siteConfig, whatsappHref } from "@/config/site";
+import { whatsappMessages } from "@/lib/whatsapp";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 
 type ContactCTAProps = {
   heading?: string;
   text?: string;
+  /** Pre-filled WhatsApp message for this page. */
+  whatsappMessage?: string;
 };
 
 export function ContactCTA({
   heading = "Have a project in mind?",
   text = "Tell me about your business, your goals, and what you'd like to build. Let's discuss the right next step.",
+  whatsappMessage = whatsappMessages.default,
 }: ContactCTAProps) {
-  const whatsapp = whatsappHref("Hi Utsav, I'd like to discuss a project.");
+  const whatsapp = whatsappHref(whatsappMessage);
 
   return (
     <section aria-labelledby="cta-heading" className="py-16 sm:py-20">
