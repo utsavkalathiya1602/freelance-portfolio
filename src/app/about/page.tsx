@@ -13,7 +13,7 @@ import { AboutHeroAside } from "@/components/page-heroes/AboutHeroAside";
 
 const title = "About";
 const description =
-  "Utsav Kalathiya is an independent web developer and Google Ads specialist in Surat, India, building websites and web applications with React.js and Node.js.";
+  "Utsav Kalathiya is a freelance web developer and Google Ads specialist based in Surat, Gujarat, India. Builds business websites and web applications with React.js and Node.js for small businesses and startups.";
 
 export const metadata: Metadata = pageMetadata({ title, description, path: "/about" });
 

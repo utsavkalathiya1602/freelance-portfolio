@@ -15,7 +15,7 @@ import { ServicesHeroAside } from "@/components/page-heroes/ServicesHeroAside";
 
 const title = "Services";
 const description =
-  "Compare website development and Google Ads management by Utsav Kalathiya — what each includes, who it suits, how pricing works and how to get started.";
+  "Website development and Google Ads management by Utsav Kalathiya — a freelance web developer in Surat, Gujarat. Compare what each service includes, who it suits, and how to get started.";
 
 export const metadata: Metadata = pageMetadata({ title, description, path: "/services" });
 

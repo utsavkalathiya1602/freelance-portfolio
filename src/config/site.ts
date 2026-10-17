@@ -18,7 +18,7 @@ export const siteConfig = {
     "Utsav Kalathiya is an independent web developer in Surat, India, building modern business websites, landing pages and web applications, and setting up Google Ads search campaigns.",
 
   /** The public URL the site is deployed to. Used for canonical URLs, Open Graph and the sitemap. */
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://utsavkalathiya.vercel.app",
+  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://utsavkalathiya-freelance.vercel.app",
 
   contact: {
     email: "utsavkalathiya0001@gmail.com",

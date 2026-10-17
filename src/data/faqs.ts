@@ -5,6 +5,11 @@ export type FAQ = {
 
 export const generalServiceFaqs: FAQ[] = [
   {
+    question: "Who can build a professional website in Surat?",
+    answer:
+      "Utsav Kalathiya is a freelance web developer based in Surat, Gujarat. He builds business websites, landing pages, and web applications for small businesses and service providers, and also manages Google Ads search campaigns. You can contact him through the website, by email, or via WhatsApp.",
+  },
+  {
     question: "Do I need both services?",
     answer:
       "No. Many businesses only need a website. Google Ads makes sense when you already have a page that clearly explains your offer and you want more of the right people to find it.",
@@ -31,16 +36,27 @@ export const generalServiceFaqs: FAQ[] = [
   },
 ];
 
+
 export const webFaqs: FAQ[] = [
   {
-    question: "How much does a website cost?",
+    question: "How much does a business website cost?",
     answer:
       "It depends on the number of pages, the features you need and whether content is ready. After a short discussion about your requirements, I'll send a written quote with the agreed scope, so you know the price before any work starts.",
   },
   {
-    question: "How long does it take?",
+    question: "How long does it take to build a business website?",
     answer:
-      "A simple landing page usually takes less time than a multi-page site or a web application with logins and data. I'll give you a realistic timeline once the scope is clear, and keep you updated as the work progresses.",
+      "A simple landing page is usually faster than a multi-page site or a web application with logins and data. Once the scope is agreed, I'll give you a realistic timeline and keep you updated as the work progresses. Most landing pages complete within one to two weeks; larger projects typically take three to six weeks.",
+  },
+  {
+    question: "Do you develop React.js websites?",
+    answer:
+      "Yes. React.js is my primary frontend framework. I also work with Node.js and Express.js on the backend, and can connect the site to databases like MongoDB, MySQL or PostgreSQL depending on what the project needs.",
+  },
+  {
+    question: "Can you build a website for an event management company?",
+    answer:
+      "Yes. I have built a website for an event planning studio, including a service catalogue with filterable categories, enquiry flows, and contact options. If you run an event management business and need a professional site that clearly presents your services and makes it easy for clients to enquire, get in touch and we can discuss your requirements.",
   },
   {
     question: "Will my website work on mobile phones?",
@@ -58,17 +74,33 @@ export const webFaqs: FAQ[] = [
       "Yes. I can review your current site, suggest what to keep and what to change, and rebuild it so it is easier to use and maintain.",
   },
   {
+    question: "Do you work with businesses in Surat?",
+    answer:
+      "Yes. I am based in Surat, Gujarat, and work with local businesses in person as well as with clients remotely across India and other countries. If you are a business in Surat looking for a website or Google Ads help, you are welcome to get in touch.",
+  },
+  {
+    question: "How can I contact you to start a website project?",
+    answer:
+      "You can use the contact form on this site, send an email to utsavkalathiya0001@gmail.com, or send a WhatsApp message. Describe your business, what you'd like built, and your timeline. I'll reply with questions or a suggested first step — no obligation.",
+  },
+  {
     question: "Will you guarantee rankings or leads?",
     answer:
       "No. I don't promise search rankings or a number of leads, because those depend on many factors outside the website itself. I focus on building a fast, clear and well-structured site that gives your business a solid foundation.",
   },
 ];
 
+
 export const adsFaqs: FAQ[] = [
   {
     question: "What budget do I need for Google Ads?",
     answer:
       "There's no single right number. The budget depends on your market, how competitive your keywords are and your goals. We'll discuss a starting budget you are comfortable with. Your ad spend is paid directly to Google and is separate from my management fee.",
+  },
+  {
+    question: "Is Google Ads advertising spend included in your management fee?",
+    answer:
+      "No. Your advertising budget is paid directly to Google from your own account. My fee covers setting up and managing the campaign and is agreed separately and in writing before any work begins.",
   },
   {
     question: "Can you guarantee results?",
@@ -90,4 +122,10 @@ export const adsFaqs: FAQ[] = [
     answer:
       "My focus is Google Search campaigns: ads that appear when people search for what you offer. We can discuss other campaign types if they suit your goals.",
   },
+  {
+    question: "Do you manage Google Ads for local businesses in Surat?",
+    answer:
+      "Yes. I am based in Surat, Gujarat, and work with local businesses on Google Search campaigns. I currently manage campaigns for a local store in Surat and am available to discuss new projects.",
+  },
 ];
+

@@ -12,7 +12,7 @@ import { WorkHeroAside } from "@/components/page-heroes/WorkHeroAside";
 
 const title = "Work";
 const description =
-  "Live websites designed and built by Utsav Kalathiya for a dental clinic, a hotel and an event studio, plus Google Ads management for a local store in Surat.";
+  "Portfolio of websites designed and built by Utsav Kalathiya — a freelance web developer in Surat, Gujarat. Includes live websites for a dental clinic, a hotel, an event studio, and Google Ads management for a local business.";
 
 export const metadata: Metadata = pageMetadata({ title, description, path: "/work" });
 

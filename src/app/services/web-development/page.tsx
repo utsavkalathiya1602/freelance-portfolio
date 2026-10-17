@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { pageMetadata } from "@/lib/metadata";
+import { siteConfig } from "@/config/site";
 import { Check } from "lucide-react";
 import { webAudiences, webOfferings, webProcess } from "@/data/services";
 import { webFaqs } from "@/data/faqs";
@@ -14,10 +15,11 @@ import { WebsiteIllustration } from "@/components/services/Illustrations";
 import { ProjectShowcaseList } from "@/components/projects/ProjectShowcaseList";
 import { ContactCTA } from "@/components/home/ContactCTA";
 import { whatsappMessages } from "@/lib/whatsapp";
+import { ServiceSchema } from "@/components/schema/ServiceSchema";
 
 const title = "Website Development";
 const description =
-  "Business websites, landing pages and custom web applications built around your goals by Utsav Kalathiya, a freelance web developer in Surat, India.";
+  "Business websites, landing pages, and web applications built for small businesses and service providers in Surat, Gujarat. React.js and full-stack development by Utsav Kalathiya — freelance web developer.";
 
 export const metadata: Metadata = pageMetadata({ title, description, path: "/services/web-development" });
 
@@ -26,12 +28,19 @@ export default function WebDevelopmentPage() {
 
   return (
     <>
+      <ServiceSchema
+        name="Website Development"
+        description="Business websites, landing pages, and custom web applications for small businesses and service providers. Built with React.js, Node.js, and modern web technologies."
+        url={`${siteConfig.url}/services/web-development`}
+        serviceType="Web Development"
+        areaServed="India"
+      />
       <ServiceHero
         eyebrow="Website Development"
         breadcrumb="Website Development"
         current="web-development"
         title="Websites built around your business goals."
-        description="From a focused landing page to a custom web application, I build fast, responsive websites that explain what you do clearly and make it easy for customers to get in touch."
+        description="From a focused landing page to a custom web application, I build fast, responsive websites that explain what you do clearly and make it easy for customers to get in touch — for businesses in Surat, Gujarat and across India."
         primaryCta={{ label: "Request a Project Discussion", href: "/contact" }}
         secondaryCta={{ label: "See Related Work", href: "#projects" }}
         aside={<WebsiteIllustration />}

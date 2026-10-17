@@ -148,7 +148,8 @@ export const adsOfferings: Offering[] = [
 ];
 
 export const webAudiences = [
-  "Local shops, clinics and service providers who need a reliable online presence",
+  "Local shops, clinics, salons and service providers who need a reliable online presence",
+  "Event management companies, interior designers and hospitality businesses wanting a professional site",
   "Startups that need a landing page or a first version of a web product",
   "Freelancers and professionals who want a portfolio website",
   "Businesses with an outdated website that needs a redesign",

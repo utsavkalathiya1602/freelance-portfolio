@@ -8,6 +8,7 @@ import { WebsiteCaseStudy } from "@/components/projects/WebsiteCaseStudy";
 import { AdsClientCaseStudy } from "@/components/projects/AdsClientCaseStudy";
 import { ContactCTA } from "@/components/home/ContactCTA";
 import { whatsappMessageFor } from "@/lib/whatsapp";
+import { CaseStudySchema } from "@/components/schema/CaseStudySchema";
 
 export function generateStaticParams() {
   return allWork.map((item) => ({ slug: item.slug }));
@@ -19,11 +20,14 @@ export async function generateMetadata({ params }: PageProps<"/work/[slug]">): P
   if (!item) return {};
 
   const title =
-    item.kind === "website" ? `${item.title} — Website Project` : `${item.title} — Google Ads Client Work`;
+    item.kind === "website"
+      ? `${item.title} — ${item.industry} Website`
+      : `${item.title} — Google Ads Case Study`;
+
   const description =
     item.kind === "website"
-      ? `${item.summary} Designed and built by Utsav Kalathiya.`
-      : `${item.summary} Google Ads managed by Utsav Kalathiya.`;
+      ? `${item.summary} Designed and built by Utsav Kalathiya, freelance web developer based in Surat, Gujarat, India.`
+      : `${item.summary} Google Ads managed by Utsav Kalathiya, freelance Google Ads specialist in Surat, India.`;
 
   return pageMetadata({ title, description, path: `/work/${item.slug}` });
 }
@@ -37,6 +41,7 @@ export default async function WorkItemPage({ params }: PageProps<"/work/[slug]">
 
   return (
     <>
+      <CaseStudySchema item={item} />
       {item.kind === "website" ? <WebsiteCaseStudy project={item} /> : <AdsClientCaseStudy client={item} />}
 
       {related.length > 0 ? (
@@ -60,3 +65,4 @@ export default async function WorkItemPage({ params }: PageProps<"/work/[slug]">
     </>
   );
 }
+

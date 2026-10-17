@@ -17,7 +17,7 @@ export function ServicesSection() {
             eyebrow="What I do"
             id="services-heading"
             title="Build the website. Bring the right visitors."
-            description="Most small businesses need one of two things: a website people trust, or more of the right people finding it. I help with both."
+            description="Small businesses and service providers in Surat and across India often need one of two things: a website people trust, or more of the right people finding it. I help with both."
           />
           <div className="mt-8">
             <Button href="/services" variant="dark">

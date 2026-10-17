@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { pageMetadata } from "@/lib/metadata";
+import { siteConfig } from "@/config/site";
 import { Check, Minus } from "lucide-react";
 import { adsDeliverables, adsNotGuaranteed, adsOfferings, adsProcess } from "@/data/services";
 import { adsFaqs } from "@/data/faqs";
@@ -15,10 +16,11 @@ import { ContactCTA } from "@/components/home/ContactCTA";
 import { whatsappMessages } from "@/lib/whatsapp";
 import { ProjectGrid } from "@/components/projects/ProjectGrid";
 import { adsClients } from "@/data/clients";
+import { ServiceSchema } from "@/components/schema/ServiceSchema";
 
 const title = "Google Ads Management";
 const description =
-  "Google Search campaign planning, keyword research, ad copy and conversion tracking for small businesses, by Utsav Kalathiya in Surat, India.";
+  "Google Search campaign setup, keyword research, ad copy, and conversion tracking for small businesses in Surat and across India. Managed by Utsav Kalathiya, freelance Google Ads specialist.";
 
 export const metadata: Metadata = pageMetadata({ title, description, path: "/services/google-ads" });
 
@@ -27,12 +29,19 @@ const factors = ["Your business", "Your market", "Your budget", "Your landing pa
 export default function GoogleAdsPage() {
   return (
     <>
+      <ServiceSchema
+        name="Google Ads Management"
+        description="Google Search campaign setup, keyword research, ad copy, and conversion tracking for small businesses. Campaigns managed transparently with your own Google Ads account."
+        url={`${siteConfig.url}/services/google-ads`}
+        serviceType="Search Engine Marketing"
+        areaServed="India"
+      />
       <ServiceHero
         eyebrow="Google Ads"
         breadcrumb="Google Ads"
         current="google-ads"
         title="Reach the right audience with a more focused Google Ads strategy."
-        description="I plan and set up Google Search campaigns around the services you actually want to sell, with conversion tracking in place so you can see what your budget is doing."
+        description="I plan and set up Google Search campaigns for local businesses in Surat and across India — built around the services you actually want to sell, with conversion tracking so you can see what your budget is doing."
         primaryCta={{ label: "Discuss Your Campaign", href: "/contact" }}
         secondaryCta={{ label: "How It Works", href: "#process" }}
         aside={

@@ -3,20 +3,31 @@ import { siteConfig } from "@/config/site";
 
 /**
  * Page metadata with canonical URL and Open Graph fields.
- * Page-level `openGraph` replaces the root one, so the shared share image is re-attached here.
+ *
+ * @param title - Short page title used in the `%s | Name` template (e.g. "Services").
+ * @param description - Unique meta description for this page.
+ * @param path - Root-relative canonical path (e.g. "/services").
+ * @param overrideTitle - Optional fully-formed title that bypasses the template.
+ *   Use this for the homepage or any page where you need exact keyword placement.
  */
 export function pageMetadata({
   title,
   description,
   path,
+  overrideTitle,
 }: {
   title: string;
   description: string;
   path: string;
+  overrideTitle?: string;
 }): Metadata {
-  const fullTitle = `${title} | ${siteConfig.name}`;
+  // When an override is provided, use it verbatim for the <title> tag and OG.
+  // The root layout template is bypassed by returning an object as the title value.
+  const resolvedTitle = overrideTitle ?? title;
+  const fullTitle = overrideTitle ? overrideTitle : `${title} | ${siteConfig.name}`;
+
   return {
-    title,
+    title: overrideTitle ? { absolute: overrideTitle } : title,
     description,
     alternates: { canonical: path },
     openGraph: {
@@ -25,8 +36,20 @@ export function pageMetadata({
       title: fullTitle,
       description,
       url: path,
-      images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: `${siteConfig.name} — ${siteConfig.title}` }],
+      images: [
+        {
+          url: "/opengraph-image",
+          width: 1200,
+          height: 630,
+          alt: `${resolvedTitle} — ${siteConfig.name}`,
+        },
+      ],
     },
-    twitter: { card: "summary_large_image", title: fullTitle, description, images: ["/opengraph-image"] },
+    twitter: {
+      card: "summary_large_image",
+      title: fullTitle,
+      description,
+      images: ["/opengraph-image"],
+    },
   };
 }
