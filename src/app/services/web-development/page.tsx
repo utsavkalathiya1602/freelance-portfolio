@@ -17,11 +17,33 @@ import { ContactCTA } from "@/components/home/ContactCTA";
 import { whatsappMessages } from "@/lib/whatsapp";
 import { ServiceSchema } from "@/components/schema/ServiceSchema";
 
-const title = "Website Development";
+const title = "Website Development Services — React.js & MERN Stack";
 const description =
-  "Business websites, landing pages, and web applications built for small businesses and service providers in Surat, Gujarat. React.js and full-stack development by Utsav Kalathiya — freelance web developer.";
+  "Custom business websites, landing pages, and web applications built by a freelance web developer in Surat. Specialising in React.js, Node.js and MERN stack development for small businesses and service providers in Surat, Gujarat and across India.";
 
-export const metadata: Metadata = pageMetadata({ title, description, path: "/services/web-development" });
+export const metadata: Metadata = pageMetadata({
+  title,
+  description,
+  path: "/services/web-development",
+  keywords: [
+    "website development services Surat",
+    "MERN stack development services",
+    "React.js developer for hire",
+    "Node.js backend developer",
+    "full stack web development Surat",
+    "custom web application development",
+    "REST API development services",
+    "business website development",
+    "small business website designer Surat",
+    "event management website development",
+    "photography studio website development",
+    "landing page development services",
+    "website redesign services",
+    "ecommerce website developer Surat",
+    "MongoDB web application developer",
+  ],
+});
+
 
 export default function WebDevelopmentPage() {
   const projects = websiteProjects;
@@ -30,10 +52,9 @@ export default function WebDevelopmentPage() {
     <>
       <ServiceSchema
         name="Website Development"
-        description="Business websites, landing pages, and custom web applications for small businesses and service providers. Built with React.js, Node.js, and modern web technologies."
+        description="Custom business websites, landing pages, and web applications for small businesses and service providers. Built with React.js, Node.js and the MERN stack."
         url={`${siteConfig.url}/services/web-development`}
         serviceType="Web Development"
-        areaServed="India"
       />
       <ServiceHero
         eyebrow="Website Development"

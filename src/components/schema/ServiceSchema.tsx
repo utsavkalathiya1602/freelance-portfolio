@@ -5,7 +5,6 @@ type ServiceSchemaProps = {
   description: string;
   url: string;
   serviceType: string;
-  areaServed?: string;
 };
 
 /**
@@ -13,13 +12,13 @@ type ServiceSchemaProps = {
  *
  * Uses the "Service" type because it accurately describes a specific service offering.
  * Does not use LocalBusiness as there is no verified physical business address.
+ * Includes Surat neighbourhood areas to improve local SEO signals.
  */
 export function ServiceSchema({
   name,
   description,
   url,
   serviceType,
-  areaServed = "India",
 }: ServiceSchemaProps) {
   const schema = {
     "@context": "https://schema.org",
@@ -32,6 +31,8 @@ export function ServiceSchema({
       "@type": "Person",
       name: siteConfig.name,
       url: siteConfig.url,
+      telephone: siteConfig.contact.phone,
+      email: `mailto:${siteConfig.contact.email}`,
       address: {
         "@type": "PostalAddress",
         addressLocality: "Surat",
@@ -39,8 +40,15 @@ export function ServiceSchema({
         addressCountry: "IN",
       },
     },
-    areaServed,
-    availableLanguage: "English",
+    areaServed: [
+      { "@type": "City", name: "Surat", containedInPlace: { "@type": "State", name: "Gujarat" } },
+      { "@type": "Place", name: "Varachha, Surat" },
+      { "@type": "Place", name: "Sarthana, Surat" },
+      { "@type": "Place", name: "Katargam, Surat" },
+      { "@type": "Place", name: "Adajan, Surat" },
+      { "@type": "Country", name: "India" },
+    ],
+    availableLanguage: ["English", "Gujarati", "Hindi"],
   };
 
   return (
@@ -50,3 +58,4 @@ export function ServiceSchema({
     />
   );
 }
+

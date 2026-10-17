@@ -33,19 +33,59 @@ export const metadata: Metadata = {
   authors: [{ name: siteConfig.name, url: siteConfig.url }],
   creator: siteConfig.name,
   keywords: [
+    // Freelance & hiring keywords
+    "freelance web developer",
+    "hire a freelance web developer",
+    "freelance website developer",
+    "freelance web developer in India",
+    "hire web developer in India",
+    "freelance full stack developer",
+    "website developer for small business",
+    "affordable website development services",
+    // Local SEO keywords — Surat
     "freelance web developer Surat",
+    "website developer in Surat",
+    "web development services Surat",
+    "freelance website designer Surat",
+    "React developer Surat",
+    "MERN stack developer Surat",
+    "website development for small businesses in Surat",
+    "website developer near Varachha",
+    "website developer near Sarthana",
     "website developer Surat Gujarat",
-    "business website development Surat",
-    "React.js developer Surat",
-    "Google Ads management Surat",
+    // Technology keywords
+    "MERN stack development services",
+    "React.js developer for hire",
+    "Node.js backend developer",
+    "full stack web development",
+    "custom web application development",
+    "REST API development services",
+    "MongoDB web application developer",
+    "React website development services",
+    "full stack developer Surat",
+    // Business website keywords
+    "business website development",
+    "small business website designer",
+    "professional portfolio website development",
+    "event management website development",
+    "photography studio website development",
+    "ecommerce website developer",
+    "website redesign services",
+    "landing page development services",
     "landing page developer India",
-    "website redesign Surat",
-    "Google Ads freelancer India",
+    // Digital marketing keywords
+    "freelance digital marketing services",
+    "Google Ads specialist Surat",
+    "Google Ads management services",
+    "SEO freelancer Surat",
+    "local SEO services for small businesses",
+    "website SEO optimization services",
+    "Google Business Profile optimization",
+    "digital marketing for photography studios",
     "digital marketing Surat",
     "Meta Ads Facebook Instagram ads Surat",
+    "Google Ads freelancer India",
     "local SEO Google Business Profile Surat",
-    "web developer for small businesses",
-    "full stack developer Surat",
   ],
   alternates: { canonical: "/" },
   openGraph: {
@@ -72,6 +112,12 @@ export const metadata: Metadata = {
   },
   verification: {
     google: "JIu2MpvRxAiRdu1E1krA7hfVBSFJRRr6pPt4G5mwwVc",
+  },
+  icons: {
+    // Next.js auto-serves src/app/icon.svg as the browser favicon.
+    // src/app/apple-icon.tsx is auto-registered as apple-touch-icon (180×180 PNG).
+    // The shortcut entry below covers older browsers that look for /favicon.svg.
+    shortcut: "/favicon.svg",
   },
 };
 

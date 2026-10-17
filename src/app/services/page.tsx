@@ -13,11 +13,26 @@ import { FAQSection } from "@/components/services/FAQSection";
 import { ContactCTA } from "@/components/home/ContactCTA";
 import { ServicesHeroAside } from "@/components/page-heroes/ServicesHeroAside";
 
-const title = "Services";
+const title = "Web Development & Digital Marketing Services — Surat";
 const description =
-  "Website development and digital marketing (Google Ads, Meta Ads and SEO) by Utsav Kalathiya — a freelance web developer and digital marketer in Surat, Gujarat. Compare what each service includes and how to get started.";
+  "Website development and digital marketing services by Utsav Kalathiya — freelance web developer and digital marketer in Surat, Gujarat. Custom websites using React.js and MERN stack, plus Google Ads, Meta Ads and SEO for small businesses in Surat and across India.";
 
-export const metadata: Metadata = pageMetadata({ title, description, path: "/services" });
+export const metadata: Metadata = pageMetadata({
+  title,
+  description,
+  path: "/services",
+  keywords: [
+    "web development services Surat",
+    "digital marketing services Surat",
+    "freelance web developer and digital marketer Surat",
+    "React.js development services India",
+    "MERN stack services",
+    "Google Ads Meta Ads SEO Surat",
+    "small business web and marketing services",
+    "affordable web development digital marketing India",
+  ],
+});
+
 
 /** Side-by-side comparison. Keep wording factual: no prices, no promised results. */
 const comparison: { label: string; web: string; ads: string }[] = [

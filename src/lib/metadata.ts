@@ -15,11 +15,14 @@ export function pageMetadata({
   description,
   path,
   overrideTitle,
+  keywords,
 }: {
   title: string;
   description: string;
   path: string;
   overrideTitle?: string;
+  /** Optional page-specific keywords. Merged with global root-layout keywords by Google; no need to repeat global ones. */
+  keywords?: string[];
 }): Metadata {
   // When an override is provided, use it verbatim for the <title> tag and OG.
   // The root layout template is bypassed by returning an object as the title value.
@@ -29,6 +32,7 @@ export function pageMetadata({
   return {
     title: overrideTitle ? { absolute: overrideTitle } : title,
     description,
+    ...(keywords && keywords.length > 0 ? { keywords } : {}),
     alternates: { canonical: path },
     openGraph: {
       type: "website",

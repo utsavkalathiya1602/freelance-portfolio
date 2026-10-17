@@ -7,11 +7,23 @@ import { Eyebrow } from "@/components/ui/SectionHeading";
 import { ContactForm } from "@/components/contact/ContactForm";
 import { whatsappMessages } from "@/lib/whatsapp";
 
-const title = "Contact";
+const title = "Contact — Hire a Freelance Web Developer in Surat";
 const description =
-  "Get in touch with Utsav Kalathiya — freelance web developer and digital marketer in Surat, Gujarat. Enquire about a website, landing page, Google Ads, Meta Ads or SEO for your business.";
+  "Get in touch with Utsav Kalathiya — freelance web developer and digital marketer in Surat, Gujarat. Enquire about a business website, landing page, React.js web app, Google Ads, Meta Ads or SEO for your business. Fast response, honest advice.";
 
-export const metadata: Metadata = pageMetadata({ title, description, path: "/contact" });
+export const metadata: Metadata = pageMetadata({
+  title,
+  description,
+  path: "/contact",
+  keywords: [
+    "hire web developer Surat",
+    "hire freelance web developer India",
+    "get a website quote Surat",
+    "contact web developer Surat Gujarat",
+    "freelance developer enquiry India",
+    "Google Ads specialist contact Surat",
+  ],
+});
 
 export default function ContactPage() {
   const whatsapp = whatsappHref(whatsappMessages.contact);

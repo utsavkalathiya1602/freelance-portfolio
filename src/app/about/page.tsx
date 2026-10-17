@@ -11,11 +11,24 @@ import { Button } from "@/components/ui/Button";
 import { ContactCTA } from "@/components/home/ContactCTA";
 import { AboutHeroAside } from "@/components/page-heroes/AboutHeroAside";
 
-const title = "About";
+const title = "About Utsav Kalathiya — Freelance Web Developer Surat";
 const description =
-  "Utsav Kalathiya is a freelance web developer and digital marketer based in Surat, Gujarat, India. Builds business websites and web applications with React.js and Node.js, and runs Google Ads, Meta Ads and SEO for small businesses.";
+  "Utsav Kalathiya is a freelance web developer and digital marketer based in Surat, Gujarat, India. Builds business websites and web applications with React.js, Node.js and the MERN stack. Available to hire for web development and digital marketing projects in Surat and across India.";
 
-export const metadata: Metadata = pageMetadata({ title, description, path: "/about" });
+export const metadata: Metadata = pageMetadata({
+  title,
+  description,
+  path: "/about",
+  keywords: [
+    "freelance web developer Surat India",
+    "MERN stack developer Surat",
+    "React.js developer available for hire",
+    "full stack developer Surat Gujarat",
+    "hire web developer India",
+    "freelance full stack developer India",
+    "web developer and digital marketer Surat",
+  ],
+});
 
 const skills = [
   {

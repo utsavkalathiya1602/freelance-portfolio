@@ -1,6 +1,4 @@
 import { siteConfig } from "@/config/site";
-import { websiteProjects } from "@/data/projects";
-import { adsClients } from "@/data/clients";
 
 /**
  * JSON-LD WebPage schema for the homepage.
@@ -11,15 +9,17 @@ import { adsClients } from "@/data/clients";
 export function HomePageSchema() {
   const url = siteConfig.url;
 
-  const schema = {
+  const webPageSchema = {
     "@context": "https://schema.org",
     "@type": "WebPage",
     "@id": `${url}/#webpage`,
     url,
     name: "Freelance Web Developer in Surat | Utsav Kalathiya",
     description:
-      "Utsav Kalathiya is a freelance web developer in Surat, Gujarat, India, building business websites, landing pages, and web applications with React.js, and running Google Ads, Meta Ads and SEO for small businesses.",
+      "Utsav Kalathiya is a freelance web developer in Surat, Gujarat, India, building business websites, landing pages, and web applications with React.js and MERN stack, and running Google Ads, Meta Ads and SEO for small businesses.",
     inLanguage: "en-IN",
+    keywords:
+      "freelance web developer Surat, MERN stack developer for hire, React.js developer Surat, website development for small businesses, Google Ads specialist Surat, hire web developer India",
     isPartOf: {
       "@type": "WebSite",
       url,
@@ -37,12 +37,36 @@ export function HomePageSchema() {
       },
     },
     mainEntityOfPage: url,
+    speakable: {
+      "@type": "SpeakableSpecification",
+      cssSelector: ["h1", "h2"],
+    },
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: url,
+      },
+    ],
   };
 
   return (
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
-    />
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+    </>
   );
 }
+

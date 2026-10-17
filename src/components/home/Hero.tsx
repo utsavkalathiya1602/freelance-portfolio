@@ -12,17 +12,17 @@ export function Hero() {
     <section aria-labelledby="hero-heading" className="border-b border-line">
       <Container className="grid gap-12 py-14 sm:py-20 lg:grid-cols-[1.15fr_1fr] lg:items-center lg:gap-16 lg:py-24">
         <div>
-          <Eyebrow>Independent Freelancer · Surat, India</Eyebrow>
+          <Eyebrow>Freelance Web Developer · Surat, India</Eyebrow>
           <h1
             id="hero-heading"
             className="font-display text-[2.6rem] font-bold leading-[1.02] tracking-[-0.04em] text-ink text-balance sm:text-6xl lg:text-[4.4rem]"
           >
-            Digital experiences that{" "}
+            Freelance web{" "}
             <span className="relative whitespace-nowrap">
               <span aria-hidden="true" className="absolute inset-x-[-0.08em] bottom-[0.06em] -z-10 h-[0.38em] bg-lime" />
-              move
+              developer
             </span>{" "}
-            your business forward.
+            in Surat — websites & digital marketing.
           </h1>
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted">
             I&apos;m Utsav Kalathiya, a freelance web developer based in Surat, Gujarat. I help small

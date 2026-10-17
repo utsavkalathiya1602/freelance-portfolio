@@ -23,11 +23,30 @@ import { ContactCTA } from "@/components/home/ContactCTA";
 import { ServiceSchema } from "@/components/schema/ServiceSchema";
 import { whatsappMessages } from "@/lib/whatsapp";
 
-const title = "Digital Marketing — Google Ads, Meta Ads & SEO";
+const title = "Google Ads, Meta Ads & SEO — Digital Marketing Surat";
 const description =
-  "Google Ads, Meta Ads (Facebook & Instagram) and SEO / Google Business Profile for small businesses in Surat and across India. Managed by Utsav Kalathiya, freelance digital marketer.";
+  "Freelance digital marketing services in Surat, Gujarat — Google Ads management, Meta Ads (Facebook & Instagram) and local SEO / Google Business Profile optimisation for small businesses. Get found by the right customers in Surat and across India.";
 
-export const metadata: Metadata = pageMetadata({ title, description, path: "/services/digital-marketing" });
+export const metadata: Metadata = pageMetadata({
+  title,
+  description,
+  path: "/services/digital-marketing",
+  keywords: [
+    "Google Ads specialist Surat",
+    "Google Ads management services Surat",
+    "Google Ads freelancer India",
+    "Meta Ads Facebook Instagram ads Surat",
+    "SEO freelancer Surat",
+    "local SEO services for small businesses",
+    "Google Business Profile optimization Surat",
+    "freelance digital marketing services India",
+    "digital marketing for photography studios",
+    "digital marketing for small businesses Surat",
+    "website SEO optimization services",
+    "social media advertising Surat",
+  ],
+});
+
 
 const factors = ["Your business", "Your area", "Your customers", "Your budget", "Your goals"];
 
@@ -38,10 +57,9 @@ export default function DigitalMarketingPage() {
     <>
       <ServiceSchema
         name="Digital Marketing"
-        description="Google Ads, Meta Ads on Facebook and Instagram, and SEO with Google Business Profile optimisation for small and local businesses."
+        description="Google Ads, Meta Ads on Facebook and Instagram, and local SEO with Google Business Profile optimisation for small and local businesses in Surat and across India."
         url={`${siteConfig.url}/services/digital-marketing`}
         serviceType="Digital Marketing"
-        areaServed="India"
       />
       <ServiceHero
         eyebrow="Digital Marketing"

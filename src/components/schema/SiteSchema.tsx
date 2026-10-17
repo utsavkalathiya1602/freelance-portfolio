@@ -20,7 +20,7 @@ export function SiteSchema() {
     url,
     jobTitle: "Freelance Web Developer & Digital Marketer",
     description:
-      "Independent web developer based in Surat, Gujarat, India. Builds business websites, landing pages, and custom web applications with React.js and Node.js, and runs Google Ads, Meta Ads and SEO for small businesses.",
+      "Independent web developer based in Surat, Gujarat, India. Builds business websites, landing pages, and custom web applications with React.js and the MERN stack (MongoDB, Express.js, React.js, Node.js), and runs Google Ads, Meta Ads and SEO for small businesses.",
     address: {
       "@type": "PostalAddress",
       addressLocality: "Surat",
@@ -36,16 +36,57 @@ export function SiteSchema() {
     knowsAbout: [
       "React.js",
       "Node.js",
+      "Express.js",
+      "MongoDB",
+      "MERN Stack",
       "JavaScript",
       "TypeScript",
-      "Web Development",
+      "Next.js",
+      "REST API Development",
+      "Full Stack Web Development",
+      "Business Website Development",
+      "Landing Page Development",
+      "Custom Web Application Development",
       "Google Ads",
       "Meta Ads",
-      "Digital Marketing",
+      "Facebook Advertising",
+      "Instagram Advertising",
       "Search Engine Optimization",
       "Search Engine Marketing",
+      "Local SEO",
+      "Google Business Profile Optimization",
+      "Digital Marketing",
+    ],
+    makesOffer: [
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Website Development",
+          description: "Custom business websites, landing pages, and web applications built with React.js and MERN stack for small businesses in Surat and across India.",
+          url: `${url}/services/web-development`,
+        },
+        areaServed: [
+          { "@type": "City", name: "Surat" },
+          { "@type": "Country", name: "India" },
+        ],
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Digital Marketing — Google Ads, Meta Ads & SEO",
+          description: "Google Ads management, Meta Ads (Facebook & Instagram) and local SEO / Google Business Profile optimisation for small businesses.",
+          url: `${url}/services/digital-marketing`,
+        },
+        areaServed: [
+          { "@type": "City", name: "Surat" },
+          { "@type": "Country", name: "India" },
+        ],
+      },
     ],
   };
+
 
   const websiteSchema = {
     "@context": "https://schema.org",

@@ -9,12 +9,27 @@ import { websiteProjects } from "@/data/projects";
 import { ProjectFilters } from "@/components/projects/ProjectFilters";
 import { ContactCTA } from "@/components/home/ContactCTA";
 import { WorkHeroAside } from "@/components/page-heroes/WorkHeroAside";
+import { WorkPageSchema } from "@/components/schema/WorkPageSchema";
 
-const title = "Work";
+const title = "Portfolio — Websites & Digital Marketing Projects";
 const description =
-  "Portfolio of websites designed and built by Utsav Kalathiya — a freelance web developer in Surat, Gujarat. Includes live websites for a dental clinic, a hotel, an event studio, and digital marketing for a local business.";
+  "Portfolio of websites and digital marketing campaigns by Utsav Kalathiya, freelance web developer in Surat, Gujarat. Live websites for a dental clinic, a heritage hotel, an event planning studio, and a photography business — plus Google Ads management for a local store in Surat.";
 
-export const metadata: Metadata = pageMetadata({ title, description, path: "/work" });
+export const metadata: Metadata = pageMetadata({
+  title,
+  description,
+  path: "/work",
+  keywords: [
+    "freelance web developer portfolio Surat",
+    "website development portfolio India",
+    "dental clinic website developer",
+    "hotel website developer India",
+    "event management website developer Surat",
+    "photography studio website developer",
+    "MERN stack portfolio projects",
+    "React.js website examples",
+  ],
+});
 
 export default function WorkPage() {
   const groups = workCategories.map((category) => {
@@ -35,6 +50,7 @@ export default function WorkPage() {
 
   return (
     <>
+      <WorkPageSchema />
       <PageHeader
         eyebrow="Work"
         title="Real websites, live and in use."

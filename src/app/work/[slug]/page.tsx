@@ -29,8 +29,33 @@ export async function generateMetadata({ params }: PageProps<"/work/[slug]">): P
       ? `${item.summary} Designed and built by Utsav Kalathiya, freelance web developer based in Surat, Gujarat, India.`
       : `${item.summary} Google Ads managed by Utsav Kalathiya, freelance digital marketer in Surat, India.`;
 
-  return pageMetadata({ title, description, path: `/work/${item.slug}` });
+  // Build page-specific keywords from item data
+  const locationStr = item.location.city
+    ? `${item.location.city}, ${item.location.country}`
+    : item.location.country;
+
+  const keywords =
+    item.kind === "website"
+      ? [
+          `${item.industry.split("·")[0].trim().toLowerCase()} website developer India`,
+          `${item.industry.split("·")[0].trim().toLowerCase()} website design`,
+          `freelance web developer portfolio ${locationStr}`,
+          `React.js website ${item.location.city ?? "India"}`,
+          `MERN stack website example`,
+          `business website developer Surat`,
+          `freelance web developer case study India`,
+        ]
+      : [
+          `Google Ads case study ${locationStr}`,
+          `Google Ads management Surat`,
+          `freelance digital marketer Surat`,
+          `local Google Ads specialist India`,
+          `small business Google Ads India`,
+        ];
+
+  return pageMetadata({ title, description, path: `/work/${item.slug}`, keywords });
 }
+
 
 export default async function WorkItemPage({ params }: PageProps<"/work/[slug]">) {
   const { slug } = await params;
