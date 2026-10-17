@@ -53,6 +53,54 @@ export const blogPosts: BlogPost[] = [
     publishedAt: "2026-10-17",
     tag: "Digital Marketing",
   },
+  {
+    slug: "google-business-profile-guide-india",
+    title: "How to Set Up Google Business Profile for Your Business in India",
+    description:
+      "A step-by-step guide to creating and optimising your Google Business Profile so your business appears in Google Maps and local search results across India.",
+    publishedAt: "2026-10-17",
+    tag: "SEO",
+  },
+  {
+    slug: "whatsapp-business-for-small-business",
+    title: "How to Use WhatsApp Business to Get More Customer Enquiries",
+    description:
+      "WhatsApp Business is free and already used by millions of small businesses in India. Here is how to set it up properly and use it to turn visitors into paying customers.",
+    publishedAt: "2026-10-17",
+    tag: "Digital Marketing",
+  },
+  {
+    slug: "website-speed-small-business-india",
+    title: "Why Your Business Website Is Slow and How to Fix It",
+    description:
+      "A slow website loses customers before they even read a word. This practical guide explains the most common causes of slow loading in India and how to fix each one without being technical.",
+    publishedAt: "2026-10-17",
+    tag: "Website Development",
+  },
+  {
+    slug: "local-seo-guide-surat-india",
+    title: "Local SEO Guide for Small Businesses in Surat and India",
+    description:
+      "How to make your business show up when local customers search for your service on Google — without paying for ads. A practical Local SEO guide for small business owners.",
+    publishedAt: "2026-10-17",
+    tag: "SEO",
+  },
+  {
+    slug: "should-small-business-sell-online-india",
+    title: "Should Your Small Business Start Selling Online in India?",
+    description:
+      "An honest guide to whether your business is ready to sell online, what platforms make sense, and the real costs and effort involved — before you commit to building an online store.",
+    publishedAt: "2026-10-17",
+    tag: "E-Commerce",
+  },
+  {
+    slug: "how-to-hire-freelance-web-developer-india",
+    title: "How to Hire a Freelance Web Developer in India: What to Check",
+    description:
+      "Before you pay anyone to build your website, read this. A practical checklist of questions, red flags, and what a professional proposal should look like — so you do not waste money.",
+    publishedAt: "2026-10-17",
+    tag: "Website Development",
+  },
 ];
 
 export function getBlogPost(slug: string): BlogPost | undefined {

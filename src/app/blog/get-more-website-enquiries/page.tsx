@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { ChevronRight } from "lucide-react";
 import { pageMetadata } from "@/lib/metadata";
 import { getBlogPost, formatDate } from "@/data/blog";
 import { siteConfig } from "@/config/site";
@@ -33,6 +34,15 @@ export default function Article() {
       <article aria-labelledby="article-heading">
         <header className="border-b border-line bg-ivory py-14 sm:py-20">
           <Container size="narrow">
+            <nav aria-label="Breadcrumb" className="mb-8">
+              <ol className="flex flex-wrap items-center gap-1.5 text-sm text-muted">
+                <li><Link href="/" className="hover:text-ink">Home</Link></li>
+                <li aria-hidden="true"><ChevronRight className="h-3.5 w-3.5" /></li>
+                <li><Link href="/blog" className="hover:text-ink">Blog</Link></li>
+                <li aria-hidden="true"><ChevronRight className="h-3.5 w-3.5" /></li>
+                <li aria-current="page" className="font-medium text-ink line-clamp-1">{post.title}</li>
+              </ol>
+            </nav>
             <p className="mb-5 inline-block rounded-full bg-lavender px-3 py-1 text-xs font-semibold text-ink">
               {post.tag}
             </p>
