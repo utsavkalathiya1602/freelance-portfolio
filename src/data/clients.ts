@@ -1,7 +1,7 @@
 import type { AdsClientProject } from "../types/project";
 
 /**
- * Real Google Ads clients.
+ * Real digital marketing clients.
  *
  * Only facts confirmed by the client are listed. Do not add performance figures, screenshots
  * or testimonials unless they are verified and the client has agreed to them being published.

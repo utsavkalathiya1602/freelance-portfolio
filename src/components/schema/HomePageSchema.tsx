@@ -18,7 +18,7 @@ export function HomePageSchema() {
     url,
     name: "Freelance Web Developer in Surat | Utsav Kalathiya",
     description:
-      "Utsav Kalathiya is a freelance web developer in Surat, Gujarat, India, building business websites, landing pages, and web applications with React.js, and managing Google Ads search campaigns for small businesses.",
+      "Utsav Kalathiya is a freelance web developer in Surat, Gujarat, India, building business websites, landing pages, and web applications with React.js, and running Google Ads, Meta Ads and SEO for small businesses.",
     inLanguage: "en-IN",
     isPartOf: {
       "@type": "WebSite",
@@ -28,7 +28,7 @@ export function HomePageSchema() {
     about: {
       "@type": "Person",
       name: siteConfig.name,
-      jobTitle: "Freelance Web Developer & Google Ads Specialist",
+      jobTitle: "Freelance Web Developer & Digital Marketer",
       address: {
         "@type": "PostalAddress",
         addressLocality: "Surat",

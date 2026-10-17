@@ -12,7 +12,7 @@ import { WorkHeroAside } from "@/components/page-heroes/WorkHeroAside";
 
 const title = "Work";
 const description =
-  "Portfolio of websites designed and built by Utsav Kalathiya — a freelance web developer in Surat, Gujarat. Includes live websites for a dental clinic, a hotel, an event studio, and Google Ads management for a local business.";
+  "Portfolio of websites designed and built by Utsav Kalathiya — a freelance web developer in Surat, Gujarat. Includes live websites for a dental clinic, a hotel, an event studio, and digital marketing for a local business.";
 
 export const metadata: Metadata = pageMetadata({ title, description, path: "/work" });
 
@@ -38,7 +38,7 @@ export default function WorkPage() {
       <PageHeader
         eyebrow="Work"
         title="Real websites, live and in use."
-        description="Websites I've designed and built for a dental clinic, a heritage hotel and an event planning studio — each one live, with real screenshots and a link to try it yourself. Plus Google Ads management for a local store in Surat."
+        description="Websites I've designed and built for a dental clinic, a heritage hotel and an event planning studio — each one live, with real screenshots and a link to try it yourself. Plus digital marketing for a local store in Surat."
         aside={<WorkHeroAside />}
       >
       </PageHeader>

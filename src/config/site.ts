@@ -11,11 +11,11 @@ export type NavItem = {
 export const siteConfig = {
   name: "Utsav Kalathiya",
   brandMark: "UK.",
-  title: "Web Developer & Google Ads Specialist",
+  title: "Web Developer & Digital Marketer",
   location: "Surat, Gujarat, India",
   shortLocation: "Surat, India",
   description:
-    "Utsav Kalathiya is an independent web developer in Surat, India, building modern business websites, landing pages and web applications, and setting up Google Ads search campaigns.",
+    "Utsav Kalathiya is an independent web developer and digital marketer in Surat, India, building modern business websites, landing pages and web applications, and running Google Ads, Meta Ads and SEO for local businesses.",
 
   /** The public URL the site is deployed to. Used for canonical URLs, Open Graph and the sitemap. */
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://utsavkalathiya-freelance.vercel.app",

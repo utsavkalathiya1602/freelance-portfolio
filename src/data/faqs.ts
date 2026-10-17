@@ -7,12 +7,12 @@ export const generalServiceFaqs: FAQ[] = [
   {
     question: "Who can build a professional website in Surat?",
     answer:
-      "Utsav Kalathiya is a freelance web developer based in Surat, Gujarat. He builds business websites, landing pages, and web applications for small businesses and service providers, and also manages Google Ads search campaigns. You can contact him through the website, by email, or via WhatsApp.",
+      "Utsav Kalathiya is a freelance web developer based in Surat, Gujarat. He builds business websites, landing pages, and web applications for small businesses and service providers, and also offers digital marketing — Google Ads, Meta Ads (Facebook & Instagram) and SEO / Google Business Profile. You can contact him through the website, by email, or via WhatsApp.",
   },
   {
     question: "Do I need both services?",
     answer:
-      "No. Many businesses only need a website. Google Ads makes sense when you already have a page that clearly explains your offer and you want more of the right people to find it.",
+      "No. Many businesses only need a website. Digital marketing makes sense when you want more of the right people to find you — and some local businesses start with Google Ads or a Google Business Profile before they have a website.",
   },
   {
     question: "I'm not sure what I need. Can you advise?",
@@ -25,14 +25,14 @@ export const generalServiceFaqs: FAQ[] = [
       "Yes. I work remotely with clients in other cities and countries, using email, video calls and messaging. Local businesses in Surat can also meet in person.",
   },
   {
-    question: "Is Google Ads spend included in your fee?",
+    question: "Is ad spend included in your fee?",
     answer:
-      "No. Your advertising budget is paid directly to Google from your own account. My fee for setting up and managing the campaign is agreed separately and in writing.",
+      "No. Your advertising budget is paid directly to Google or Meta from your own account. My fee for setting up and managing the campaigns is agreed separately and in writing.",
   },
   {
     question: "How is pricing decided?",
     answer:
-      "Website projects are quoted per project once the scope is clear. Google Ads management is agreed based on the campaign setup and how often it needs to be reviewed. You get the price in writing before any work starts.",
+      "Website projects are quoted per project once the scope is clear. Digital marketing is agreed based on the channels, the setup work and how often campaigns need to be reviewed. You get the price in writing before any work starts.",
   },
 ];
 
@@ -76,7 +76,7 @@ export const webFaqs: FAQ[] = [
   {
     question: "Do you work with businesses in Surat?",
     answer:
-      "Yes. I am based in Surat, Gujarat, and work with local businesses in person as well as with clients remotely across India and other countries. If you are a business in Surat looking for a website or Google Ads help, you are welcome to get in touch.",
+      "Yes. I am based in Surat, Gujarat, and work with local businesses in person as well as with clients remotely across India and other countries. If you are a business in Surat looking for a website or digital marketing help, you are welcome to get in touch.",
   },
   {
     question: "How can I contact you to start a website project?",
@@ -91,41 +91,40 @@ export const webFaqs: FAQ[] = [
 ];
 
 
-export const adsFaqs: FAQ[] = [
+export const marketingFaqs: FAQ[] = [
   {
-    question: "What budget do I need for Google Ads?",
+    question: "Should I use Google Ads, Meta Ads or SEO?",
     answer:
-      "There's no single right number. The budget depends on your market, how competitive your keywords are and your goals. We'll discuss a starting budget you are comfortable with. Your ad spend is paid directly to Google and is separate from my management fee.",
+      "It depends on how your customers find you. Google Ads works well when people actively search for your service. Meta Ads on Facebook and Instagram suit visual products, offers and reaching people who aren't searching yet. SEO and a strong Google Business Profile build steady visibility over time. Many local businesses start with one channel and add others later — I'll recommend a sensible starting point.",
   },
   {
-    question: "Is Google Ads advertising spend included in your management fee?",
+    question: "What budget do I need for ads?",
     answer:
-      "No. Your advertising budget is paid directly to Google from your own account. My fee covers setting up and managing the campaign and is agreed separately and in writing before any work begins.",
+      "There's no single right number. It depends on your market, competition and goals. We'll agree a starting budget you're comfortable with. Ad spend is paid directly to Google or Meta from your own account and is separate from my management fee.",
+  },
+  {
+    question: "Do I need a website before running ads?",
+    answer:
+      "Not always. Local businesses can send people to their Google Business Profile, a call, directions or WhatsApp — I currently manage Google Ads for a store in Surat that has no separate website. A focused landing page usually helps more people get in touch, and I can build one if it makes sense.",
+  },
+  {
+    question: "How long does SEO take to show results?",
+    answer:
+      "SEO and Google Business Profile improvements build up gradually — usually over weeks to months, not days. Ads can bring visibility immediately; SEO is the long-term foundation. I'll be clear about what to expect for your situation.",
   },
   {
     question: "Can you guarantee results?",
     answer:
-      "No one can honestly guarantee a specific number of leads or a fixed cost per click. What I can promise is a carefully planned campaign, proper conversion tracking and regular, transparent reviews.",
+      "No one can honestly guarantee a number of leads, a fixed cost per click or a top ranking. What I can promise is careful setup, proper tracking and regular, transparent reviews.",
   },
   {
-    question: "Do I need a website or landing page first?",
+    question: "Who owns the ad accounts and Business Profile?",
     answer:
-      "Yes. Ads send people to a page, and that page has a large effect on whether visitors contact you. If your current page isn't suitable, I can also help build a focused landing page.",
+      "You do. Campaigns run in your own Google Ads and Meta accounts with your billing details, and your Google Business Profile stays in your name. You keep full access at all times.",
   },
   {
-    question: "Who owns the Google Ads account?",
+    question: "Do you manage digital marketing for local businesses in Surat?",
     answer:
-      "You do. The campaign runs in your own Google Ads account with your billing details, and you keep full access to it at all times.",
-  },
-  {
-    question: "Which campaign types do you work with?",
-    answer:
-      "My focus is Google Search campaigns: ads that appear when people search for what you offer. We can discuss other campaign types if they suit your goals.",
-  },
-  {
-    question: "Do you manage Google Ads for local businesses in Surat?",
-    answer:
-      "Yes. I am based in Surat, Gujarat, and work with local businesses on Google Search campaigns. I currently manage campaigns for a local store in Surat and am available to discuss new projects.",
+      "Yes. I'm based in Surat, Gujarat, and currently manage Google Ads for a local store in Katargam, Surat. I'm available to discuss Google Ads, Meta Ads and SEO for new clients in Surat and across India.",
   },
 ];
-

@@ -49,7 +49,7 @@ export function WorkHeroAside() {
         </div>
         <div className="rounded-[var(--radius-card)] border border-ink/10 bg-lavender p-5">
           <Megaphone aria-hidden="true" className="h-5 w-5" />
-          <dt className="mt-4 text-sm font-medium text-ink/70">Google Ads clients</dt>
+          <dt className="mt-4 text-sm font-medium text-ink/70">Marketing clients</dt>
           <dd className="font-display text-4xl font-bold tracking-[-0.03em] text-ink">{adsClients.length}</dd>
         </div>
       </dl>

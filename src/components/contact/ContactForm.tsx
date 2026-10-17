@@ -9,8 +9,10 @@ const projectTypes = [
   "Landing page",
   "Web application",
   "Website redesign",
-  "Google Ads campaign",
-  "Website + Google Ads",
+  "Google Ads",
+  "Meta Ads (Facebook / Instagram)",
+  "SEO / Google Business Profile",
+  "Website + Digital Marketing",
   "Something else",
 ];
 

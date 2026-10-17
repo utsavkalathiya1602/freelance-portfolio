@@ -12,7 +12,7 @@ import { HomePageSchema } from "@/components/schema/HomePageSchema";
 export const metadata: Metadata = pageMetadata({
   title: "Freelance Web Developer in Surat | Utsav Kalathiya",
   description:
-    "Need a business website or Google Ads support in Surat? Utsav Kalathiya builds modern websites, landing pages, and web applications for small businesses and service providers in Surat, Gujarat.",
+    "Need a business website or digital marketing support in Surat? Utsav Kalathiya builds modern websites, landing pages, and web applications for small businesses and service providers in Surat, Gujarat.",
   path: "/",
   overrideTitle: "Freelance Web Developer in Surat | Utsav Kalathiya",
 });

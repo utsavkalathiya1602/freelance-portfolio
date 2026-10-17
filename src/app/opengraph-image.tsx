@@ -34,7 +34,7 @@ export default function OpengraphImage() {
               Website Development
             </div>
             <div style={{ background: "#D8CCFF", borderRadius: 999, padding: "14px 28px", fontSize: 28, fontWeight: 700 }}>
-              Google Ads
+              Digital Marketing
             </div>
           </div>
         </div>

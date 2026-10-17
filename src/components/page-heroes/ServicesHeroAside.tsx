@@ -7,7 +7,7 @@ const toneBg = { lime: "bg-lime", lavender: "bg-lavender" } as const;
 /** How each service is engaged — complements the detailed cards further down the page. */
 const engagement: Record<string, { type: string; pricing: string }> = {
   "web-development": { type: "Project-based", pricing: "Quoted per project" },
-  "google-ads": { type: "Ongoing", pricing: "Monthly management + your ad spend" },
+  "digital-marketing": { type: "Ongoing", pricing: "Monthly management + your ad spend" },
 };
 
 export function ServicesHeroAside() {

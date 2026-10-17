@@ -9,9 +9,9 @@ export const workCategories: { id: WorkCategory; label: string; description: str
     description: "Live websites I've designed and built for businesses.",
   },
   {
-    id: "google-ads",
-    label: "Google Ads & Lead Generation",
-    description: "Google Search advertising I manage for real businesses.",
+    id: "digital-marketing",
+    label: "Digital Marketing",
+    description: "Advertising and marketing I manage for real businesses.",
   },
 ];
 
@@ -19,7 +19,7 @@ export const allWork: WorkItem[] = [...websiteProjects, ...adsClients];
 
 /** Which Work page category an item belongs to. */
 export function categoryOf(item: WorkItem): WorkCategory {
-  return item.kind === "website" ? "website" : "google-ads";
+  return item.kind === "website" ? "website" : "digital-marketing";
 }
 
 export function getWorkItem(slug: string): WorkItem | undefined {
@@ -31,7 +31,7 @@ export function getWebsiteProject(slug: string | undefined): WebsiteProject | un
 }
 
 /**
- * Related items of the same kind. Google Ads clients fall back to live websites
+ * Related items of the same kind. Marketing clients fall back to live websites
  * while there is only one client.
  */
 export function getRelatedWork(item: WorkItem, limit = 2): WorkItem[] {

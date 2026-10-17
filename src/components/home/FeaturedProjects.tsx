@@ -30,7 +30,7 @@ export function FeaturedProjects() {
       </div>
       {clients.length > 0 ? (
         <div className="mt-16">
-          <h3 className="font-display text-2xl font-bold tracking-[-0.02em] text-ink sm:text-3xl">Google Ads client work</h3>
+          <h3 className="font-display text-2xl font-bold tracking-[-0.02em] text-ink sm:text-3xl">Digital marketing client work</h3>
           <ul className="mt-8 grid gap-6 md:grid-cols-2 lg:gap-8">
             {clients.map((client) => (
               <li key={client.slug}>

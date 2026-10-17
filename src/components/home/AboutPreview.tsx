@@ -20,7 +20,7 @@ export function AboutPreview() {
           <div className="mt-6 space-y-4 text-lg leading-relaxed text-muted">
             <p>
               I&apos;m {siteConfig.name}, an independent developer based in {siteConfig.location}. I build modern
-              websites and web applications with React.js and Node.js, and I set up Google Ads search campaigns
+              websites and web applications with React.js and Node.js, and I run Google Ads, Meta Ads and SEO
               for businesses where advertising makes sense.
             </p>
             <p>

@@ -18,9 +18,9 @@ export function SiteSchema() {
     "@type": "Person",
     name: siteConfig.name,
     url,
-    jobTitle: "Freelance Web Developer & Google Ads Specialist",
+    jobTitle: "Freelance Web Developer & Digital Marketer",
     description:
-      "Independent web developer based in Surat, Gujarat, India. Builds business websites, landing pages, and custom web applications with React.js and Node.js, and manages Google Ads Search campaigns for small businesses.",
+      "Independent web developer based in Surat, Gujarat, India. Builds business websites, landing pages, and custom web applications with React.js and Node.js, and runs Google Ads, Meta Ads and SEO for small businesses.",
     address: {
       "@type": "PostalAddress",
       addressLocality: "Surat",
@@ -40,6 +40,9 @@ export function SiteSchema() {
       "TypeScript",
       "Web Development",
       "Google Ads",
+      "Meta Ads",
+      "Digital Marketing",
+      "Search Engine Optimization",
       "Search Engine Marketing",
     ],
   };

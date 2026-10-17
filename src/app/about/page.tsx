@@ -13,7 +13,7 @@ import { AboutHeroAside } from "@/components/page-heroes/AboutHeroAside";
 
 const title = "About";
 const description =
-  "Utsav Kalathiya is a freelance web developer and Google Ads specialist based in Surat, Gujarat, India. Builds business websites and web applications with React.js and Node.js for small businesses and startups.";
+  "Utsav Kalathiya is a freelance web developer and digital marketer based in Surat, Gujarat, India. Builds business websites and web applications with React.js and Node.js, and runs Google Ads, Meta Ads and SEO for small businesses.";
 
 export const metadata: Metadata = pageMetadata({ title, description, path: "/about" });
 
@@ -36,7 +36,7 @@ const skills = [
   {
     label: "Marketing",
     tone: "bg-stone",
-    items: ["Google Ads (Search)", "Keyword research", "Conversion tracking"],
+    items: ["Google Ads", "Meta Ads (Facebook & Instagram)", "SEO & Google Business Profile", "Conversion tracking"],
   },
 ];
 
@@ -73,12 +73,12 @@ export default function AboutPage() {
       <PageHeader
         eyebrow={`About · ${siteConfig.shortLocation}`}
         title="Hi, I'm Utsav. I build websites that do a job."
-        description={`I'm an independent web developer based in ${siteConfig.location}. I help small businesses, startups and service providers with modern websites, web applications and Google Ads search campaigns.`}
+        description={`I'm an independent web developer based in ${siteConfig.location}. I help small businesses, startups and service providers with modern websites, web applications and digital marketing — Google Ads, Meta Ads and SEO.`}
         aside={
           <AboutHeroAside
             currentRole={experience[0]}
             currentStudy={education[0]}
-            stack={["React.js", "Node.js", "Express.js", "MongoDB", "Tailwind CSS", "Google Ads"]}
+            stack={["React.js", "Node.js", "Express.js", "MongoDB", "Google Ads", "Meta Ads", "SEO"]}
           />
         }
       />
@@ -95,7 +95,7 @@ export default function AboutPage() {
             <p>
               For freelance clients, I focus on the things that matter to a business: a website that explains what you
               do clearly, works on every screen size, and makes it easy for customers to contact you. Where it makes
-              sense, I also set up Google Ads search campaigns so the right people can find you.
+              sense, I also run Google Ads, Meta Ads and SEO so the right people can find you.
             </p>
             <p>
               I keep communication simple and honest — a clear scope, realistic timelines, and no promises I can&apos;t

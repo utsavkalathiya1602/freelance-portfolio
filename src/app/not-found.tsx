@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 const suggestions = [
   { label: "Website Development", href: "/services/web-development" },
-  { label: "Google Ads", href: "/services/google-ads" },
+  { label: "Digital Marketing", href: "/services/digital-marketing" },
   { label: "Work", href: "/work" },
   { label: "Contact", href: "/contact" },
 ];

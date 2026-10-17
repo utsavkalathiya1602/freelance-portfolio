@@ -26,7 +26,7 @@ const footerLinks = [
     heading: "Services",
     links: [
       { label: "Website Development", href: "/services/web-development" },
-      { label: "Google Ads", href: "/services/google-ads" },
+      { label: "Digital Marketing", href: "/services/digital-marketing" },
       { label: "Portfolio", href: "/work" },
     ],
   },
@@ -49,7 +49,7 @@ export function Footer() {
               {siteConfig.brandMark}
             </Link>
             <p className="mt-4 text-sm leading-relaxed text-white/65">
-              {siteConfig.name} — independent web developer and Google Ads specialist based in{" "}
+              {siteConfig.name} — independent web developer and digital marketer based in{" "}
               {siteConfig.location}. Building practical websites for small businesses, startups and service providers.
             </p>
           </div>

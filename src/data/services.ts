@@ -6,18 +6,19 @@ import {
   FileSearch,
   Layers,
   LayoutTemplate,
+  MapPin,
   Megaphone,
   MonitorSmartphone,
   PenLine,
   Plug,
   RefreshCw,
   Search,
-  SlidersHorizontal,
   Target,
   UserRound,
+  Users,
 } from "lucide-react";
 
-export type ServiceSlug = "web-development" | "google-ads";
+export type ServiceSlug = "web-development" | "digital-marketing";
 
 export type Service = {
   slug: ServiceSlug;
@@ -51,20 +52,20 @@ export const services: Service[] = [
     icon: Code2,
   },
   {
-    slug: "google-ads",
-    title: "Google Ads",
-    shortTitle: "Google Ads",
-    href: "/services/google-ads",
+    slug: "digital-marketing",
+    title: "Digital Marketing",
+    shortTitle: "Marketing",
+    href: "/services/digital-marketing",
     description:
-      "Search campaign setup, keyword research, and performance measurement aligned with your business goals.",
+      "Google Ads, Meta Ads on Facebook and Instagram, and local SEO with Google Business Profile — focused on bringing the right customers to your business.",
     includes: [
-      "Google Search campaign setup",
-      "Keyword research",
-      "Ad copy and campaign structure",
+      "Google Ads — Search campaigns",
+      "Meta Ads — Facebook & Instagram",
+      "SEO & Google Business Profile",
       "Conversion tracking setup",
-      "Campaign optimization",
+      "Regular reviews and optimisation",
     ],
-    cta: "Explore Google Ads",
+    cta: "Explore Digital Marketing",
     tone: "lavender",
     icon: Megaphone,
   },
@@ -114,35 +115,103 @@ export const webOfferings: Offering[] = [
   },
 ];
 
-export const adsOfferings: Offering[] = [
+export type MarketingChannel = {
+  id: "google-ads" | "meta-ads" | "seo";
+  name: string;
+  tagline: string;
+  description: string;
+  /** When this channel is usually the right choice. */
+  bestFor: string;
+  includes: string[];
+  icon: LucideIcon;
+  tone: "lime" | "lavender" | "peach";
+};
+
+/** The digital marketing channels I offer. */
+export const marketingChannels: MarketingChannel[] = [
   {
-    title: "Campaign planning",
+    id: "google-ads",
+    name: "Google Ads",
+    tagline: "Be found when people search",
+    description:
+      "Search campaigns that show your business to people who are already looking for what you offer — on Google Search and, for local businesses, alongside your location.",
+    bestFor: "Services people actively search for, like a store, clinic, repair or local service.",
+    includes: [
+      "Search campaign setup and structure",
+      "Keyword research and negative keywords",
+      "Ad copy written for your offer",
+      "Local targeting for your area",
+      "Conversion tracking and regular optimisation",
+    ],
+    icon: Search,
+    tone: "lavender",
+  },
+  {
+    id: "meta-ads",
+    name: "Meta Ads",
+    tagline: "Reach people on Facebook & Instagram",
+    description:
+      "Ads on Facebook and Instagram that put your business in front of the right local audience — to build awareness, promote offers and bring in enquiries.",
+    bestFor: "Visual products, offers and events, or reaching people who aren't searching yet.",
+    includes: [
+      "Campaign and audience setup",
+      "Ad creative and copy for feed, stories and reels",
+      "Location and interest targeting",
+      "Enquiry options such as WhatsApp, calls or lead forms",
+      "Pixel / tracking setup and regular optimisation",
+    ],
+    icon: Users,
+    tone: "peach",
+  },
+  {
+    id: "seo",
+    name: "SEO & Google Business Profile",
+    tagline: "Show up on Google Search and Maps",
+    description:
+      "Improving how your business appears in Google Search and Maps — a complete, accurate Business Profile and a website structured so search engines understand it.",
+    bestFor: "Local businesses that want steady visibility without paying for every click.",
+    includes: [
+      "Google Business Profile setup and optimisation",
+      "Accurate business details, categories and photos",
+      "On-page SEO: titles, descriptions and page structure",
+      "Local keyword targeting for your area",
+      "Technical basics: speed, mobile, sitemap and Search Console",
+    ],
+    icon: MapPin,
+    tone: "lime",
+  },
+];
+
+/** What every marketing engagement includes, whichever channel is used. */
+export const marketingOfferings: Offering[] = [
+  {
+    title: "Strategy & planning",
     description: "Agreeing on goals, locations, budget and what counts as a useful enquiry before anything goes live.",
     icon: Layers,
   },
   {
-    title: "Keyword research",
-    description: "Finding the search terms your potential customers use, and the ones that waste budget.",
-    icon: Search,
+    title: "Audience & keyword research",
+    description: "Finding the searches and audiences your potential customers fit, and the ones that waste budget.",
+    icon: Target,
   },
   {
-    title: "Campaign structure",
-    description: "Organising campaigns and ad groups so that keywords, ads and landing pages stay closely matched.",
-    icon: SlidersHorizontal,
-  },
-  {
-    title: "Ad copy",
-    description: "Writing clear, relevant search ads that describe your offer accurately.",
+    title: "Ad copy & creative",
+    description: "Clear, accurate ads that describe your business and your offer honestly.",
     icon: PenLine,
   },
   {
     title: "Conversion tracking",
-    description: "Setting up tracking for calls, form submissions or other actions so you can see what the ads lead to.",
+    description: "Tracking calls, messages, form submissions or visits so you can see what the marketing leads to.",
     icon: FileSearch,
   },
   {
-    title: "Review and optimization",
-    description: "Reviewing search terms, costs and conversions, and adjusting the campaign based on what the data shows.",
+    title: "Local visibility",
+    description: "Making sure people nearby can find your business, its location and how to contact you.",
+    icon: MapPin,
+  },
+  {
+    title: "Review & optimisation",
+    description: "Regular reviews of costs, results and search terms, with changes based on what the data shows.",
     icon: BarChart3,
   },
 ];
@@ -187,37 +256,37 @@ export const webProcess: ProcessStep[] = [
   },
 ];
 
-export const adsProcess: ProcessStep[] = [
+export const marketingProcess: ProcessStep[] = [
   {
     title: "Understand",
-    description: "Your services, locations, budget, landing page and what a good lead looks like for you.",
+    description: "Your business, area, customers, budget and what a good enquiry looks like for you.",
   },
   {
-    title: "Access & tracking",
-    description: "Access to your Google Ads account, and conversion tracking set up before launch.",
+    title: "Choose channels",
+    description: "A recommendation on Google Ads, Meta Ads, SEO or a mix — based on how your customers find you.",
   },
   {
-    title: "Build & launch",
-    description: "Keyword research, campaign structure and ad copy, shared with you for review before going live.",
+    title: "Set up & launch",
+    description: "Account access, tracking, targeting and ads, shared with you for review before going live.",
   },
   {
     title: "Review",
-    description: "Regular checks on search terms, spend and conversions, with clear notes on what changed and why.",
+    description: "Regular checks on spend, results and what to improve, with clear notes on what changed and why.",
   },
 ];
 
 /** What I can deliver vs. what depends on factors outside anyone's control. */
-export const adsDeliverables = [
-  "A campaign structure based on your services and locations",
-  "Keyword research and negative keyword lists",
-  "Search ad copy written for your offer",
-  "Conversion tracking for the actions you care about",
+export const marketingDeliverables = [
+  "A plan based on your services, area and budget",
+  "Campaigns, audiences and keywords set up properly",
+  "Clear, accurate ad copy for your offer",
+  "Tracking for the actions you care about",
   "Regular reviews and plain-language updates",
 ];
 
-export const adsNotGuaranteed = [
+export const marketingNotGuaranteed = [
   "A specific number of leads or sales",
   "A fixed cost per click or cost per lead",
-  "Top ad positions for every search",
-  "Results that do not depend on your market, budget or landing page",
+  "A guaranteed top position on Google or Maps",
+  "Results that do not depend on your market, budget or offer",
 ];

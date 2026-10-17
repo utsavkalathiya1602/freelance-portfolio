@@ -9,7 +9,7 @@ import { whatsappMessages } from "@/lib/whatsapp";
 
 const title = "Contact";
 const description =
-  "Get in touch with Utsav Kalathiya — freelance web developer and Google Ads specialist in Surat, Gujarat. Enquire about a website, landing page, or Google Ads campaign for your business.";
+  "Get in touch with Utsav Kalathiya — freelance web developer and digital marketer in Surat, Gujarat. Enquire about a website, landing page, Google Ads, Meta Ads or SEO for your business.";
 
 export const metadata: Metadata = pageMetadata({ title, description, path: "/contact" });
 

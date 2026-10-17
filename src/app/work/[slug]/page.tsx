@@ -27,7 +27,7 @@ export async function generateMetadata({ params }: PageProps<"/work/[slug]">): P
   const description =
     item.kind === "website"
       ? `${item.summary} Designed and built by Utsav Kalathiya, freelance web developer based in Surat, Gujarat, India.`
-      : `${item.summary} Google Ads managed by Utsav Kalathiya, freelance Google Ads specialist in Surat, India.`;
+      : `${item.summary} Google Ads managed by Utsav Kalathiya, freelance digital marketer in Surat, India.`;
 
   return pageMetadata({ title, description, path: `/work/${item.slug}` });
 }

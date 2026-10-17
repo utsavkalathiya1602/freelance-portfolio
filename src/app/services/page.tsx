@@ -15,7 +15,7 @@ import { ServicesHeroAside } from "@/components/page-heroes/ServicesHeroAside";
 
 const title = "Services";
 const description =
-  "Website development and Google Ads management by Utsav Kalathiya — a freelance web developer in Surat, Gujarat. Compare what each service includes, who it suits, and how to get started.";
+  "Website development and digital marketing (Google Ads, Meta Ads and SEO) by Utsav Kalathiya — a freelance web developer and digital marketer in Surat, Gujarat. Compare what each service includes and how to get started.";
 
 export const metadata: Metadata = pageMetadata({ title, description, path: "/services" });
 
@@ -24,17 +24,17 @@ const comparison: { label: string; web: string; ads: string }[] = [
   {
     label: "Best for",
     web: "Businesses with no website, an outdated one, or a new product or service to launch",
-    ads: "Businesses with a clear landing page that want more people searching for their service to find them",
+    ads: "Businesses that want more of the right local customers to find them — on Google, Facebook, Instagram or Maps",
   },
   {
     label: "Main goal",
     web: "Explain what you do clearly and make it easy to contact you",
-    ads: "Put your offer in front of people already searching for it",
+    ads: "Put your business in front of people who are likely to become customers",
   },
   {
     label: "What you receive",
     web: "A responsive website or landing page, set up and handed over with a walkthrough",
-    ads: "Keyword research, campaign structure, ad copy, conversion tracking and regular reviews",
+    ads: "Google Ads, Meta Ads and/or SEO set up with tracking, plus regular reviews",
   },
   {
     label: "Type of work",
@@ -44,12 +44,12 @@ const comparison: { label: string; web: string; ads: string }[] = [
   {
     label: "What I need from you",
     web: "Business details, photos and any content you already have",
-    ads: "Access to your Google Ads account, your budget and what counts as a good enquiry",
+    ads: "Access to your ad accounts or Business Profile, your budget and what counts as a good enquiry",
   },
   {
     label: "How pricing works",
     web: "Quoted per project after the scope is agreed",
-    ads: "Management fee agreed in writing; ad spend is paid directly to Google",
+    ads: "Management fee agreed in writing; ad spend is paid directly to Google or Meta",
   },
 ];
 
@@ -73,7 +73,7 @@ export default function ServicesPage() {
     <>
       <PageHeader
         eyebrow="Services"
-        title="Websites and Google Ads, explained clearly."
+        title="Websites and digital marketing, explained clearly."
         description="Compare what each service includes, who it suits and how it's priced — then start with the one that fits your business today."
         aside={<ServicesHeroAside />}
       >
@@ -82,9 +82,9 @@ export default function ServicesPage() {
             <Code2 aria-hidden="true" className="h-4 w-4" />
             Website Development
           </Button>
-          <Button href="/services/google-ads" variant="outline">
+          <Button href="/services/digital-marketing" variant="outline">
             <Megaphone aria-hidden="true" className="h-4 w-4" />
-            Google Ads
+            Digital Marketing
           </Button>
         </nav>
       </PageHeader>
@@ -113,7 +113,7 @@ export default function ServicesPage() {
         {/* Table on larger screens */}
         <div className="mt-12 hidden overflow-hidden rounded-[var(--radius-card)] border border-line md:block">
           <table className="w-full text-left">
-            <caption className="sr-only">Comparison of Website Development and Google Ads services</caption>
+            <caption className="sr-only">Comparison of Website Development and Digital Marketing services</caption>
             <thead>
               <tr className="border-b border-line">
                 <td className="w-48 bg-ivory p-5" />
@@ -121,7 +121,7 @@ export default function ServicesPage() {
                   Website Development
                 </th>
                 <th scope="col" className="bg-lavender p-5 font-display text-xl font-bold text-ink">
-                  Google Ads
+                  Digital Marketing
                 </th>
               </tr>
             </thead>
@@ -145,7 +145,7 @@ export default function ServicesPage() {
         <div className="mt-10 grid gap-4 md:hidden">
           {[
             { key: "web" as const, name: "Website Development", tone: "bg-lime" },
-            { key: "ads" as const, name: "Google Ads", tone: "bg-lavender" },
+            { key: "ads" as const, name: "Digital Marketing", tone: "bg-lavender" },
           ].map((column) => (
             <div key={column.key} className="overflow-hidden rounded-[var(--radius-card)] border border-line">
               <h3 className={`p-5 font-display text-xl font-bold text-ink ${column.tone}`}>{column.name}</h3>

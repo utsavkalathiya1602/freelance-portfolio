@@ -26,7 +26,7 @@ export function Hero() {
           </h1>
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted">
             I&apos;m Utsav Kalathiya, a freelance web developer based in Surat, Gujarat. I help small
-            businesses build modern websites and reach the right customers through Google Ads.
+            businesses build modern websites and reach the right customers through Google Ads, Meta Ads and SEO.
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <Button href="/contact" size="lg">

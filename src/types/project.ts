@@ -3,7 +3,7 @@
  *
  * Two kinds of entries, both real work:
  *  - "website":    websites I have designed and built (with live links and real screenshots)
- *  - "ads-client": Google Ads clients I manage (facts only — no figures unless verified and approved)
+ *  - "ads-client": digital marketing clients I manage (facts only — no figures unless verified and approved)
  */
 
 export type Location = {
@@ -11,7 +11,7 @@ export type Location = {
   country: string;
 };
 
-export type WorkCategory = "website" | "google-ads";
+export type WorkCategory = "website" | "digital-marketing";
 
 type BaseWork = {
   slug: string;
