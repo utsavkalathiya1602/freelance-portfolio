@@ -29,6 +29,36 @@
     "height": 1688,
     "version": 1792137955
   },
+  "portfolio/projects/clinicqueue/desktop-features": {
+    "width": 1440,
+    "height": 900,
+    "version": 1792388901
+  },
+  "portfolio/projects/clinicqueue/desktop-home": {
+    "width": 1440,
+    "height": 900,
+    "version": 1792388902
+  },
+  "portfolio/projects/clinicqueue/desktop-pricing": {
+    "width": 1440,
+    "height": 900,
+    "version": 1792388904
+  },
+  "portfolio/projects/clinicqueue/desktop-steps": {
+    "width": 1440,
+    "height": 900,
+    "version": 1792388905
+  },
+  "portfolio/projects/clinicqueue/mobile-features": {
+    "width": 780,
+    "height": 1688,
+    "version": 1792388905
+  },
+  "portfolio/projects/clinicqueue/mobile-home": {
+    "width": 780,
+    "height": 1688,
+    "version": 1792388906
+  },
   "portfolio/projects/devam-event-studio/desktop-about": {
     "width": 1440,
     "height": 900,

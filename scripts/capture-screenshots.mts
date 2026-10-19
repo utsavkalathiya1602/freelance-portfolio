@@ -59,6 +59,18 @@ const sites: Site[] = [
       { name: "mobile-offers", device: "mobile", target: "text:Better when you book direct" },
     ],
   },
+  {
+    slug: "clinicqueue",
+    url: "https://clinicqueues.com/",
+    shots: [
+      { name: "desktop-home", device: "desktop", target: "top" },
+      { name: "desktop-features", device: "desktop", target: "text:Everything you need to run a calm queue" },
+      { name: "desktop-steps", device: "desktop", target: "text:From booking to consult, in five steps" },
+      { name: "desktop-pricing", device: "desktop", target: "text:Start free. Upgrade as you grow." },
+      { name: "mobile-home", device: "mobile", target: "top" },
+      { name: "mobile-features", device: "mobile", target: "text:Everything you need to run a calm queue" },
+    ],
+  },
 ];
 
 const devices = {

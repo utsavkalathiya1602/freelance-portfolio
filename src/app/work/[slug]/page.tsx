@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: PageProps<"/work/[slug]">): P
 
   const title =
     item.kind === "website"
-      ? `${item.title} — Website Case Study`
+      ? `${item.title} — ${item.team ? "Product" : "Website"} Case Study`
       : `${item.title} — Google Ads Case Study`;
 
   const description = item.summary;

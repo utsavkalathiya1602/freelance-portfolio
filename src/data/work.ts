@@ -6,7 +6,7 @@ export const workCategories: { id: WorkCategory; label: string; description: str
   {
     id: "website",
     label: "Website Development",
-    description: "Live websites I've designed and built for businesses.",
+    description: "Live websites and web products I've built or worked on.",
   },
   {
     id: "digital-marketing",

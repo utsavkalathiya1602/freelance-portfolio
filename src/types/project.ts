@@ -2,7 +2,7 @@
  * Data model for the Work section.
  *
  * Two kinds of entries, both real work:
- *  - "website":    websites I have designed and built (with live links and real screenshots)
+ *  - "website":    websites and web products I have built or worked on (live links and real screenshots)
  *  - "ads-client": digital marketing clients I manage (facts only — no figures unless verified and approved)
  */
 
@@ -53,6 +53,10 @@ export type WebsiteProject = BaseWork & {
   features: string[];
   stack: { label: string; items: string[] }[];
   role: string;
+  /** True when the product belongs to someone else and I worked on it as part of a team. */
+  team?: boolean;
+  /** What I personally contributed — shown on team projects so the scope is clear. */
+  contributions?: string[];
   /** Background colour behind screenshots on cards (any CSS colour). */
   accent: string;
   /** First desktop screenshot is used as the cover image. */

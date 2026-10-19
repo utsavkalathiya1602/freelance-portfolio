@@ -18,7 +18,7 @@ export function FeaturedProjects() {
           eyebrow="Selected work"
           id="work-heading"
           title="Work worth exploring."
-          description="Live websites I've designed and built for real businesses — try them yourself."
+          description="Live websites and web products I've built or worked on — try them yourself."
         />
         <Button href="/work" variant="outline" className="self-start lg:self-auto">
           View all projects

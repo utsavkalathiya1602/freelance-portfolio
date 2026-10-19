@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowRight, ArrowUpRight, Check, MapPin } from "lucide-react";
+import { ArrowRight, ArrowUpRight, Check, MapPin, Users } from "lucide-react";
 import type { WebsiteProject } from "@/types/project";
 import { formatLocation } from "@/data/work";
 import { WebsiteVisual } from "./WebsiteVisual";
@@ -34,6 +34,12 @@ export function ProjectShowcase({ project, reverse = false, priority = false }: 
             <span aria-hidden="true" className="h-1.5 w-1.5 rounded-full bg-[#2f9e5b]" />
             Live
           </span>
+          {project.team ? (
+            <span className="inline-flex items-center gap-1.5 rounded-full bg-lavender px-3 py-1 text-xs font-semibold text-ink">
+              <Users aria-hidden="true" className="h-3.5 w-3.5" />
+              Team project
+            </span>
+          ) : null}
         </div>
 
         <h3 className="mt-5 font-display text-3xl font-bold tracking-[-0.03em] text-ink sm:text-4xl">

@@ -1,7 +1,7 @@
 import type { WebsiteProject } from "../types/project";
 
 /**
- * Real websites I have designed and built.
+ * Real websites and web products I have built, or worked on as part of a team (`team: true`).
  *
  * Content here describes what is visible on each live site. Screenshots are real captures
  * of the live sites, stored in Cloudinary (see scripts/capture-screenshots.mts and
@@ -11,6 +11,103 @@ import type { WebsiteProject } from "../types/project";
 const screenshotRoot = "portfolio/projects";
 
 export const websiteProjects: WebsiteProject[] = [
+  {
+    kind: "website",
+    slug: "clinicqueue",
+    title: "ClinicQueue",
+    businessName: "ClinicQueue",
+    industry: "Healthcare · Clinic queue SaaS",
+    location: { city: "Surat", country: "India" },
+    projectType: "SaaS product · Team project",
+    summary:
+      "A smart queue management product for Indian clinics — live tokens, slot booking, SMS and WhatsApp alerts, and dashboards for doctors and reception. I worked on it as a developer in the team.",
+    services: ["Frontend development", "Backend & API development"],
+    featured: true,
+    team: true,
+    overview:
+      "ClinicQueue is a SaaS product that helps clinics in India run calmer OPDs. Patients book a slot or walk in, get a live token and receive SMS or WhatsApp alerts when the doctor is ready, while reception and doctors manage one shared, real-time queue. It is offered on a free plan and a paid Pro plan. I worked on ClinicQueue as a developer in the product team — it is not a solo project.",
+    goals: [
+      "Reduce crowding and confusion in clinic waiting areas",
+      "Combine booked appointments and walk-ins in one live queue per doctor",
+      "Keep patients informed with live token status and alerts",
+      "Give doctors, reception and admins the tools they need on one screen",
+    ],
+    approach: [
+      "A real-time queue view where patients see their position and staff see who is next, delayed or a no-show.",
+      "SMS and WhatsApp notifications when a patient's turn is near.",
+      "Doctor and admin tools to call next, skip and recall patients from the same queue screen.",
+      "Role-based access for doctors, reception and administrators, plus a waiting-room display board.",
+    ],
+    contributions: [
+      "Frontend development — building and maintaining pages, UI components and screens with Next.js, React and Tailwind CSS",
+      "Backend development — working on the APIs and server-side logic behind the product's features",
+      "Working within the product team on new features, fixes and improvements",
+    ],
+    sections: [
+      { name: "Landing page", description: "Product introduction with patient and clinic calls to action." },
+      { name: "Features", description: "Real-time queue, SMS & WhatsApp alerts, appointments and walk-ins, doctor and admin tools." },
+      { name: "Patient flow", description: "Book or walk in, get a digital token, get notified, see the doctor on time." },
+      { name: "Pricing", description: "Free and Pro plans with monthly and yearly billing." },
+      { name: "FAQ & contact", description: "Answers for clinics and patients, and a support contact." },
+      { name: "Clinic staff login", description: "Access to the queue, dashboards and clinic settings." },
+    ],
+    features: [
+      "Live token queue with real-time updates",
+      "Slot booking and walk-ins in one queue",
+      "SMS and WhatsApp patient alerts",
+      "Doctor and reception dashboards",
+      "Waiting-room TV display board",
+      "Roles for doctors, reception and administrators",
+      "Analytics on waits, tokens and peak hours",
+      "Free and Pro subscription plans",
+    ],
+    stack: [
+      { label: "Frontend", items: ["Next.js", "React", "Tailwind CSS"] },
+      { label: "Real-time", items: ["WebSocket live updates"] },
+      { label: "My work", items: ["Frontend / UI", "Backend / APIs"] },
+    ],
+    role: "Developer in the team — frontend and backend",
+    accent: "#F9DAD3",
+    screenshots: [
+      {
+        publicId: `${screenshotRoot}/clinicqueue/desktop-home`,
+        device: "desktop",
+        alt: "ClinicQueue homepage with the heading 'Your clinic visit, without the wait' and buttons to join the queue or request a demo",
+        caption: "Homepage hero",
+      },
+      {
+        publicId: `${screenshotRoot}/clinicqueue/desktop-features`,
+        device: "desktop",
+        alt: "ClinicQueue features section describing the real-time queue view and SMS and WhatsApp alerts",
+        caption: "Features section",
+      },
+      {
+        publicId: `${screenshotRoot}/clinicqueue/desktop-steps`,
+        device: "desktop",
+        alt: "ClinicQueue patient flow section titled 'From booking to consult, in five steps'",
+        caption: "Patient flow",
+      },
+      {
+        publicId: `${screenshotRoot}/clinicqueue/desktop-pricing`,
+        device: "desktop",
+        alt: "ClinicQueue pricing section with Free and Pro plans",
+        caption: "Pricing plans",
+      },
+      {
+        publicId: `${screenshotRoot}/clinicqueue/mobile-home`,
+        device: "mobile",
+        alt: "ClinicQueue homepage on a mobile phone",
+        caption: "Mobile homepage",
+      },
+      {
+        publicId: `${screenshotRoot}/clinicqueue/mobile-features`,
+        device: "mobile",
+        alt: "ClinicQueue features section on a mobile phone",
+        caption: "Mobile features section",
+      },
+    ],
+    liveUrl: "https://clinicqueues.com/",
+  },
   {
     kind: "website",
     slug: "aarshdeep-dental-clinic",

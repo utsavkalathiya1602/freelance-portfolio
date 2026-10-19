@@ -17,7 +17,9 @@ export function CaseStudySchema({ item }: { item: WorkItem }) {
 
   const description =
     item.kind === "website"
-      ? `${item.summary} Designed and built by Utsav Kalathiya, freelance web developer in Surat, India.`
+      ? item.team
+        ? `${item.summary} Utsav Kalathiya worked on it as a developer in the product team.`
+        : `${item.summary} Designed and built by Utsav Kalathiya, freelance web developer in Surat, India.`
       : `${item.summary} Google Ads managed by Utsav Kalathiya, based in Surat, India.`;
 
   const schema = {

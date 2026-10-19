@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowRight, ArrowUpRight, MapPin } from "lucide-react";
+import { ArrowRight, ArrowUpRight, MapPin, Users } from "lucide-react";
 import type { WorkItem } from "@/types/project";
 import { formatLocation } from "@/data/work";
 import { Tag } from "@/components/ui/Tag";
@@ -30,6 +30,12 @@ export function ProjectCard({ item, headingLevel: Heading = "h3" }: ProjectCardP
             <MapPin aria-hidden="true" className="h-3.5 w-3.5 shrink-0" />
             <span className="truncate">{formatLocation(item)}</span>
           </span>
+          {item.kind === "website" && item.team ? (
+            <span className="ml-auto inline-flex shrink-0 items-center gap-1 rounded-full bg-lavender px-2.5 py-1 text-xs font-semibold text-ink">
+              <Users aria-hidden="true" className="h-3.5 w-3.5" />
+              Team
+            </span>
+          ) : null}
         </div>
 
         <Heading className="mt-4 font-display text-2xl font-bold tracking-[-0.02em] text-ink">

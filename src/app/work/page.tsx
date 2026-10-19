@@ -13,7 +13,7 @@ import { WorkPageSchema } from "@/components/schema/WorkPageSchema";
 
 const title = "Portfolio — Websites & Marketing Work";
 const description =
-  "Live websites for a dental clinic, a heritage hotel and an event studio, plus Google Ads for a local store in Surat. Real projects by Utsav Kalathiya.";
+  "Live websites for a dental clinic, a hotel and an event studio, team work on the ClinicQueue SaaS, and Google Ads for a store in Surat. Real projects only.";
 
 export const metadata: Metadata = pageMetadata({
   title,
@@ -54,7 +54,7 @@ export default function WorkPage() {
       <PageHeader
         eyebrow="Work"
         title="Real websites, live and in use."
-        description="Websites I've designed and built for a dental clinic, a heritage hotel and an event planning studio — each one live, with real screenshots and a link to try it yourself. Plus digital marketing for a local store in Surat."
+        description="Websites I've designed and built for a dental clinic, a heritage hotel and an event planning studio, plus ClinicQueue — a clinic queue SaaS I work on as a developer in the team. Each one is live, with real screenshots and a link to try it yourself."
         aside={<WorkHeroAside />}
       >
       </PageHeader>

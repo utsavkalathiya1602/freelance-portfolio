@@ -6,7 +6,8 @@ import { ProjectScreenshot } from "@/components/projects/ProjectScreenshot";
 
 /** Real screenshots of a featured live project, plus counts derived from the project data. */
 export function WorkHeroAside() {
-  const project = websiteProjects.find((item) => item.featured) ?? websiteProjects[0];
+  // Feature one of my own projects here; team products appear in the list below.
+  const project = websiteProjects.find((item) => item.featured && !item.team) ?? websiteProjects[0];
   if (!project) return null;
 
   const desktop = project.screenshots.find((shot) => shot.device === "desktop");

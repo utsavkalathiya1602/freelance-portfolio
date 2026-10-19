@@ -29,7 +29,7 @@ export function WebsiteCaseStudy({ project }: { project: WebsiteProject }) {
       <Section labelledBy="overview-heading">
         <ProjectOverview
           overview={project.overview}
-          problemTitle="What the website needed to do"
+          problemTitle={project.team ? "What the product needed to do" : "What the website needed to do"}
           problem={
             <ul className="space-y-2">
               {project.goals.map((goal) => (
@@ -40,10 +40,23 @@ export function WebsiteCaseStudy({ project }: { project: WebsiteProject }) {
               ))}
             </ul>
           }
-          goalsTitle="How it was built to do that"
+          goalsTitle={project.team ? "How the product does that" : "How it was built to do that"}
           goals={project.approach}
-        />
-      </Section>
+        />      </Section>
+
+      {project.contributions?.length ? (
+        <Section labelledBy="contribution-heading">
+          <div className="grid gap-10 lg:grid-cols-[1fr_1.3fr] lg:gap-16">
+            <SectionHeading
+              eyebrow="My role"
+              id="contribution-heading"
+              title="My contribution."
+              description={`${project.title} is a team product. These are the parts I worked on as a developer.`}
+            />
+            <FeatureList items={project.contributions} columns={1} />
+          </div>
+        </Section>
+      ) : null}
 
       {desktopShots.length > 0 ? (
         <Section tone="stone" labelledBy="desktop-heading">

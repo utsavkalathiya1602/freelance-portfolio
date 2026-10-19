@@ -40,7 +40,7 @@ export function ProjectHero({ item }: { item: WorkItem }) {
         <div className="mt-10 grid gap-10 lg:grid-cols-[1.4fr_1fr] lg:items-start lg:gap-16">
           <div>
             <Eyebrow>
-              {item.kind === "website" ? "Website project" : "Digital marketing · Client work"}
+              {item.kind === "website" ? (item.team ? "Team project · Developer" : "Website project") : "Digital marketing · Client work"}
             </Eyebrow>
             <h1 className="font-display text-[2.6rem] font-bold leading-[1.02] tracking-[-0.04em] text-ink text-balance sm:text-6xl lg:text-[4.2rem]">
               {item.title}
