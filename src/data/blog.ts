@@ -18,6 +18,8 @@ export type BlogPost = {
   updatedAt?: string;
   /** Topic tag displayed on the card and index. */
   tag: string;
+  /** Estimated reading time, from the article's word count (≈200 words per minute). */
+  readingMinutes: number;
 };
 
 export const blogPosts: BlogPost[] = [
@@ -28,6 +30,7 @@ export const blogPosts: BlogPost[] = [
       "An honest breakdown of what a business website costs in Surat — what affects the price, what to expect at different budget levels, and how to get a fair quote.",
     publishedAt: "2026-10-17",
     tag: "Website Development",
+    readingMinutes: 3,
   },
   {
     slug: "photography-studio-website",
@@ -36,6 +39,7 @@ export const blogPosts: BlogPost[] = [
       "Instagram has millions of photographers. A website gives you something Instagram can't: a space you own, where clients can enquire, see your packages, and find you on Google.",
     publishedAt: "2026-10-17",
     tag: "Website Development",
+    readingMinutes: 3,
   },
   {
     slug: "react-vs-wordpress-small-business",
@@ -44,6 +48,7 @@ export const blogPosts: BlogPost[] = [
       "A practical comparison to help small business owners choose between React and WordPress — based on what you actually need, not what sounds most impressive.",
     publishedAt: "2026-10-17",
     tag: "Website Development",
+    readingMinutes: 3,
   },
   {
     slug: "get-more-website-enquiries",
@@ -52,6 +57,7 @@ export const blogPosts: BlogPost[] = [
       "Practical changes to your website that help more visitors turn into actual enquiries — without spending more on ads.",
     publishedAt: "2026-10-17",
     tag: "Digital Marketing",
+    readingMinutes: 4,
   },
   {
     slug: "google-business-profile-guide-india",
@@ -60,6 +66,7 @@ export const blogPosts: BlogPost[] = [
       "A step-by-step guide to creating and optimising your Google Business Profile so your business appears in Google Maps and local search results across India.",
     publishedAt: "2026-10-17",
     tag: "SEO",
+    readingMinutes: 4,
   },
   {
     slug: "whatsapp-business-for-small-business",
@@ -68,6 +75,7 @@ export const blogPosts: BlogPost[] = [
       "WhatsApp Business is free and already used by millions of small businesses in India. Here is how to set it up properly and use it to turn visitors into paying customers.",
     publishedAt: "2026-10-17",
     tag: "Digital Marketing",
+    readingMinutes: 3,
   },
   {
     slug: "website-speed-small-business-india",
@@ -76,6 +84,7 @@ export const blogPosts: BlogPost[] = [
       "A slow website loses customers before they even read a word. This practical guide explains the most common causes of slow loading in India and how to fix each one without being technical.",
     publishedAt: "2026-10-17",
     tag: "Website Development",
+    readingMinutes: 4,
   },
   {
     slug: "local-seo-guide-surat-india",
@@ -84,6 +93,7 @@ export const blogPosts: BlogPost[] = [
       "How to make your business show up when local customers search for your service on Google — without paying for ads. A practical Local SEO guide for small business owners.",
     publishedAt: "2026-10-17",
     tag: "SEO",
+    readingMinutes: 4,
   },
   {
     slug: "should-small-business-sell-online-india",
@@ -92,6 +102,7 @@ export const blogPosts: BlogPost[] = [
       "An honest guide to whether your business is ready to sell online, what platforms make sense, and the real costs and effort involved — before you commit to building an online store.",
     publishedAt: "2026-10-17",
     tag: "E-Commerce",
+    readingMinutes: 4,
   },
   {
     slug: "how-to-hire-freelance-web-developer-india",
@@ -100,6 +111,61 @@ export const blogPosts: BlogPost[] = [
       "Before you pay anyone to build your website, read this. A practical checklist of questions, red flags, and what a professional proposal should look like — so you do not waste money.",
     publishedAt: "2026-10-17",
     tag: "Website Development",
+    readingMinutes: 4,
+  },
+  {
+    slug: "google-ads-vs-meta-ads-local-business",
+    title: "Google Ads vs Meta Ads: Which Is Right for Your Local Business?",
+    description:
+      "Google Ads reaches people who are searching. Meta Ads reaches people who are scrolling. How to decide which one fits your business, budget and customers.",
+    publishedAt: "2026-10-19",
+    tag: "Digital Marketing",
+    readingMinutes: 3,
+  },
+  {
+    slug: "google-ads-budget-small-business-india",
+    title: "How Much Should a Small Business Spend on Google Ads in India?",
+    description:
+      "There is no magic number. A simple way to work out a sensible starting Google Ads budget from your own costs, prices and goals — before you spend a rupee.",
+    publishedAt: "2026-10-19",
+    tag: "Digital Marketing",
+    readingMinutes: 3,
+  },
+  {
+    slug: "meta-ads-guide-local-business",
+    title: "Meta Ads for Local Businesses: A Beginner's Guide",
+    description:
+      "How Facebook and Instagram ads work for a local business — objectives, audiences, creatives and budgets — and the mistakes that waste money in the first month.",
+    publishedAt: "2026-10-19",
+    tag: "Digital Marketing",
+    readingMinutes: 3,
+  },
+  {
+    slug: "landing-page-vs-website",
+    title: "Landing Page vs Website: What Does Your Business Actually Need?",
+    description:
+      "A landing page and a full website do different jobs. When a single focused page is enough, when you need more, and how the two work together with ads.",
+    publishedAt: "2026-10-19",
+    tag: "Website Development",
+    readingMinutes: 3,
+  },
+  {
+    slug: "business-website-homepage-checklist",
+    title: "What to Include on a Business Website Homepage: A Checklist",
+    description:
+      "Visitors decide in seconds whether to stay. A practical checklist of what your homepage needs — from the first headline to the contact button — and what to leave out.",
+    publishedAt: "2026-10-19",
+    tag: "Website Development",
+    readingMinutes: 3,
+  },
+  {
+    slug: "track-website-and-ad-enquiries",
+    title: "How to Track Enquiries from Your Website and Ads",
+    description:
+      "If you can't see which calls, forms and WhatsApp messages came from your ads, you can't tell what's working. A plain-language guide to tracking enquiries.",
+    publishedAt: "2026-10-19",
+    tag: "Digital Marketing",
+    readingMinutes: 3,
   },
 ];
 
@@ -107,11 +173,38 @@ export function getBlogPost(slug: string): BlogPost | undefined {
   return blogPosts.find((p) => p.slug === slug);
 }
 
+/** Newest first; articles published on the same day keep their listed order. */
+export function sortedBlogPosts(): BlogPost[] {
+  return [...blogPosts].sort((a, b) => b.publishedAt.localeCompare(a.publishedAt));
+}
+
+/** Topics with the number of articles in each, most common first. */
+export function blogTopics(): { tag: string; count: number }[] {
+  const counts = new Map<string, number>();
+  for (const post of blogPosts) counts.set(post.tag, (counts.get(post.tag) ?? 0) + 1);
+  return [...counts.entries()].map(([tag, count]) => ({ tag, count })).sort((a, b) => b.count - a.count);
+}
+
+/** Up to `limit` other articles, preferring the same topic. */
+export function getRelatedPosts(slug: string, limit = 3): BlogPost[] {
+  const current = getBlogPost(slug);
+  const others = sortedBlogPosts().filter((p) => p.slug !== slug);
+  const sameTopic = others.filter((p) => p.tag === current?.tag);
+  const rest = others.filter((p) => p.tag !== current?.tag);
+  return [...sameTopic, ...rest].slice(0, limit);
+}
+
+export function topicId(tag: string): string {
+  return tag.toLowerCase().replace(/[^a-z0-9]+/g, "-");
+}
+
 /** Format an ISO date string into a readable date like "17 October 2026". */
 export function formatDate(iso: string): string {
+  // UTC keeps the date identical on the server and in every visitor's time zone.
   return new Date(iso).toLocaleDateString("en-IN", {
     day: "numeric",
     month: "long",
     year: "numeric",
+    timeZone: "UTC",
   });
 }

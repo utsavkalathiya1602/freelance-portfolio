@@ -171,3 +171,13 @@ summary::-webkit-details-marker {
 .article-body a:hover {
   text-decoration-color: var(--ink);
 }
+
+.article-body code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.875em;
+  background: var(--stone);
+  color: var(--ink);
+  padding: 0.125rem 0.375rem;
+  border-radius: 0.375rem;
+  overflow-wrap: anywhere;
+}

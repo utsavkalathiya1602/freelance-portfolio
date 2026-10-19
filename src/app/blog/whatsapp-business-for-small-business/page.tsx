@@ -1,17 +1,11 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ChevronRight } from "lucide-react";
 import { pageMetadata } from "@/lib/metadata";
-import { getBlogPost, formatDate } from "@/data/blog";
-import { siteConfig } from "@/config/site";
-import { ArticleSchema } from "@/components/schema/ArticleSchema";
-import { ArticleBody } from "@/components/blog/ArticleBody";
-import { Container } from "@/components/ui/Container";
-import { ContactCTA } from "@/components/home/ContactCTA";
+import { getBlogPost } from "@/data/blog";
+import { ArticleLayout } from "@/components/blog/ArticleLayout";
 
 const slug = "whatsapp-business-for-small-business";
 const post = getBlogPost(slug)!;
-const url = `${siteConfig.url}/blog/${slug}`;
 
 export const metadata: Metadata = pageMetadata({
   title: post.title,
@@ -28,47 +22,13 @@ export const metadata: Metadata = pageMetadata({
 
 export default function Article() {
   return (
-    <>
-      <ArticleSchema post={post} url={url} />
-
-      <article aria-labelledby="article-heading">
-        <header className="border-b border-line bg-ivory py-14 sm:py-20">
-          <Container size="narrow">
-            <nav aria-label="Breadcrumb" className="mb-8">
-              <ol className="flex flex-wrap items-center gap-1.5 text-sm text-muted">
-                <li><Link href="/" className="hover:text-ink">Home</Link></li>
-                <li aria-hidden="true"><ChevronRight className="h-3.5 w-3.5" /></li>
-                <li><Link href="/blog" className="hover:text-ink">Blog</Link></li>
-                <li aria-hidden="true"><ChevronRight className="h-3.5 w-3.5" /></li>
-                <li aria-current="page" className="font-medium text-ink line-clamp-1">{post.title}</li>
-              </ol>
-            </nav>
-            <p className="mb-5 inline-block rounded-full bg-lavender px-3 py-1 text-xs font-semibold text-ink">
-              {post.tag}
-            </p>
-            <h1
-              id="article-heading"
-              className="font-display text-[2.2rem] font-bold leading-[1.05] tracking-[-0.04em] text-ink text-balance sm:text-5xl"
-            >
-              {post.title}
-            </h1>
-            <p className="mt-6 text-lg leading-relaxed text-muted">{post.description}</p>
-            <div className="mt-8 flex flex-wrap items-center gap-4 text-sm text-muted">
-              <span>
-                By{" "}
-                <Link href="/about" className="font-semibold text-ink underline underline-offset-4">
-                  {siteConfig.name}
-                </Link>
-              </span>
-              <span aria-hidden="true">·</span>
-              <time dateTime={post.publishedAt}>{formatDate(post.publishedAt)}</time>
-            </div>
-          </Container>
-        </header>
-
-        <div className="py-14 sm:py-20">
-          <Container size="narrow">
-            <ArticleBody>
+    <ArticleLayout
+      post={post}
+      cta={{
+        heading: "Want a WhatsApp button on your website?",
+        text: "If your website does not have a WhatsApp contact button, I can add one. Tell me about your business and I will suggest the best way to set it up.",
+      }}
+    >
 
               <h2>Why WhatsApp Business is worth setting up properly</h2>
               <p>
@@ -164,16 +124,6 @@ export default function Article() {
                 </Link>{" "}
                 for information on what a proper business website includes.
               </p>
-
-            </ArticleBody>
-          </Container>
-        </div>
-      </article>
-
-      <ContactCTA
-        heading="Want a WhatsApp button on your website?"
-        text="If your website does not have a WhatsApp contact button, I can add one. Tell me about your business and I will suggest the best way to set it up."
-      />
-    </>
+    </ArticleLayout>
   );
 }
