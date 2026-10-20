@@ -71,6 +71,18 @@ const sites: Site[] = [
       { name: "mobile-features", device: "mobile", target: "text:Everything you need to run a calm queue" },
     ],
   },
+  {
+    slug: "easy-rentals",
+    url: "https://house-renting-2.onrender.com/",
+    shots: [
+      { name: "desktop-home", device: "desktop", target: "top" },
+      { name: "desktop-listings", device: "desktop", target: "text:Available Properties" },
+      { name: "desktop-hotels", device: "desktop", target: "text:Available Properties" },
+      { name: "desktop-footer", device: "desktop", target: "footer" },
+      { name: "mobile-home", device: "mobile", target: "top" },
+      { name: "mobile-listings", device: "mobile", target: "text:Available Properties" },
+    ],
+  },
 ];
 
 const devices = {

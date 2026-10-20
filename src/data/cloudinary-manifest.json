@@ -89,6 +89,36 @@
     "height": 1688,
     "version": 1792137959
   },
+  "portfolio/projects/easy-rentals/desktop-footer": {
+    "width": 1440,
+    "height": 900,
+    "version": 1792483888
+  },
+  "portfolio/projects/easy-rentals/desktop-home": {
+    "width": 1440,
+    "height": 900,
+    "version": 1792483889
+  },
+  "portfolio/projects/easy-rentals/desktop-hotels": {
+    "width": 1440,
+    "height": 900,
+    "version": 1792483890
+  },
+  "portfolio/projects/easy-rentals/desktop-listings": {
+    "width": 1440,
+    "height": 900,
+    "version": 1792483891
+  },
+  "portfolio/projects/easy-rentals/mobile-home": {
+    "width": 780,
+    "height": 1688,
+    "version": 1792483891
+  },
+  "portfolio/projects/easy-rentals/mobile-listings": {
+    "width": 780,
+    "height": 1688,
+    "version": 1792483892
+  },
   "portfolio/projects/hotel-bhabha/desktop-dining": {
     "width": 1440,
     "height": 900,
