@@ -167,6 +167,60 @@ export const blogPosts: BlogPost[] = [
     tag: "Digital Marketing",
     readingMinutes: 3,
   },
+  {
+    slug: "ai-search-optimization-small-business",
+    title: "How to Make Your Business Visible on ChatGPT, Gemini and Google AI Search",
+    description:
+      "AI-powered search is changing how customers discover businesses. A practical guide to helping your business appear in ChatGPT, Gemini and Google AI Overviews — and the myths to avoid.",
+    publishedAt: "2026-10-20",
+    tag: "SEO",
+    readingMinutes: 7,
+  },
+  {
+    slug: "website-traffic-no-leads",
+    title: "Why Your Website Gets Traffic but No Leads: 9 Things to Fix",
+    description:
+      "Getting visitors but no enquiries is a conversion problem, not a traffic problem. Here are nine reasons your website isn't turning visitors into leads — and how to fix each one.",
+    publishedAt: "2026-10-20",
+    tag: "Website Development",
+    readingMinutes: 6,
+  },
+  {
+    slug: "google-ads-cost-per-lead-india",
+    title: "Google Ads Cost Per Lead in India: What Businesses Should Expect in 2026",
+    description:
+      "How much does a lead from Google Ads actually cost in India? A clear explanation of the five factors that determine your cost per lead, with illustrative examples for common business types.",
+    publishedAt: "2026-10-20",
+    tag: "Digital Marketing",
+    readingMinutes: 7,
+  },
+  {
+    slug: "website-redesign-vs-new-website",
+    title: "Website Redesign vs New Website: Which Is Better for Your Business?",
+    description:
+      "Not sure whether to redesign your current website or start fresh? A practical framework to help business owners evaluate the real costs, SEO risks and the right decision for their situation.",
+    publishedAt: "2026-10-20",
+    tag: "Website Development",
+    readingMinutes: 6,
+  },
+  {
+    slug: "get-more-customers-google-maps",
+    title: "How to Get More Local Customers from Google Maps Without Increasing Your Ad Budget",
+    description:
+      "Practical steps to optimise your Google Business Profile, improve local relevance and track enquiries — so more people in your area find and contact your business for free.",
+    publishedAt: "2026-10-20",
+    tag: "SEO",
+    readingMinutes: 6,
+  },
+  {
+    slug: "track-leads-google-ads-website-whatsapp",
+    title: "How to Track Every Lead from Google Ads, Your Website and WhatsApp",
+    description:
+      "A step-by-step guide to measuring every form submission, phone call, WhatsApp click and Google Ads conversion — so you always know which marketing is producing real leads.",
+    publishedAt: "2026-10-20",
+    tag: "Digital Marketing",
+    readingMinutes: 7,
+  },
 ];
 
 export function getBlogPost(slug: string): BlogPost | undefined {
