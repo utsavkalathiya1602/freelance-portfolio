@@ -115,10 +115,16 @@ export const metadata: Metadata = {
     google: "JIu2MpvRxAiRdu1E1krA7hfVBSFJRRr6pPt4G5mwwVc",
   },
   icons: {
-    // Next.js auto-serves src/app/icon.svg as the browser favicon.
+    // favicon.ico — Google Search & legacy browsers look for this first.
+    icon: [
+      { url: "/favicon.ico", sizes: "48x48", type: "image/x-icon" },
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/icon-192.png", sizes: "192x192", type: "image/png" },
+      { url: "/icon-512.png", sizes: "512x512", type: "image/png" },
+      { url: "/favicon.svg", type: "image/svg+xml" },
+    ],
     // src/app/apple-icon.tsx is auto-registered as apple-touch-icon (180×180 PNG).
-    // The shortcut entry below covers older browsers that look for /favicon.svg.
-    shortcut: "/favicon.svg",
+    shortcut: "/favicon.ico",
   },
 };
 
