@@ -221,6 +221,61 @@ export const blogPosts: BlogPost[] = [
     tag: "Digital Marketing",
     readingMinutes: 7,
   },
+  // ── Priority 1–6: Enhanced 2026 series ────────────────────────────
+  {
+    slug: "ai-search-visibility-2026",
+    title: "How to Get Your Business Recommended by AI Search in 2026",
+    description:
+      "A practical guide for Indian business owners on AI SEO, AEO and GEO — how ChatGPT, Gemini and Google AI Overviews discover businesses and what you can do to improve your visibility.",
+    publishedAt: "2026-10-21",
+    tag: "SEO",
+    readingMinutes: 9,
+  },
+  {
+    slug: "website-development-cost-india-2026",
+    title: "Website Development Cost in India (2026): Complete Pricing Guide",
+    description:
+      "An honest, detailed breakdown of what a business website costs in India in 2026 — from a basic brochure site to a custom web application — with a budget estimator tool.",
+    publishedAt: "2026-10-21",
+    tag: "Website Development",
+    readingMinutes: 10,
+  },
+  {
+    slug: "google-ads-budget-india-2026",
+    title: "Google Ads Budget in India (2026): How Much Should a Small Business Spend?",
+    description:
+      "How to work out a sensible Google Ads budget for your Indian business in 2026 — ad spend vs management fees, cost per click, and a free lead-cost calculator.",
+    publishedAt: "2026-10-21",
+    tag: "Digital Marketing",
+    readingMinutes: 9,
+  },
+  {
+    slug: "why-website-not-getting-customers",
+    title: "Why Is Your Website Not Getting Customers? 10 Common Problems and Fixes",
+    description:
+      "Traffic but no enquiries? A self-assessment checklist and practical fixes for the ten most common reasons Indian business websites fail to convert visitors into leads.",
+    publishedAt: "2026-10-21",
+    tag: "Website Development",
+    readingMinutes: 10,
+  },
+  {
+    slug: "local-seo-small-business-india-2026",
+    title: "Local SEO for Small Businesses in India: How to Get More Customers from Google",
+    description:
+      "How local search and Google Maps work, how to set up and optimize your Google Business Profile, and how to track calls and enquiries from local SEO in India.",
+    publishedAt: "2026-10-21",
+    tag: "SEO",
+    readingMinutes: 10,
+  },
+  {
+    slug: "landing-page-vs-full-website-lead-generation",
+    title: "Landing Page vs Full Website: Which Is Better for Generating Leads?",
+    description:
+      "An annotated comparison of landing pages and full websites for lead generation — when each works best, what every landing page needs, and how to test performance.",
+    publishedAt: "2026-10-21",
+    tag: "Website Development",
+    readingMinutes: 9,
+  },
 ];
 
 export function getBlogPost(slug: string): BlogPost | undefined {

@@ -181,3 +181,36 @@ summary::-webkit-details-marker {
   border-radius: 0.375rem;
   overflow-wrap: anywhere;
 }
+
+/* ------------------------------------------------------------------
+   Range input — accent color for article calculators
+   ------------------------------------------------------------------ */
+input[type="range"] {
+  accent-color: var(--ink);
+}
+
+/* ------------------------------------------------------------------
+   Article inline table — used by ComparisonTable widget
+   ------------------------------------------------------------------ */
+.article-body table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.article-body th,
+.article-body td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid var(--line);
+}
+
+.article-body th {
+  background: var(--ink);
+  color: var(--white);
+  font-weight: 600;
+}
+
+.article-body tr:last-child td {
+  border-bottom: none;
+}

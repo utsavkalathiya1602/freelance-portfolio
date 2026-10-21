@@ -66,6 +66,14 @@ export function ArticleLayout({ post, children, cta }: ArticleLayoutProps) {
               </span>
               <span aria-hidden="true">·</span>
               <time dateTime={post.publishedAt}>{formatDate(post.publishedAt)}</time>
+              {post.updatedAt && (
+                <>
+                  <span aria-hidden="true">·</span>
+                  <span className="rounded-full bg-lime px-2.5 py-0.5 text-xs font-semibold text-ink">
+                    Updated {formatDate(post.updatedAt)}
+                  </span>
+                </>
+              )}
               <span aria-hidden="true">·</span>
               <span className="inline-flex items-center gap-1.5">
                 <Clock aria-hidden="true" className="h-3.5 w-3.5" />
