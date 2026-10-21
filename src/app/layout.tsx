@@ -5,6 +5,7 @@ import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { WhatsAppButton } from "@/components/layout/WhatsAppButton";
 import { SiteSchema } from "@/components/schema/SiteSchema";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 // Self-hosted variable fonts (SIL Open Font License — see src/fonts).
@@ -142,6 +143,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         </main>
         <Footer />
         <WhatsAppButton />
+        <Analytics />
       </body>
     </html>
   );
