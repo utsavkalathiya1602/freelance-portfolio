@@ -158,7 +158,7 @@ export default function Article() {
       <p>
         Sending paid ad traffic to a homepage — where the visitor can browse to your blog, read your
         About page, or get lost in a menu — is one of the most common reasons Google Ads campaigns seem
-        "not to work." A focused landing page keeps the visitor&apos;s attention on the single action
+        &quot;not to work.&quot; A focused landing page keeps the visitor&apos;s attention on the single action
         you paid to get them to take.
       </p>
 
@@ -166,7 +166,7 @@ export default function Article() {
       <ul>
         <li>
           <strong>You are running ads for one service or offer.</strong> Someone who clicks an ad for
-          "kitchen renovation" should land on a page about kitchen renovation, not a homepage listing
+          &quot;kitchen renovation&quot; should land on a page about kitchen renovation, not a homepage listing
           ten services.
         </li>
         <li>
@@ -233,8 +233,8 @@ export default function Article() {
       />
       <p>
         One critical principle: your landing page headline should match the language of the ad the
-        visitor just clicked. If your ad says "Affordable Website Design in Surat," your page headline
-        should say something very close to that — not "Welcome to [Company Name]." This is called
+        visitor just clicked. If your ad says &quot;Affordable Website Design in Surat,&quot; your page headline
+        should say something very close to that — not &quot;Welcome to [Company Name].&quot; This is called
         message match and it is one of the fastest ways to improve conversion rates.
       </p>
 
@@ -325,7 +325,7 @@ export default function Article() {
       <p>
         For a well-designed landing page matched to a relevant ad, 3–8% is a realistic range for a
         service business in India. New campaigns often start at 1–3% and improve with optimization.
-        Any specific number you hear quoted (e.g., "guaranteed 15% conversion") should be treated with
+        Any specific number you hear quoted (e.g., &quot;guaranteed 15% conversion&quot;) should be treated with
         scepticism until you see your own data.
       </p>
 

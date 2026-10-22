@@ -117,24 +117,24 @@ export default function Article() {
       <h2 id="problem-1">1. Unclear headline and offer</h2>
       <p>
         A visitor should understand within five seconds what you do, who you do it for, and what they
-        should do next. If your homepage opens with your company name and a tagline like "Your trusted
-        partner for excellence," visitors have to guess what you actually sell.
+        should do next. If your homepage opens with your company name and a tagline like &quot;Your trusted
+        partner for excellence,&quot; visitors have to guess what you actually sell.
       </p>
       <p>
-        <strong>The fix:</strong> Replace vague headlines with specific ones. "Website Design for Small
-        Businesses in Surat — Fixed Price, Fast Delivery" is clear. "Digital solutions for a
-        changing world" is not. Your headline should name what you do and, ideally, who you do it for.
+        <strong>The fix:</strong> Replace vague headlines with specific ones. &quot;Website Design for Small
+        Businesses in Surat — Fixed Price, Fast Delivery&quot; is clear. &quot;Digital solutions for a
+        changing world&quot; is not. Your headline should name what you do and, ideally, who you do it for.
       </p>
 
       <h2 id="problem-2">2. Weak or missing call to action</h2>
       <p>
-        Every page should tell visitors what to do next. A "Contact Us" link buried in the footer is
+        Every page should tell visitors what to do next. A &quot;Contact Us&quot; link buried in the footer is
         not a call to action. If your page does not have a visible, specific button above the fold —
-        "Get a Quote," "WhatsApp Us," "Book a Free Call" — many interested visitors will simply leave.
+        &quot;Get a Quote,&quot; &quot;WhatsApp Us,&quot; &quot;Book a Free Call&quot; — many interested visitors will simply leave.
       </p>
       <p>
         <strong>The fix:</strong> Place a clear CTA button above the fold on every key page and repeat
-        it at least once at the bottom. Use action language: "Get a Free Quote," not "Submit." Make it
+        it at least once at the bottom. Use action language: &quot;Get a Free Quote,&quot; not &quot;Submit.&quot; Make it
         obvious what happens when they click.
       </p>
 
@@ -194,7 +194,7 @@ export default function Article() {
         whether you are within their budget often leave rather than enquire. They assume the worst.
       </p>
       <p>
-        <strong>The fix:</strong> You do not have to publish exact prices. A "starting from ₹15,000"
+        <strong>The fix:</strong> You do not have to publish exact prices. A &quot;starting from ₹15,000&quot;
         or a pricing guide blog post (like the{" "}
         <Link href="/blog/website-development-cost-india-2026">
           website development cost guide
@@ -223,7 +223,7 @@ export default function Article() {
       </p>
       <p>
         <strong>The fix:</strong> Keep your main navigation to five or fewer items. Label them by what
-        the visitor wants: "Services," "Work," "Prices," "Contact" — not what you want to call them.
+        the visitor wants: &quot;Services,&quot; &quot;Work,&quot; &quot;Prices,&quot; &quot;Contact&quot; — not what you want to call them.
         Remove dropdown menus if you can. Test on mobile.
       </p>
 
@@ -231,7 +231,7 @@ export default function Article() {
       <p>
         If you do not know how many people called, messaged or submitted your form this month, you
         cannot measure whether any change you make is working. Many businesses assume their website
-        "doesn't work" without having the data to know what is actually happening.
+        &quot;doesn&apos;t work&quot; without having the data to know what is actually happening.
       </p>
       <p>
         <strong>The fix:</strong> Set up Google Analytics 4 with event tracking for form submissions,

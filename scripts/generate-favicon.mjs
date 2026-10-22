@@ -91,8 +91,8 @@ async function main() {
   
   const icoBuffer = createIco(pngBuffers);
   
-  // Write to src/app/favicon.ico (Next.js auto-serves this)
-  const outPath = resolve(ROOT, "src/app/favicon.ico");
+  // Write to public/favicon.ico — served at a stable /favicon.ico URL (Google prefers a fixed address).
+  const outPath = resolve(ROOT, "public/favicon.ico");
   writeFileSync(outPath, icoBuffer);
   console.log(`✅ Written ${outPath} (${icoBuffer.length} bytes)`);
   

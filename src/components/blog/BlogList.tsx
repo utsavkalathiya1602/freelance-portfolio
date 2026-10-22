@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useMemo, useSyncExternalStore } from "react";
 import Link from "next/link";
 import { ArrowRight, Clock } from "lucide-react";
 import { formatDate, topicId, type BlogPost } from "@/data/blog";
@@ -15,42 +15,50 @@ const ALL = "all";
 /** Threshold for the "New" badge: 30 days in milliseconds. */
 const NEW_THRESHOLD_MS = 1000 * 60 * 60 * 24 * 30;
 
+function subscribeToHash(onChange: () => void) {
+  window.addEventListener("hashchange", onChange);
+  return () => window.removeEventListener("hashchange", onChange);
+}
+
+function subscribeToNothing() {
+  return () => {};
+}
+
+let clientNow: number | null = null;
+/** Captured once per page load so the snapshot stays stable between renders. */
+function getClientNow() {
+  clientNow ??= Date.now();
+  return clientNow;
+}
+
 /**
  * Article cards with topic filters. The selected topic is kept in the URL hash
  * (e.g. /blog#topic-seo) so it can be linked to and survives reloads.
  * Without JavaScript, every article is shown.
  */
 export function BlogList({ posts, topics }: BlogListProps) {
-  const [active, setActive] = useState<string>(ALL);
-  const [newSlugs, setNewSlugs] = useState<Set<string>>(new Set());
+  // Selected topic lives in the URL hash (read from the browser; empty during server rendering).
+  const hash = useSyncExternalStore(subscribeToHash, () => window.location.hash, () => "");
+  const active = useMemo(() => {
+    const match = hash.match(/^#topic-(.+)$/);
+    const found = match ? topics.find((topic) => topicId(topic.tag) === match[1]) : undefined;
+    return found ? found.tag : ALL;
+  }, [hash, topics]);
 
-  useEffect(() => {
-    const fromHash = () => {
-      const match = window.location.hash.match(/^#topic-(.+)$/);
-      const found = match ? topics.find((topic) => topicId(topic.tag) === match[1]) : undefined;
-      setActive(found ? found.tag : ALL);
-    };
-    fromHash();
-    window.addEventListener("hashchange", fromHash);
-    return () => window.removeEventListener("hashchange", fromHash);
-  }, [topics]);
-
-  // Compute "New" badges client-side only (Date.now() is unstable during prerender).
-  useEffect(() => {
-    const now = Date.now();
-    const slugs = new Set<string>();
-    for (const post of posts) {
-      if (now - new Date(post.publishedAt).getTime() < NEW_THRESHOLD_MS) {
-        slugs.add(post.slug);
-      }
-    }
-    setNewSlugs(slugs);
-  }, [posts]);
+  // "New" badges depend on the current date, so they are only computed in the browser.
+  const now = useSyncExternalStore(subscribeToNothing, getClientNow, () => null);
+  const newSlugs = useMemo(() => {
+    if (now === null) return new Set<string>();
+    return new Set(
+      posts.filter((post) => now - new Date(post.publishedAt).getTime() < NEW_THRESHOLD_MS).map((post) => post.slug),
+    );
+  }, [now, posts]);
 
   function select(tag: string) {
-    setActive(tag);
-    const hash = tag === ALL ? "" : `#topic-${topicId(tag)}`;
-    window.history.replaceState(null, "", `${window.location.pathname}${hash}`);
+    const nextHash = tag === ALL ? "" : `#topic-${topicId(tag)}`;
+    window.history.replaceState(null, "", `${window.location.pathname}${nextHash}`);
+    // replaceState doesn't fire hashchange, so notify the subscriber ourselves.
+    window.dispatchEvent(new HashChangeEvent("hashchange"));
   }
 
   const visible = active === ALL ? posts : posts.filter((post) => post.tag === active);

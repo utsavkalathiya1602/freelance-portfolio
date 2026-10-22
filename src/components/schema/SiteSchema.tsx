@@ -94,7 +94,9 @@ export function SiteSchema() {
     "@context": "https://schema.org",
     "@type": "WebSite",
     "@id": websiteId,
+    // Google uses this as the site name in search results (instead of the hosting domain).
     name: siteConfig.name,
+    alternateName: [`${siteConfig.name} — ${siteConfig.title}`, siteConfig.brandMark],
     url,
     description: siteConfig.description,
     inLanguage: "en-IN",

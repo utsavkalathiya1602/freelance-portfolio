@@ -7,9 +7,9 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: "*",
         allow: "/",
-        // Disallow Next.js internal paths and any future API routes.
-        // CSS, JS and other render resources are intentionally NOT blocked.
-        disallow: ["/api/", "/_next/"],
+        // Only block API routes. /_next/ must stay crawlable: it holds the CSS, JavaScript and
+        // fonts Google needs to render pages (and to process the site icon and name) correctly.
+        disallow: ["/api/"],
       },
     ],
     sitemap: `${siteConfig.url}/sitemap.xml`,

@@ -116,6 +116,8 @@ export const metadata: Metadata = {
   },
   icons: {
     // favicon.ico — Google Search & legacy browsers look for this first.
+    // public/favicon.ico (16/32/48 px) at a fixed URL — Google asks for a stable favicon address,
+    // so it is not placed in src/app (where Next.js would add a build-specific query string).
     icon: [
       { url: "/favicon.ico", sizes: "48x48", type: "image/x-icon" },
       { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
@@ -124,7 +126,6 @@ export const metadata: Metadata = {
       { url: "/favicon.svg", type: "image/svg+xml" },
     ],
     // src/app/apple-icon.tsx is auto-registered as apple-touch-icon (180×180 PNG).
-    shortcut: "/favicon.ico",
   },
 };
 

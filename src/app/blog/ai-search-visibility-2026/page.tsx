@@ -197,9 +197,9 @@ export default function Article() {
         systems process each page separately and extract specific facts.
       </p>
       <p>
-        Instead of a single "Services" page, create individual pages such as "Website Design for Small
-        Businesses in Surat," "Google Ads Management for Indian Businesses," and "Local SEO for Gujarat
-        Businesses." Each page can then answer a focused set of questions.
+        Instead of a single &quot;Services&quot; page, create individual pages such as &quot;Website Design for Small
+        Businesses in Surat,&quot; &quot;Google Ads Management for Indian Businesses,&quot; and &quot;Local SEO for Gujarat
+        Businesses.&quot; Each page can then answer a focused set of questions.
       </p>
 
       <h3>Content that directly answers customer questions</h3>
@@ -211,7 +211,7 @@ export default function Article() {
       <ul>
         <li>FAQ sections on service pages, written in plain question-and-answer form</li>
         <li>Blog articles that address one specific question in depth</li>
-        <li>Comparison pages (e.g., "Google Ads vs Meta Ads for local businesses in India")</li>
+        <li>Comparison pages (e.g., &quot;Google Ads vs Meta Ads for local businesses in India&quot;)</li>
         <li>Pricing guides that explain what affects cost, even without fixed prices</li>
       </ul>
 
@@ -294,7 +294,7 @@ export default function Article() {
           placement in ChatGPT or Gemini answers. AI recommendations are editorially generated.
         </li>
         <li>
-          <strong>Myth: You need separate "AI content" for AI search.</strong> The same content that
+          <strong>Myth: You need separate &quot;AI content&quot; for AI search.</strong> The same content that
           serves your human readers — clear, specific, honest and well-structured — is what AI systems
           prefer.
         </li>

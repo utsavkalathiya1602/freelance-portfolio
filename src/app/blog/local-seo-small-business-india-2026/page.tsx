@@ -128,8 +128,8 @@ export default function Article() {
 
       <h2 id="how-local-search-works">How local search and Google Maps work</h2>
       <p>
-        When someone in Surat searches "website developer near me" or "plumber in Varachha," Google
-        shows a local results block — often called the "Map Pack" or "Local Pack" — above the regular
+        When someone in Surat searches &quot;website developer near me&quot; or &quot;plumber in Varachha,&quot; Google
+        shows a local results block — often called the &quot;Map Pack&quot; or &quot;Local Pack&quot; — above the regular
         search results. This block shows three businesses with their star rating, address, phone number
         and a link to Google Maps.
       </p>
@@ -166,7 +166,7 @@ export default function Article() {
           Go to <strong>business.google.com</strong> and search for your business name.
         </li>
         <li>
-          If your business is already listed, claim it. If not, click "Add your business."
+          If your business is already listed, claim it. If not, click &quot;Add your business.&quot;
         </li>
         <li>
           Complete the verification process. Google typically verifies via a postcard to your business
@@ -192,7 +192,7 @@ export default function Article() {
       <p>
         Your description (up to 750 characters) should clearly explain what you do, who you serve, and
         why customers choose you. Mention your city and key services naturally. Do not stuff keywords
-        or include promotional claims like "best" or "cheapest."
+        or include promotional claims like &quot;best&quot; or &quot;cheapest.&quot;
       </p>
       <h3>Add real photos regularly</h3>
       <p>
@@ -208,8 +208,8 @@ export default function Article() {
       </p>
       <h3>Complete the Services and Products sections</h3>
       <p>
-        List each service you offer with a clear description. For example: "Website Design for Small
-        Businesses," "Google Ads Management," "Local SEO Setup." These help Google understand the
+        List each service you offer with a clear description. For example: &quot;Website Design for Small
+        Businesses,&quot; &quot;Google Ads Management,&quot; &quot;Local SEO Setup.&quot; These help Google understand the
         breadth of what you offer and match your profile to more relevant searches.
       </p>
 
@@ -226,7 +226,7 @@ export default function Article() {
           is highest.
         </li>
         <li>
-          Send a direct review link — go to your GBP, click "Share review form," and send the short
+          Send a direct review link — go to your GBP, click &quot;Share review form,&quot; and send the short
           URL. The fewer steps between the customer and the review form, the higher the completion rate.
         </li>
         <li>
@@ -254,9 +254,9 @@ export default function Article() {
         local searches. Example page titles:
       </p>
       <ul>
-        <li>"Website Development for Small Businesses in Surat"</li>
-        <li>"Google Ads Management for Surat and Gujarat Businesses"</li>
-        <li>"Local SEO Services for Indian Small Businesses"</li>
+        <li>&quot;Website Development for Small Businesses in Surat&quot;</li>
+        <li>&quot;Google Ads Management for Surat and Gujarat Businesses&quot;</li>
+        <li>&quot;Local SEO Services for Indian Small Businesses&quot;</li>
       </ul>
       <p>
         Each page should answer the most common questions a local customer would ask about that
@@ -341,7 +341,7 @@ export default function Article() {
       <h3>What is the difference between local SEO and regular SEO?</h3>
       <p>
         Regular SEO focuses on ranking in standard organic search results for any location. Local SEO
-        specifically targets searches with local intent — people searching "near me" or in a specific
+        specifically targets searches with local intent — people searching &quot;near me&quot; or in a specific
         city — and prioritizes the Google Maps local pack. Local SEO depends heavily on your GBP;
         regular SEO does not.
       </p>

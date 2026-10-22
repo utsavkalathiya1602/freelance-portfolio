@@ -127,7 +127,7 @@ export default function Article() {
       <ul>
         <li>
           <strong>Keyword competition</strong> — the more businesses bidding on a keyword, the higher
-          the cost. "Lawyer in Mumbai" is far more expensive than "event photographer in Surat."
+          the cost. &quot;Lawyer in Mumbai&quot; is far more expensive than &quot;event photographer in Surat.&quot;
         </li>
         <li>
           <strong>Your Quality Score</strong> — Google rewards relevant ads and landing pages with lower
@@ -215,8 +215,8 @@ export default function Article() {
           <strong>Monthly ad spend:</strong> ₹20,000
         </li>
         <li>
-          <strong>Target keywords:</strong> "website developer Surat," "freelance web developer Gujarat,"
-          "website development cost India"
+          <strong>Target keywords:</strong> &quot;website developer Surat,&quot; &quot;freelance web developer Gujarat,&quot;
+          &quot;website development cost India&quot;
         </li>
         <li>
           <strong>Estimated CPC:</strong> ₹25–₹50
