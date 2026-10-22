@@ -11,6 +11,7 @@ export const metadata: Metadata = pageMetadata({
   title: post.title,
   description: post.description,
   path: `/blog/${slug}`,
+  article: post,
   keywords: [
     "why is my website slow India",
     "fix slow website small business India",

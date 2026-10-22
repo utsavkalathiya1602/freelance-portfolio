@@ -11,6 +11,7 @@ export const metadata: Metadata = pageMetadata({
   title: post.title,
   description: post.description,
   path: `/blog/${slug}`,
+  article: post,
   keywords: [
     "React vs WordPress small business India",
     "React.js or WordPress for business website",
@@ -113,6 +114,10 @@ export default function Article() {
                 </Link>{" "}
                 if you want to talk through what fits your situation.
               </p>
+      <p>
+        Considering a DIY tool instead? Read{" "}
+        <Link href="/blog/ai-website-builder-vs-custom-website">AI website builder vs custom website</Link>.
+      </p>
     </ArticleLayout>
   );
 }

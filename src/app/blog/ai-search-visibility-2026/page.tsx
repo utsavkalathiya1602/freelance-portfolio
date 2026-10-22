@@ -14,6 +14,7 @@ export const metadata: Metadata = pageMetadata({
   title: post.title,
   description: post.description,
   path: `/blog/${slug}`,
+  article: post,
   keywords: [
     "AI SEO 2026",
     "AEO answer engine optimization India",
@@ -361,6 +362,10 @@ export default function Article() {
           AI search optimization guide
         </Link>{" "}
         covers the fundamentals in more detail.
+      </p>
+      <p>
+        AI features can only use pages Google has indexed. If some of yours are missing, see{" "}
+        <Link href="/blog/website-pages-not-indexed-google">why Google isn&apos;t indexing your pages</Link>.
       </p>
     </ArticleLayout>
   );

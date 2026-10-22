@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { siteConfig } from "@/config/site";
+import type { BlogPost } from "@/data/blog";
 
 /**
  * Page metadata with canonical URL and Open Graph fields.
@@ -7,6 +8,7 @@ import { siteConfig } from "@/config/site";
  * @param title - Short page title used in the `%s | Name` template (e.g. "Services").
  * @param description - Unique meta description for this page.
  * @param path - Root-relative canonical path (e.g. "/services").
+ * @param article - Blog post for article pages: switches Open Graph to `article` with dates, author and section.
  * @param overrideTitle - Optional fully-formed title that bypasses the template.
  *   Use this for the homepage or any page where you need exact keyword placement.
  */
@@ -16,6 +18,7 @@ export function pageMetadata({
   path,
   overrideTitle,
   keywords,
+  article,
 }: {
   title: string;
   description: string;
@@ -23,6 +26,7 @@ export function pageMetadata({
   overrideTitle?: string;
   /** Optional page-specific keywords. Merged with global root-layout keywords by Google; no need to repeat global ones. */
   keywords?: string[];
+  article?: BlogPost;
 }): Metadata {
   // When an override is provided, use it verbatim for the <title> tag and OG.
   // The root layout template is bypassed by returning an object as the title value.
@@ -35,7 +39,15 @@ export function pageMetadata({
     ...(keywords && keywords.length > 0 ? { keywords } : {}),
     alternates: { canonical: path },
     openGraph: {
-      type: "website",
+      ...(article
+        ? {
+            type: "article" as const,
+            publishedTime: article.publishedAt,
+            modifiedTime: article.updatedAt ?? article.publishedAt,
+            authors: [`${siteConfig.url}/about`],
+            section: article.tag,
+          }
+        : { type: "website" as const }),
       siteName: siteConfig.name,
       title: fullTitle,
       description,

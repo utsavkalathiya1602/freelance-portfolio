@@ -174,7 +174,7 @@ export const blogPosts: BlogPost[] = [
       "AI-powered search is changing how customers discover businesses. A practical guide to helping your business appear in ChatGPT, Gemini and Google AI Overviews — and the myths to avoid.",
     publishedAt: "2026-10-20",
     tag: "SEO",
-    readingMinutes: 7,
+    readingMinutes: 6,
   },
   {
     slug: "website-traffic-no-leads",
@@ -183,7 +183,7 @@ export const blogPosts: BlogPost[] = [
       "Getting visitors but no enquiries is a conversion problem, not a traffic problem. Here are nine reasons your website isn't turning visitors into leads — and how to fix each one.",
     publishedAt: "2026-10-20",
     tag: "Website Development",
-    readingMinutes: 6,
+    readingMinutes: 7,
   },
   {
     slug: "google-ads-cost-per-lead-india",
@@ -210,7 +210,7 @@ export const blogPosts: BlogPost[] = [
       "Practical steps to optimise your Google Business Profile, improve local relevance and track enquiries — so more people in your area find and contact your business for free.",
     publishedAt: "2026-10-20",
     tag: "SEO",
-    readingMinutes: 6,
+    readingMinutes: 7,
   },
   {
     slug: "track-leads-google-ads-website-whatsapp",
@@ -219,7 +219,7 @@ export const blogPosts: BlogPost[] = [
       "A step-by-step guide to measuring every form submission, phone call, WhatsApp click and Google Ads conversion — so you always know which marketing is producing real leads.",
     publishedAt: "2026-10-20",
     tag: "Digital Marketing",
-    readingMinutes: 7,
+    readingMinutes: 8,
   },
   // ── Priority 1–6: Enhanced 2026 series ────────────────────────────
   {
@@ -229,7 +229,7 @@ export const blogPosts: BlogPost[] = [
       "A practical guide for Indian business owners on AI SEO, AEO and GEO — how ChatGPT, Gemini and Google AI Overviews discover businesses and what you can do to improve your visibility.",
     publishedAt: "2026-10-21",
     tag: "SEO",
-    readingMinutes: 9,
+    readingMinutes: 6,
   },
   {
     slug: "website-development-cost-india-2026",
@@ -238,7 +238,7 @@ export const blogPosts: BlogPost[] = [
       "An honest, detailed breakdown of what a business website costs in India in 2026 — from a basic brochure site to a custom web application — with a budget estimator tool.",
     publishedAt: "2026-10-21",
     tag: "Website Development",
-    readingMinutes: 10,
+    readingMinutes: 5,
   },
   {
     slug: "google-ads-budget-india-2026",
@@ -247,7 +247,7 @@ export const blogPosts: BlogPost[] = [
       "How to work out a sensible Google Ads budget for your Indian business in 2026 — ad spend vs management fees, cost per click, and a free lead-cost calculator.",
     publishedAt: "2026-10-21",
     tag: "Digital Marketing",
-    readingMinutes: 9,
+    readingMinutes: 5,
   },
   {
     slug: "why-website-not-getting-customers",
@@ -256,7 +256,7 @@ export const blogPosts: BlogPost[] = [
       "Traffic but no enquiries? A self-assessment checklist and practical fixes for the ten most common reasons Indian business websites fail to convert visitors into leads.",
     publishedAt: "2026-10-21",
     tag: "Website Development",
-    readingMinutes: 10,
+    readingMinutes: 6,
   },
   {
     slug: "local-seo-small-business-india-2026",
@@ -265,7 +265,7 @@ export const blogPosts: BlogPost[] = [
       "How local search and Google Maps work, how to set up and optimize your Google Business Profile, and how to track calls and enquiries from local SEO in India.",
     publishedAt: "2026-10-21",
     tag: "SEO",
-    readingMinutes: 10,
+    readingMinutes: 7,
   },
   {
     slug: "landing-page-vs-full-website-lead-generation",
@@ -274,7 +274,52 @@ export const blogPosts: BlogPost[] = [
       "An annotated comparison of landing pages and full websites for lead generation — when each works best, what every landing page needs, and how to test performance.",
     publishedAt: "2026-10-21",
     tag: "Website Development",
-    readingMinutes: 9,
+    readingMinutes: 6,
+  },
+  {
+    slug: "website-maintenance-cost-india",
+    title: "Website Maintenance Cost in India: What You Should Pay For (and What You Shouldn’t)",
+    description:
+      "What website maintenance actually includes, published price ranges in India, fixed yearly costs like domain and hosting, and how to compare maintenance quotes fairly.",
+    publishedAt: "2026-10-22",
+    tag: "Website Development",
+    readingMinutes: 6,
+  },
+  {
+    slug: "google-ads-spam-leads",
+    title: "Getting Fake or Spam Leads from Google Ads? Causes and Fixes",
+    description:
+      "Why Google Ads sends junk form fills and wrong numbers, what Google says its filters don’t catch, and the form, campaign and tracking fixes that cut spam leads.",
+    publishedAt: "2026-10-22",
+    tag: "Digital Marketing",
+    readingMinutes: 5,
+  },
+  {
+    slug: "google-ads-conversion-tracking-not-working",
+    title: "Google Ads Conversion Tracking Not Working? A Step-by-Step Troubleshooting Guide",
+    description:
+      "Diagnose Google Ads conversions that show zero, too many or don’t match GA4 — tag checks, form and call tracking, GA4 key event imports and primary vs secondary goals.",
+    publishedAt: "2026-10-22",
+    tag: "Digital Marketing",
+    readingMinutes: 5,
+  },
+  {
+    slug: "ai-website-builder-vs-custom-website",
+    title: "AI Website Builder vs Custom Website: Which Should a Small Business Choose?",
+    description:
+      "An honest comparison of AI website builders and custom development — speed, cost, ownership, SEO control and when each one is the right choice for a small business.",
+    publishedAt: "2026-10-22",
+    tag: "Website Development",
+    readingMinutes: 4,
+  },
+  {
+    slug: "website-pages-not-indexed-google",
+    title: "Why Google Isn’t Indexing Your Website Pages (and How to Fix It)",
+    description:
+      "What “Crawled – currently not indexed” and “Discovered – currently not indexed” mean in Search Console, and a practical checklist to get a small business site indexed.",
+    publishedAt: "2026-10-22",
+    tag: "SEO",
+    readingMinutes: 4,
   },
 ];
 

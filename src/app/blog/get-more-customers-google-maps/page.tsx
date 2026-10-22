@@ -11,6 +11,7 @@ export const metadata: Metadata = pageMetadata({
   title: post.title,
   description: post.description,
   path: `/blog/${slug}`,
+  article: post,
   keywords: [
     "get more customers from Google Maps",
     "Google Maps optimization India",

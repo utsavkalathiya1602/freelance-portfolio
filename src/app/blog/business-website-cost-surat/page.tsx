@@ -11,6 +11,7 @@ export const metadata: Metadata = pageMetadata({
   title: post.title,
   description: post.description,
   path: `/blog/${slug}`,
+  article: post,
   keywords: [
     "website cost Surat",
     "how much does a business website cost India",
@@ -112,6 +113,10 @@ export default function Article() {
                 </Link>{" "}
                 for more detail on what is included.
               </p>
+      <p>
+        For the ongoing cost after launch, see the{" "}
+        <Link href="/blog/website-maintenance-cost-india">website maintenance cost guide</Link>.
+      </p>
     </ArticleLayout>
   );
 }

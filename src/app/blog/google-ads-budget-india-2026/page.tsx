@@ -14,6 +14,7 @@ export const metadata: Metadata = pageMetadata({
   title: post.title,
   description: post.description,
   path: `/blog/${slug}`,
+  article: post,
   keywords: [
     "Google Ads cost India 2026",
     "Google Ads budget India small business",

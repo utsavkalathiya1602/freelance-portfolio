@@ -12,6 +12,7 @@ export const metadata: Metadata = pageMetadata({
   title: post.title,
   description: post.description,
   path: `/blog/${slug}`,
+  article: post,
   keywords: [
     "Google Ads cost per lead in India",
     "Google Ads CPL India 2026",
@@ -241,6 +242,10 @@ export default function Article() {
       <p>
         To discuss a Google Ads plan based on your business, budget and city, visit the{" "}
         <Link href="/services/digital-marketing">Digital Marketing service page</Link>.
+      </p>
+      <p>
+        If many of your leads turn out to be fake or unreachable, read{" "}
+        <Link href="/blog/google-ads-spam-leads">how to reduce spam leads from Google Ads</Link>.
       </p>
     </ArticleLayout>
   );

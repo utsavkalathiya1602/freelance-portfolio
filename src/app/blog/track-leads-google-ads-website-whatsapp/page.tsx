@@ -12,6 +12,7 @@ export const metadata: Metadata = pageMetadata({
   title: post.title,
   description: post.description,
   path: `/blog/${slug}`,
+  article: post,
   keywords: [
     "track leads from Google Ads and WhatsApp",
     "lead tracking Google Ads India",
@@ -249,6 +250,10 @@ export default function Article() {
         <Link href="/blog/track-website-and-ad-enquiries">enquiry tracking overview</Link>. For help
         setting up measurement on your website and campaigns, visit the{" "}
         <Link href="/services/digital-marketing">Digital Marketing service page</Link>.
+      </p>
+      <p>
+        If your conversions show zero, double-count or don&apos;t match GA4, work through the{" "}
+        <Link href="/blog/google-ads-conversion-tracking-not-working">conversion tracking troubleshooting guide</Link>.
       </p>
     </ArticleLayout>
   );

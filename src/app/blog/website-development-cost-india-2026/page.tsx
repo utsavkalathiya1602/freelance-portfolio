@@ -14,6 +14,7 @@ export const metadata: Metadata = pageMetadata({
   title: post.title,
   description: post.description,
   path: `/blog/${slug}`,
+  article: post,
   keywords: [
     "website development cost India 2026",
     "website design price India",
@@ -346,6 +347,10 @@ export default function Article() {
         Ready to get a website built for your business? Visit the{" "}
         <Link href="/services/web-development">Website Development service page</Link> to see examples
         of recent projects and request a project estimate.
+      </p>
+      <p>
+        For the ongoing cost after launch, see the{" "}
+        <Link href="/blog/website-maintenance-cost-india">website maintenance cost guide</Link>.
       </p>
     </ArticleLayout>
   );

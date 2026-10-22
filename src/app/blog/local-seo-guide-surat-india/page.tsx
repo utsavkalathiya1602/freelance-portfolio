@@ -11,6 +11,7 @@ export const metadata: Metadata = pageMetadata({
   title: post.title,
   description: post.description,
   path: `/blog/${slug}`,
+  article: post,
   keywords: [
     "local SEO small business Surat",
     "local SEO guide India",
@@ -157,6 +158,10 @@ export default function Article() {
                 </Link>
                 .
               </p>
+      <p>
+        If your service pages don&apos;t appear on Google at all, check{" "}
+        <Link href="/blog/website-pages-not-indexed-google">why Google isn&apos;t indexing your pages</Link>.
+      </p>
     </ArticleLayout>
   );
 }

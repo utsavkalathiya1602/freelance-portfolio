@@ -21,7 +21,9 @@ for (const slug of slugs) {
   }
   const source = await readFile(page, "utf8");
   const body = source.split(/<ArticleLayout[\s\S]*?\n {4}>/)[1]?.split("</ArticleLayout>")[0] ?? "";
-  const text = body
+  // FAQ entries rendered through <ArticleFAQ faqs={faqs} /> live in a `faqs` array above the JSX.
+  const faqText = [...source.matchAll(/(?:question|answer):\s*"((?:[^"\\]|\\.)*)"/g)].map((m) => m[1]).join(" ");
+  const text = `${body} ${faqText}`
     .replace(/\{" "\}/g, " ")
     .replace(/<[^>]+>/g, " ")
     .replace(/&[a-z]+;/g, " ");

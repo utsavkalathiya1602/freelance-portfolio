@@ -12,6 +12,7 @@ export const metadata: Metadata = pageMetadata({
   title: post.title,
   description: post.description,
   path: `/blog/${slug}`,
+  article: post,
   keywords: [
     "track website enquiries",
     "Google Ads conversion tracking",
@@ -121,6 +122,10 @@ export default function Article() {
         <Link href="/blog/google-ads-budget-small-business-india">Google Ads budget guide</Link> shows how to work that out.
         For help setting up tracking, see the{" "}
         <Link href="/services/digital-marketing">Digital Marketing service page</Link>.
+      </p>
+      <p>
+        If your numbers look wrong after setup, see the{" "}
+        <Link href="/blog/google-ads-conversion-tracking-not-working">Google Ads conversion tracking troubleshooting guide</Link>.
       </p>
     </ArticleLayout>
   );
