@@ -15,12 +15,10 @@ export const metadata: Metadata = pageMetadata({
   article: post,
   keywords: [
     "track leads from Google Ads and WhatsApp",
-    "lead tracking Google Ads India",
     "WhatsApp click tracking Google Analytics",
     "track form submissions Google Analytics",
-    "multi-channel lead tracking India",
     "Google Ads conversion tracking setup",
-    "attribution tracking small business India",
+    "how to track leads from Google Ads",
   ],
 });
 
@@ -117,7 +115,7 @@ export default function Article() {
 
       <h2>Track WhatsApp clicks and qualified enquiries</h2>
       <p>
-        WhatsApp is often the most-used enquiry channel for Indian businesses, but it is also the hardest to
+        In countries where WhatsApp is widely used, it is often the busiest enquiry channel, but it is also the hardest to
         track automatically because the conversation happens inside WhatsApp, not on your website.
       </p>
       <p>
@@ -138,7 +136,7 @@ export default function Article() {
 
       <h2>Connect leads to a spreadsheet or CRM</h2>
       <p>
-        For most small businesses in India, a simple shared Google Sheet is an adequate lead register. Create
+        For most small businesses, a simple shared Google Sheet is an adequate lead register. Create
         columns for:
       </p>
       <ul>

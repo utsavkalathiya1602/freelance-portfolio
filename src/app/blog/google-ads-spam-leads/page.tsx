@@ -135,13 +135,13 @@ export default function Article() {
         <li>
           <strong>Server-side validation</strong> — checks that run on the server, because sophisticated bots can
           bypass browser-only checks and post data directly. Validate that phone numbers match the expected format
-          (for India, a 10-digit mobile number) and that email domains are real.
+          (for example, a 10-digit mobile number in India, or a valid UK or US number format) and that email domains are real.
         </li>
         <li>
           <strong>Double opt-in</strong> — a confirmation link by email, where it suits your business.
         </li>
       </ul>
-      <p>Practical additions that work well for small Indian businesses:</p>
+      <p>Practical additions that work well for small businesses:</p>
       <ul>
         <li>A hidden &ldquo;honeypot&rdquo; field that humans never see — any submission that fills it is a bot.</li>
         <li>
@@ -149,7 +149,7 @@ export default function Article() {
           you context before you call.
         </li>
         <li>
-          A WhatsApp or call option next to the form. Many people in India prefer it, and a chat is hard for a bot to
+          A WhatsApp, text or call option next to the form. Many people prefer it, and a conversation is hard for a bot to
           fake.
         </li>
       </ul>

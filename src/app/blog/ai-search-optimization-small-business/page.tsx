@@ -16,11 +16,11 @@ export const metadata: Metadata = pageMetadata({
     "AI search optimization for small businesses",
     "how to appear on ChatGPT",
     "Google AI Overviews optimization",
-    "Gemini search visibility India",
     "AEO answer engine optimization",
-    "AI search engine optimization India",
     "appear in AI answers",
     "SGE optimization small business",
+    "how to get your business recommended by ChatGPT",
+    "AI search optimization",
   ],
 });
 
@@ -45,8 +45,8 @@ export default function Article() {
       <p>
         AI search optimization — sometimes called Answer Engine Optimization (AEO) — is the practice of structuring
         your website content so that AI-powered tools can accurately understand, summarize and reference your
-        business. When someone asks ChatGPT &ldquo;who is the best web developer in Surat?&rdquo; or Gemini &ldquo;which
-        digital marketing agency in Gujarat helps small businesses?&rdquo; the answer draws from publicly available,
+        business. When someone asks ChatGPT &ldquo;who is a good plumber in Austin?&rdquo; or Gemini &ldquo;which
+        accountant in Leeds works with small businesses?&rdquo; the answer draws heavily from publicly available,
         crawlable web content.
       </p>
       <p>
@@ -89,8 +89,8 @@ export default function Article() {
       </p>
       <p>
         Example: instead of a single &ldquo;Services&rdquo; page listing everything, create individual pages for
-        &ldquo;Website Development for Small Businesses in Surat,&rdquo; &ldquo;Google Ads Management India,&rdquo; and
-        &ldquo;Local SEO for Indian Businesses.&rdquo; Each page answers a focused set of questions.
+        &ldquo;Emergency Electrician in Calgary,&rdquo; &ldquo;Commercial Electrical Inspections,&rdquo; and
+        &ldquo;EV Charger Installation.&rdquo; Each page answers a focused set of questions.
       </p>
 
       <h3>Helpful, specific answers to customer questions</h3>
@@ -109,8 +109,9 @@ export default function Article() {
       <h3>Consistent business information and credible mentions</h3>
       <p>
         AI systems check multiple sources before forming an answer. Your business name, location, phone number and
-        website address should appear consistently across your Google Business Profile, JustDial, Sulekha, LinkedIn,
-        and any other directories or press mentions.
+        website address should appear consistently across your Google Business Profile, Bing Places, Apple Business
+        Connect, LinkedIn, the main business directories in your country (for example Yelp in the US, Yell in the UK,
+        Justdial in India), and any press mentions.
       </p>
       <p>
         Inconsistencies — a different phone number on one directory, a misspelled business name on another — reduce
@@ -140,7 +141,7 @@ export default function Article() {
         that requires user interaction to load. Text embedded in images cannot be read by AI or search engines.
       </p>
 
-      <h2>A practical AI search checklist for Indian businesses</h2>
+      <h2>A practical AI search checklist for small businesses</h2>
       <ul>
         <li>Write a complete, specific &ldquo;About&rdquo; page that names your location and describes what makes your business different</li>
         <li>Create individual pages for each core service, each mentioning your city or service area</li>

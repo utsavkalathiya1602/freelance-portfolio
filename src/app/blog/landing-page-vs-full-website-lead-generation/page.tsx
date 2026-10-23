@@ -16,12 +16,10 @@ export const metadata: Metadata = pageMetadata({
   path: `/blog/${slug}`,
   article: post,
   keywords: [
-    "landing page vs website India",
-    "lead generation landing page India",
-    "Google Ads landing page India",
-    "landing page design India",
     "landing page vs full website",
     "best option for lead generation website",
+    "landing page or website for Google Ads",
+    "landing page vs website for lead generation",
   ],
 });
 
@@ -69,7 +67,7 @@ const comparisonRows = [
     b: "2–8 weeks",
   },
   {
-    label: "Cost to build",
+    label: "Cost to build (India example)",
     a: "₹6,000 – ₹20,000",
     b: "₹25,000 – ₹1,50,000+",
   },
@@ -83,7 +81,7 @@ const comparisonRows = [
 const landingPageSections = [
   {
     label: "Headline matches the ad",
-    a: "\"Website design for small businesses in Surat\"",
+    a: "\"Same-day boiler repair in Bristol\"",
     b: "If your ad says 'affordable websites,' the page must say 'affordable websites,' not 'digital solutions.'",
   },
   {
@@ -218,13 +216,13 @@ export default function Article() {
         colA="Landing page"
         colB="Full website"
         rows={comparisonRows}
-        note="Cost and time estimates are illustrative for 2026 Indian market rates. Actual figures depend on design complexity, features and who builds it."
+        note="Cost figures are illustrative 2026 Indian market rates, shown as one example — prices in the US, UK, Canada or Australia are typically quoted very differently. Actual figures depend on design complexity, features, country and who builds it."
       />
 
       <h2 id="landing-page-anatomy">What every high-converting landing page needs</h2>
       <p>
         The following are the eight essential sections of a landing page that converts ad clicks into
-        enquiries. Each section has a purpose — removing any one of them reduces conversions.
+        enquiries. Each section has a purpose, and a missing one is a common reason pages underperform.
       </p>
       <ComparisonTable
         colA="Example"
@@ -234,9 +232,9 @@ export default function Article() {
       />
       <p>
         One critical principle: your landing page headline should match the language of the ad the
-        visitor just clicked. If your ad says &quot;Affordable Website Design in Surat,&quot; your page headline
+        visitor just clicked. If your ad says &quot;Same-Day Boiler Repair in Bristol,&quot; your page headline
         should say something very close to that — not &quot;Welcome to [Company Name].&quot; This is called
-        message match and it is one of the fastest ways to improve conversion rates.
+        message match, and it is one of the simplest things to check and fix.
       </p>
 
       <h2 id="common-combo">The common combination: both together</h2>
@@ -246,7 +244,7 @@ export default function Article() {
         landing pages turn paid clicks into enquiries.
       </p>
       <p>
-        A typical setup for a service business in Surat running Google Ads:
+        A typical setup — here, for a web design business in Surat running Google Ads, but the pattern is the same anywhere:
       </p>
       <ul>
         <li>
@@ -324,18 +322,19 @@ export default function Article() {
 
       <h3>What is a realistic conversion rate for a landing page?</h3>
       <p>
-        For a well-designed landing page matched to a relevant ad, 3–8% is a realistic range for a
-        service business in India. New campaigns often start at 1–3% and improve with optimization.
-        Any specific number you hear quoted (e.g., &quot;guaranteed 15% conversion&quot;) should be treated with
-        scepticism until you see your own data.
+        It varies too much by industry, country, offer and traffic source for one honest number.
+        Published benchmarks from landing page tools differ widely and define &quot;conversion&quot; differently.
+        Measure your own baseline for a few weeks, then improve against it — and treat any guaranteed
+        figure (e.g., &quot;15% conversion&quot;) with scepticism.
       </p>
 
       <h3>Can I build a landing page myself?</h3>
       <p>
         Yes — tools like Carrd, Unbounce, or a simple HTML page can produce a functional landing page.
         The quality of the copywriting and the clarity of the offer matters more than the technology.
-        If you are spending ₹20,000+/month on ads, the cost of a professionally built landing page pays
-        for itself quickly in improved conversion rates.
+        If you are spending a meaningful monthly budget on ads, even a small improvement in conversion
+        rate can be worth more than the cost of a professionally built page — do the arithmetic with
+        your own numbers.
       </p>
 
       <p>

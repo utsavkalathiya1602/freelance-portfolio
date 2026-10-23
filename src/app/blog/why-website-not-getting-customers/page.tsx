@@ -16,12 +16,11 @@ export const metadata: Metadata = pageMetadata({
   path: `/blog/${slug}`,
   article: post,
   keywords: [
-    "website not getting leads India",
-    "website conversion optimization India",
     "increase website enquiries small business",
-    "improve website conversions India",
     "website not converting visitors",
     "website problems no customers",
+    "website not getting leads",
+    "website conversion checklist",
   ],
 });
 
@@ -54,8 +53,8 @@ const auditChecklist = [
   },
   {
     id: "page-speed",
-    label: "Check your mobile score in Google PageSpeed Insights",
-    detail: "Aim for 70+. Test at pagespeed.web.dev using your mobile URL.",
+    label: "Check your mobile results in Google PageSpeed Insights",
+    detail: "Test at pagespeed.web.dev and check whether the page passes Core Web Vitals (LCP, INP, CLS).",
   },
   {
     id: "form-fields",
@@ -74,8 +73,8 @@ const auditChecklist = [
   },
   {
     id: "whatsapp",
-    label: "Is there a WhatsApp button on every page?",
-    detail: "Most Indian customers prefer WhatsApp over a contact form.",
+    label: "Is there a one-tap way to call or message you on every page?",
+    detail: "WhatsApp where your customers use it (common in India, the UK and Europe); click-to-call or text elsewhere.",
   },
   {
     id: "navigation",
@@ -122,8 +121,8 @@ export default function Article() {
         partner for excellence,&quot; visitors have to guess what you actually sell.
       </p>
       <p>
-        <strong>The fix:</strong> Replace vague headlines with specific ones. &quot;Website Design for Small
-        Businesses in Surat — Fixed Price, Fast Delivery&quot; is clear. &quot;Digital solutions for a
+        <strong>The fix:</strong> Replace vague headlines with specific ones. &quot;Roof Repairs in Brisbane —
+        Free Inspection Within 48 Hours&quot; is clear. &quot;Digital solutions for a
         changing world&quot; is not. Your headline should name what you do and, ideally, who you do it for.
       </p>
 
@@ -141,9 +140,9 @@ export default function Article() {
 
       <h2 id="problem-3">3. Slow mobile loading</h2>
       <p>
-        In India, the majority of web traffic arrives on mobile devices. A page that takes more than
-        3 seconds to load loses a significant portion of visitors before they even see your offer.
-        Page speed is also a Google ranking factor.
+        Many small business websites now receive most of their visitors on phones. A page that is slow
+        to show its main content, or slow to respond when tapped, loses visitors before they even see
+        your offer.
       </p>
       <p>
         <strong>The fix:</strong> Test with Google PageSpeed Insights (pagespeed.web.dev). The most
@@ -167,14 +166,14 @@ export default function Article() {
 
       <h2 id="problem-5">5. Complicated contact forms</h2>
       <p>
-        Forms with ten required fields — company name, designation, GST number, project budget range,
+        Forms with ten required fields — company name, job title, tax or VAT number, project budget range,
         timeline, how did you hear about us — deter most people who would have enquired through a
         simple form. Every additional required field reduces submissions.
       </p>
       <p>
         <strong>The fix:</strong> Reduce your contact form to three to five fields: name, phone or email,
-        and a brief message. Collect extra details after the conversation has started. Also offer WhatsApp
-        as an alternative — many people in India strongly prefer messaging to filling in forms.
+        and a brief message. Collect extra details after the conversation has started. Also offer a
+        messaging option — WhatsApp where your customers use it, or click-to-text where they don’t.
       </p>
 
       <h2 id="problem-6">6. Poor mobile layout</h2>
@@ -191,12 +190,12 @@ export default function Article() {
 
       <h2 id="problem-7">7. No pricing transparency</h2>
       <p>
-        Many Indian business websites show no price information at all. Visitors who cannot estimate
+        Many small business websites show no price information at all. Visitors who cannot estimate
         whether you are within their budget often leave rather than enquire. They assume the worst.
       </p>
       <p>
-        <strong>The fix:</strong> You do not have to publish exact prices. A &quot;starting from ₹15,000&quot;
-        or a pricing guide blog post (like the{" "}
+        <strong>The fix:</strong> You do not have to publish exact prices. A &quot;starting from&quot; price
+        in your local currency, or a pricing guide blog post (like the{" "}
         <Link href="/blog/website-development-cost-india-2026">
           website development cost guide
         </Link>
@@ -258,10 +257,10 @@ export default function Article() {
 
       <h3>How many enquiries should 1,000 website visitors produce?</h3>
       <p>
-        A realistic conversion rate for a service business website is 1–5%, depending on traffic quality,
-        the nature of the service, and how well the website is optimised. If you are converting under
-        0.5%, there is usually a clear structural problem. A focused landing page matched to a specific
-        ad campaign can reach higher rates.
+        There is no reliable universal figure — published benchmarks vary by industry, country, traffic
+        source and what counts as a conversion. As a rough estimate of my own (not a benchmark), many
+        service websites convert in the low single-digit percentages. Compare your site against its own
+        past performance rather than a headline average.
       </p>
 
       <h3>Should I use a pop-up to capture leads?</h3>
@@ -283,8 +282,9 @@ export default function Article() {
       <h3>Does my website need a live chat widget?</h3>
       <p>
         Live chat helps only if someone is available to respond quickly. An unanswered chat is worse
-        than no chat. For most small businesses in India, a prominently placed WhatsApp button achieves
-        the same outcome with far less complexity and feels more natural to Indian customers.
+        than no chat. In markets where WhatsApp is widely used, such as India, the UK and much of Europe, a
+        prominently placed WhatsApp button often achieves the same outcome with far less complexity.
+        Elsewhere, click-to-call or click-to-text does the same job.
       </p>
 
       <h3>Should I add more pages to get more leads?</h3>

@@ -91,7 +91,7 @@ export default function Article() {
 
       <h2>Don’t forget offline enquiries</h2>
       <p>
-        Many customers in India call directly or walk in after seeing an ad. Software can’t always see that, so add a
+        Many customers call directly or walk in after seeing an ad. Software can’t always see that, so add a
         simple habit: ask every new customer &ldquo;how did you hear about us?&rdquo; and note the answer in a spreadsheet
         or your WhatsApp Business labels. Combined with your online tracking, this gives a much more honest picture.
       </p>

@@ -13,11 +13,9 @@ export const metadata: Metadata = pageMetadata({
   path: `/blog/${slug}`,
   article: post,
   keywords: [
-    "WhatsApp Business small business India",
-    "WhatsApp Business setup guide India",
-    "get customer enquiries WhatsApp India",
-    "WhatsApp for business Surat",
-    "WhatsApp Business catalogue India",
+    "WhatsApp Business for small business",
+    "WhatsApp Business setup guide",
+    "WhatsApp button on website",
   ],
 });
 
@@ -33,7 +31,7 @@ export default function Article() {
 
               <h2>Why WhatsApp Business is worth setting up properly</h2>
               <p>
-                India has over 500 million WhatsApp users. For many small business customers — especially in cities like Surat, Ahmedabad, and Mumbai — WhatsApp is the preferred way to contact a business. It is faster than email and more comfortable than a phone call.
+                In many countries — India, Brazil, the UK, Spain, Germany, South Africa and much of Latin America among them — WhatsApp is the everyday way people message each other, and increasingly the way they contact a business. It is faster than email and more comfortable than a phone call. In the US and Canada it is less dominant, so check what your own customers use before making it your main channel.
               </p>
               <p>
                 WhatsApp Business is a separate free app from Meta (the company behind WhatsApp). It gives you a professional business profile, automated replies, and a product catalogue — all things a regular WhatsApp account does not have.

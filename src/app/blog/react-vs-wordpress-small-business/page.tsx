@@ -13,11 +13,10 @@ export const metadata: Metadata = pageMetadata({
   path: `/blog/${slug}`,
   article: post,
   keywords: [
-    "React vs WordPress small business India",
     "React.js or WordPress for business website",
     "should I use WordPress or React",
-    "React website vs WordPress India",
-    "custom website vs WordPress Surat",
+    "React vs WordPress website",
+    "React vs WordPress SEO",
   ],
 });
 

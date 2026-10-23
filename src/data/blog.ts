@@ -38,6 +38,7 @@ export const blogPosts: BlogPost[] = [
     description:
       "Instagram has millions of photographers. A website gives you something Instagram can't: a space you own, where clients can enquire, see your packages, and find you on Google.",
     publishedAt: "2026-10-17",
+    updatedAt: "2026-10-23",
     tag: "Website Development",
     readingMinutes: 3,
   },
@@ -52,10 +53,11 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "get-more-website-enquiries",
-    title: "How Can a Small Business Get More Website Enquiries?",
+    title: "How to Get More Leads and Enquiries from Your Website",
     description:
       "Practical changes to your website that help more visitors turn into actual enquiries — without spending more on ads.",
     publishedAt: "2026-10-17",
+    updatedAt: "2026-10-23",
     tag: "Digital Marketing",
     readingMinutes: 4,
   },
@@ -72,19 +74,21 @@ export const blogPosts: BlogPost[] = [
     slug: "whatsapp-business-for-small-business",
     title: "How to Use WhatsApp Business to Get More Customer Enquiries",
     description:
-      "WhatsApp Business is free and already used by millions of small businesses in India. Here is how to set it up properly and use it to turn visitors into paying customers.",
+      "WhatsApp Business is free and used by small businesses worldwide. How to set it up properly, turn chats into customers — and when it isn’t the right channel for your market.",
     publishedAt: "2026-10-17",
+    updatedAt: "2026-10-23",
     tag: "Digital Marketing",
-    readingMinutes: 3,
+    readingMinutes: 4,
   },
   {
     slug: "website-speed-small-business-india",
-    title: "Why Your Business Website Is Slow and How to Fix It",
+    title: "Why Is My Website Slow? Causes and Fixes for Small Business Websites",
     description:
-      "A slow website loses customers before they even read a word. This practical guide explains the most common causes of slow loading in India and how to fix each one without being technical.",
+      "Why business websites load slowly, how to read PageSpeed Insights and Core Web Vitals, and six practical fixes — most of which need no coding.",
     publishedAt: "2026-10-17",
+    updatedAt: "2026-10-23",
     tag: "Website Development",
-    readingMinutes: 4,
+    readingMinutes: 6,
   },
   {
     slug: "local-seo-guide-surat-india",
@@ -138,7 +142,7 @@ export const blogPosts: BlogPost[] = [
       "How Facebook and Instagram ads work for a local business — objectives, audiences, creatives and budgets — and the mistakes that waste money in the first month.",
     publishedAt: "2026-10-19",
     tag: "Digital Marketing",
-    readingMinutes: 3,
+    readingMinutes: 4,
   },
   {
     slug: "landing-page-vs-website",
@@ -173,6 +177,7 @@ export const blogPosts: BlogPost[] = [
     description:
       "AI-powered search is changing how customers discover businesses. A practical guide to helping your business appear in ChatGPT, Gemini and Google AI Overviews — and the myths to avoid.",
     publishedAt: "2026-10-20",
+    updatedAt: "2026-10-23",
     tag: "SEO",
     readingMinutes: 6,
   },
@@ -182,8 +187,9 @@ export const blogPosts: BlogPost[] = [
     description:
       "Getting visitors but no enquiries is a conversion problem, not a traffic problem. Here are nine reasons your website isn't turning visitors into leads — and how to fix each one.",
     publishedAt: "2026-10-20",
+    updatedAt: "2026-10-23",
     tag: "Website Development",
-    readingMinutes: 7,
+    readingMinutes: 8,
   },
   {
     slug: "google-ads-cost-per-lead-india",
@@ -226,10 +232,11 @@ export const blogPosts: BlogPost[] = [
     slug: "ai-search-visibility-2026",
     title: "How to Get Your Business Recommended by AI Search in 2026",
     description:
-      "A practical guide for Indian business owners on AI SEO, AEO and GEO — how ChatGPT, Gemini and Google AI Overviews discover businesses and what you can do to improve your visibility.",
+      "A practical guide for small business owners on AI SEO, AEO and GEO — how ChatGPT, Gemini and Google AI Overviews find businesses, and how to measure your visibility.",
     publishedAt: "2026-10-21",
+    updatedAt: "2026-10-23",
     tag: "SEO",
-    readingMinutes: 6,
+    readingMinutes: 7,
   },
   {
     slug: "website-development-cost-india-2026",
@@ -253,8 +260,9 @@ export const blogPosts: BlogPost[] = [
     slug: "why-website-not-getting-customers",
     title: "Why Is Your Website Not Getting Customers? 10 Common Problems and Fixes",
     description:
-      "Traffic but no enquiries? A self-assessment checklist and practical fixes for the ten most common reasons Indian business websites fail to convert visitors into leads.",
+      "Traffic but no enquiries? A self-assessment checklist and practical fixes for the ten most common reasons small business websites fail to turn visitors into customers.",
     publishedAt: "2026-10-21",
+    updatedAt: "2026-10-23",
     tag: "Website Development",
     readingMinutes: 6,
   },
@@ -273,6 +281,7 @@ export const blogPosts: BlogPost[] = [
     description:
       "An annotated comparison of landing pages and full websites for lead generation — when each works best, what every landing page needs, and how to test performance.",
     publishedAt: "2026-10-21",
+    updatedAt: "2026-10-23",
     tag: "Website Development",
     readingMinutes: 6,
   },

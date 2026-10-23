@@ -18,7 +18,7 @@ export const metadata: Metadata = pageMetadata({
     "what to put on a homepage",
     "small business website content",
     "homepage design tips",
-    "website homepage India",
+    "what to put on a business website homepage",
   ],
 });
 
@@ -74,8 +74,8 @@ export default function Article() {
 
       <h3>6. Who you serve</h3>
       <p>
-        Mention the customers and areas you work with — &ldquo;homeowners in Surat&rdquo;, &ldquo;small businesses across
-        Gujarat&rdquo;. It helps visitors recognise themselves, and helps search engines understand where you’re relevant.
+        Mention the customers and areas you work with — &ldquo;homeowners in North London&rdquo;, &ldquo;restaurants across Ontario&rdquo;,
+        &ldquo;small businesses in Surat&rdquo;. It helps visitors recognise themselves, and helps search engines understand where you’re relevant.
       </p>
 
       <h3>7. Answers to common questions</h3>
@@ -93,7 +93,7 @@ export default function Article() {
       <h2>Technical basics that affect every visitor</h2>
       <ul>
         <li>
-          <strong>Mobile first.</strong> Most visitors in India browse on phones. Check text size, button spacing and
+          <strong>Mobile first.</strong> For most local businesses, a large share of visitors browse on phones. Check text size, button spacing and
           forms on a real phone.
         </li>
         <li>

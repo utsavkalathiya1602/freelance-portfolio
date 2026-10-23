@@ -16,9 +16,8 @@ export const metadata: Metadata = pageMetadata({
   keywords: [
     "Google Ads vs Meta Ads",
     "Google Ads or Facebook ads for local business",
-    "Instagram ads vs Google Ads India",
-    "best ads for small business Surat",
-    "local business advertising India",
+    "Google Ads vs Meta Ads which is better",
+    "Facebook ads vs Google ads for local business",
   ],
 });
 
@@ -80,7 +79,7 @@ export default function Article() {
         </li>
         <li>
           <strong>You want messages, not just website visits.</strong> Meta can send people straight into a WhatsApp,
-          Messenger or Instagram chat with your business, which suits many Indian customers who prefer to message first.
+          Messenger or Instagram chat with your business, which suits customers who prefer to message first — common wherever WhatsApp or Messenger is widely used.
         </li>
       </ul>
 

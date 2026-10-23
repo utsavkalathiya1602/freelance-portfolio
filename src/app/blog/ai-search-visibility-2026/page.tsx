@@ -17,12 +17,12 @@ export const metadata: Metadata = pageMetadata({
   article: post,
   keywords: [
     "AI SEO 2026",
-    "AEO answer engine optimization India",
     "GEO generative engine optimization",
     "how to appear in ChatGPT search",
     "AI search optimization small business",
-    "Google AI Overviews optimization India",
     "appear in Gemini search results",
+    "generative engine optimization",
+    "measure AI search visibility",
   ],
 });
 
@@ -99,7 +99,7 @@ const checklistItems = [
   {
     id: "nap",
     label: "Make your business name, address and phone number identical everywhere",
-    detail: "Check JustDial, Sulekha, LinkedIn, Indiamart, and any directory listings.",
+    detail: "Check the directories that matter in your country — e.g. Yelp, Bing Places and Apple Business Connect, Yell (UK), YellowPages.ca (Canada), Yellow (Australia), Justdial (India) — plus LinkedIn.",
   },
   {
     id: "schema",
@@ -167,7 +167,7 @@ export default function Article() {
         </li>
       </ul>
       <p>
-        For a small business in India, the practical implication is straightforward: your website needs
+        For a small business anywhere, the practical implication is straightforward: your website needs
         to clearly answer the questions your customers ask, and your business needs to appear consistently
         across the web so AI systems can verify that you exist and are credible.
       </p>
@@ -198,9 +198,8 @@ export default function Article() {
         systems process each page separately and extract specific facts.
       </p>
       <p>
-        Instead of a single &quot;Services&quot; page, create individual pages such as &quot;Website Design for Small
-        Businesses in Surat,&quot; &quot;Google Ads Management for Indian Businesses,&quot; and &quot;Local SEO for Gujarat
-        Businesses.&quot; Each page can then answer a focused set of questions.
+        Instead of a single &quot;Services&quot; page, create individual pages such as &quot;Kitchen Renovation in
+        Manchester,&quot; &quot;Google Ads Management for Dental Clinics,&quot; and &quot;Local SEO for Accountants.&quot; Each page can then answer a focused set of questions.
       </p>
 
       <h3>Content that directly answers customer questions</h3>
@@ -212,7 +211,7 @@ export default function Article() {
       <ul>
         <li>FAQ sections on service pages, written in plain question-and-answer form</li>
         <li>Blog articles that address one specific question in depth</li>
-        <li>Comparison pages (e.g., &quot;Google Ads vs Meta Ads for local businesses in India&quot;)</li>
+        <li>Comparison pages (e.g., &quot;Google Ads vs Meta Ads for local businesses&quot;)</li>
         <li>Pricing guides that explain what affects cost, even without fixed prices</li>
       </ul>
 
@@ -220,7 +219,8 @@ export default function Article() {
       <p>
         AI systems check multiple sources before forming an answer. Your business name, location, phone
         number and website address should appear consistently across your Google Business Profile,
-        JustDial, Sulekha, LinkedIn, and any other directories or press mentions. Inconsistencies reduce
+        Bing Places, Apple Business Connect, LinkedIn, the main directories in your country, and any press
+        mentions. Inconsistencies reduce
         the confidence AI systems have in your business details.
       </p>
 
@@ -271,12 +271,16 @@ export default function Article() {
       </p>
       <ul>
         <li>
-          <strong>Google Search Console</strong> — monitor your impressions for AI Overview appearances.
-          Google is gradually adding this reporting data.
+          <strong>Google Search Console</strong> — Google&apos;s{" "}
+          <a href="https://developers.google.com/search/docs/appearance/ai-features">AI features documentation</a>{" "}
+          says traffic from AI Overviews and AI Mode is included in the Performance report under the
+          &quot;Web&quot; search type. Google has also announced a separate generative AI performance report that
+          is rolling out to a subset of sites, so you may or may not see it yet.
         </li>
         <li>
-          <strong>Manual testing</strong> — regularly ask ChatGPT, Gemini and Google about your service
-          category in your city and see which businesses are mentioned.
+          <strong>Manual testing</strong> — regularly ask ChatGPT, Gemini, Copilot and Google about your
+          service category in your city and see which businesses are mentioned. Results vary by user,
+          location and time, so record them as snapshots, not rankings.
         </li>
         <li>
           <strong>Google Alerts</strong> — set alerts for your business name to detect when it is
@@ -300,8 +304,10 @@ export default function Article() {
           prefer.
         </li>
         <li>
-          <strong>Myth: Schema markup guarantees AI inclusion.</strong> Schema helps AI understand your
-          content, but it does not guarantee you will be cited in any answer.
+          <strong>Myth: Schema markup guarantees AI inclusion.</strong> Google states that no special
+          schema is required to appear in its AI features — a page needs to be indexed and eligible to
+          show with a snippet. Schema can still help machines read your details accurately, but it does
+          not guarantee you will be cited in any answer.
         </li>
         <li>
           <strong>Myth: AI has replaced traditional SEO.</strong> The vast majority of searches still

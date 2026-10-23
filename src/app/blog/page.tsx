@@ -9,20 +9,20 @@ import { ContactCTA } from "@/components/home/ContactCTA";
 
 const title = "Blog — Website & Marketing Guides";
 const description =
-  "Practical guides for small business owners in Surat and across India on websites, Google Ads, Meta Ads, local SEO and getting more enquiries.";
+  "Practical guides to website development, SEO, Google Ads, AI search and lead generation for small businesses — in India and around the world.";
 
 export const metadata: Metadata = pageMetadata({
   title,
   description,
   path: "/blog",
   keywords: [
-    "freelance web developer blog Surat",
-    "website cost Surat",
-    "small business website guide India",
-    "digital marketing tips small business",
-    "Google Ads vs Meta Ads",
-    "Google Ads budget India",
-    "local SEO guide India",
+    "small business website guides",
+    "website development blog",
+    "Google Ads guides for small business",
+    "SEO and AI search guides",
+    "lead generation for small business",
+    "website cost India",
+    "local SEO India",
   ],
 });
 
@@ -32,8 +32,8 @@ export default function BlogIndexPage() {
       <PageHeader
         eyebrow="Blog"
         title="Guides for small businesses."
-        description="Practical answers to the questions business owners ask me most often — on websites, Google Ads, Meta Ads, local SEO and getting more enquiries."
-        aside={<BlogHeroAside startHereSlug="business-website-cost-surat" />}
+        description="Practical guides to website development, SEO, Google Ads, AI search and digital growth for businesses around the world — plus India-specific pricing and local guides where the advice depends on the market."
+        aside={<BlogHeroAside startHereSlug="why-website-not-getting-customers" />}
       />
 
       <section aria-label="Articles" className="py-14 sm:py-20">

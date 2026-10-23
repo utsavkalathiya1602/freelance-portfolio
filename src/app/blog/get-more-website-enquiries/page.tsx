@@ -13,11 +13,12 @@ export const metadata: Metadata = pageMetadata({
   path: `/blog/${slug}`,
   article: post,
   keywords: [
-    "get more website enquiries small business India",
     "increase website conversions",
-    "how to get more leads from website India",
     "website conversion tips small business",
     "website contact form best practices",
+    "how to get more leads from your website",
+    "how to get more enquiries from your website",
+    "website lead generation small business",
   ],
 });
 
@@ -50,7 +51,7 @@ export default function Article() {
                 <li>Put a phone number, WhatsApp button, or contact link in the header — visible on every page.</li>
                 <li>Place a contact form or CTA (call to action) on every major service page, not only on the Contact page.</li>
                 <li>On mobile, make the phone number a tappable link so visitors can call in one tap.</li>
-                <li>Add a floating WhatsApp button if your customers are comfortable using WhatsApp — many local businesses in India find this the fastest way to get enquiries.</li>
+                <li>Add a floating WhatsApp button if your customers use WhatsApp — in India, the UK, much of Europe and Latin America it is often the fastest way to get enquiries. In the US and Canada, a click-to-call or click-to-text button usually does the same job.</li>
               </ul>
 
               <h2>Be specific about what you offer and who it is for</h2>
@@ -92,7 +93,7 @@ export default function Article() {
 
               <h2>Check that your website loads quickly on mobile</h2>
               <p>
-                A large proportion of small business website visitors in India arrive on mobile devices with varying connection speeds. If your website takes more than three to four seconds to load on a mobile connection, a significant number of visitors will leave before they see your content.
+                Many small business websites receive most of their visitors on phones, often on mobile data rather than Wi-Fi. If the main content takes several seconds to appear, a meaningful share of visitors leave before they see it.
               </p>
               <p>
                 Common causes of slow mobile loading: uncompressed images, too many plugins (if using WordPress), and third-party scripts (chat widgets, analytics, etc.) that block the main content from rendering.

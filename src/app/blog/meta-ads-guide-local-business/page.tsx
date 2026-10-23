@@ -15,10 +15,10 @@ export const metadata: Metadata = pageMetadata({
   article: post,
   keywords: [
     "Meta Ads for local business",
-    "Facebook ads for small business India",
     "Instagram ads beginner guide",
     "click to WhatsApp ads",
-    "Meta Ads Surat",
+    "Meta Ads for small business",
+    "how to use Meta Ads for local business",
   ],
 });
 
@@ -54,8 +54,8 @@ export default function Article() {
           messages.
         </li>
         <li>
-          <strong>Engagement (messages)</strong> — start conversations in WhatsApp, Messenger or Instagram Direct. Many
-          customers in India are more comfortable sending a message than filling in a form.
+          <strong>Engagement (messages)</strong> — start conversations in WhatsApp, Messenger or Instagram Direct. In many
+          markets, customers are more comfortable sending a message than filling in a form.
         </li>
       </ul>
       <p>
@@ -113,7 +113,7 @@ export default function Article() {
         big changes during this time restarts the process, so avoid editing ads every day.
       </p>
       <p>
-        As with Google Ads, ad spend is charged in addition to any management fee, and GST applies to ad spend in India.
+        As with Google Ads, ad spend is charged in addition to any management fee, and sales tax rules on ad spend depend on your country (for example, GST applies to Meta ad spend in India).
         Start with a budget you’re comfortable running for a few weeks, rather than a large amount for a few days.
       </p>
 

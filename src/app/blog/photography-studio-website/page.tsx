@@ -13,11 +13,11 @@ export const metadata: Metadata = pageMetadata({
   path: `/blog/${slug}`,
   article: post,
   keywords: [
-    "photography studio website India",
-    "photographer website Surat",
     "do photographers need a website",
     "photography website vs Instagram",
-    "photography studio website developer Surat",
+    "photography website",
+    "photography studio website",
+    "photographer website design",
   ],
 });
 
@@ -33,7 +33,7 @@ export default function Article() {
 
               <h2>Instagram is great for discovery. A website is for conversion.</h2>
               <p>
-                Most photography studios in India already use Instagram — and rightly so. It is an excellent tool for reaching new people and showing your work in a visual format. But Instagram was designed for browsing, not for making business decisions.
+                Most photography studios already use Instagram — and rightly so. It is an excellent tool for reaching new people and showing your work in a visual format. But Instagram was designed for browsing, not for making business decisions.
               </p>
               <p>
                 When a potential client finds your photos and wants to know more — your packages, your prices, how to book a session — they often look for a website. If there is no website, or just a link in bio pointing to a poorly organised page, many of them will move on to the next photographer who does have one.
@@ -53,7 +53,7 @@ export default function Article() {
 
               <h3>Helps you get found on Google</h3>
               <p>
-                When someone searches &ldquo;maternity photographer in Surat&rdquo; or &ldquo;wedding photographer near me&rdquo;, Google shows websites — not Instagram profiles (or very rarely). A website with clear content about the type of photography you offer and where you are based gives you the best chance of appearing in those searches.
+                When someone searches &ldquo;maternity photographer in Manchester&rdquo; or &ldquo;wedding photographer near me&rdquo;, most of the organic results are usually websites and directory listings rather than Instagram profiles. A website with clear content about the type of photography you offer and where you are based gives you the best chance of appearing in those searches.
               </p>
 
               <h3>You own it entirely</h3>
@@ -81,7 +81,7 @@ export default function Article() {
 
               <h2>Next steps</h2>
               <p>
-                If you run a photography studio in Surat and are considering a website, the{" "}
+                If you run a photography studio — in Surat or anywhere else — and are considering a website, the{" "}
                 <Link href="/services/web-development">
                   Website Development service page
                 </Link>{" "}

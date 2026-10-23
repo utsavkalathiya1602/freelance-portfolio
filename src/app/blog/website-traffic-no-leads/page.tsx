@@ -16,11 +16,10 @@ export const metadata: Metadata = pageMetadata({
   keywords: [
     "website traffic but no leads",
     "website not converting visitors",
-    "improve website conversion rate India",
     "why website gets no enquiries",
     "website conversion optimization small business",
-    "landing page optimization India",
     "improve website enquiries",
+    "why your website gets traffic but no leads",
   ],
 });
 
@@ -38,8 +37,8 @@ export default function Article() {
       <p>
         Traffic without leads is a conversion problem, not a traffic problem. The most common causes are an unclear
         offer, a weak or missing call to action, slow mobile loading, no trust signals, and missing or complicated
-        contact options. Fixing the right combination of these typically doubles or triples enquiries from the same
-        number of visitors.
+        contact options. Fixing these can increase leads from the same number of visitors — how much depends on your
+        market, offer and traffic quality, so measure before and after each change.
       </p>
 
       <h2>Visitors vs enquiries: understand the difference</h2>
@@ -49,8 +48,9 @@ export default function Article() {
         wanted to do business with you.
       </p>
       <p>
-        The gap between the two is your conversion rate. Even a small improvement — from 1% to 3% — triples your
-        leads without spending another rupee on advertising.
+        The gap between the two is your conversion rate. The arithmetic is simple: if 1,000 visitors a month convert
+        at 1%, you get 10 leads; at 2%, you get 20 — without spending more on advertising. (These are illustrative
+        numbers, not benchmarks.)
       </p>
 
       <h2>Nine reasons your website is not converting</h2>
@@ -62,8 +62,8 @@ export default function Article() {
         excellence,&rdquo; visitors have to work to figure out what you actually sell.
       </p>
       <p>
-        Fix: Replace vague headlines with specific ones. &ldquo;Website Design for Small Businesses in Surat — Fixed
-        Price, Fast Delivery&rdquo; is clear. &ldquo;Digital solutions for a changing world&rdquo; is not.
+        Fix: Replace vague headlines with specific ones. &ldquo;Emergency Plumbing in Leeds — Same-Day Call-Outs&rdquo;
+        or &ldquo;Website Design for Small Businesses — Fixed Price, Fast Delivery&rdquo; is clear. &ldquo;Digital solutions for a changing world&rdquo; is not.
       </p>
 
       <h3>2. Weak or missing call to action</h3>
@@ -79,12 +79,12 @@ export default function Article() {
 
       <h3>3. Slow mobile experience</h3>
       <p>
-        In India, the majority of web traffic arrives on mobile devices over 4G connections. A page that takes
-        more than 3 seconds to load loses a significant portion of visitors before they even see your offer.
-        Page speed is also a Google ranking factor.
+        For most small business websites, a large share of visitors arrive on phones — often on mobile data rather
+        than Wi-Fi. A page that is slow to show its main content, or slow to respond when tapped, loses visitors
+        before they see your offer.
       </p>
       <p>
-        Fix: Test your page speed using Google PageSpeed Insights. Common fixes include compressing images,
+        Fix: Test your page in Google PageSpeed Insights and check whether it passes Core Web Vitals. Common fixes include compressing images,
         removing unused scripts, and using modern image formats. The{" "}
         <Link href="/blog/website-speed-small-business-india">website speed guide</Link> covers this in more detail.
       </p>
@@ -114,14 +114,15 @@ export default function Article() {
 
       <h3>6. Complicated enquiry forms</h3>
       <p>
-        Forms with ten required fields — company name, designation, GST number, project budget range, timeline,
+        Forms with ten required fields — company name, job title, tax or VAT number, project budget range, timeline,
         how did you hear about us — deter the majority of people who would have enquired through a simple form.
         The more fields you add, the fewer submissions you receive.
       </p>
       <p>
         Fix: Reduce your contact form to three to five fields maximum: name, phone or email, and a brief message.
-        Collect extra details after the conversation has started. Also offer WhatsApp as an alternative — many
-        people in India prefer messaging to filling in forms.
+        Collect extra details after the conversation has started. Also offer a messaging option where your
+        customers use one — WhatsApp is widely used in India, the UK, much of Europe and Latin America, while text
+        messages or Messenger are more common in the US and Canada.
       </p>
 
       <h3>7. Poor mobile layout</h3>
@@ -164,7 +165,7 @@ export default function Article() {
       <h2>How to audit your website in 30 minutes</h2>
       <ol>
         <li>Open your homepage on a mobile phone and ask: &ldquo;What does this business do, and what should I do next?&rdquo; Answer honestly.</li>
-        <li>Use Google PageSpeed Insights to check your mobile load speed. Aim for a score above 70.</li>
+        <li>Use Google PageSpeed Insights to check your mobile results, and whether the page passes Core Web Vitals.</li>
         <li>Try to complete your own contact form from start to finish. Count the fields and the steps.</li>
         <li>Check Google Analytics: which pages have the most traffic? Which have the lowest time on page?</li>
         <li>Search for your own business on Google. Does your Google Business Profile appear? Does it look complete and accurate?</li>
@@ -177,7 +178,7 @@ export default function Article() {
       </p>
       <ol>
         <li>Unclear offer and missing CTA — these affect every visitor</li>
-        <li>Slow mobile speed — affects the majority of Indian visitors</li>
+        <li>Slow mobile speed — affects every visitor on a phone</li>
         <li>Complicated forms — directly reduces enquiry volume</li>
         <li>Missing trust signals — affects visitors who are close to enquiring</li>
         <li>Tracking setup — enables you to measure every subsequent improvement</li>
@@ -187,10 +188,10 @@ export default function Article() {
 
       <h3>How many enquiries should a website convert from 1,000 visitors?</h3>
       <p>
-        A realistic conversion rate for a service business website ranges from 1% to 5%, depending on traffic
-        quality, the nature of the service, and how well the website is optimized. A well-targeted landing page
-        for a specific service with strong ad traffic can reach higher. If you are converting under 0.5%, there
-        is usually a clear structural problem.
+        There is no universal number. Published benchmarks vary widely by industry, country, traffic source and how
+        a &ldquo;conversion&rdquo; is defined, so treat any single figure with caution. As a rough working estimate (my
+        own, not a benchmark), many service websites convert somewhere in the low single-digit percentages. The
+        most useful comparison is your own site before and after a change, measured over the same kind of traffic.
       </p>
 
       <h3>Does adding more pages help get more leads?</h3>
@@ -217,8 +218,9 @@ export default function Article() {
       <h3>Does my website need a live chat to convert better?</h3>
       <p>
         Live chat can help if someone is available to respond quickly. An unanswered chat is worse than no chat.
-        For most small businesses in India, a clearly placed WhatsApp button achieves the same outcome with less
-        complexity and is more natural for Indian customers.
+        In markets where WhatsApp is widely used — such as India, the UK and much of Europe — a clearly placed
+        WhatsApp button often achieves the same outcome with less complexity. Elsewhere, a click-to-call or
+        click-to-text button can do the same job.
       </p>
 
       <p>
