@@ -126,6 +126,10 @@ export default function Article() {
         look at turning visitors into enquiries, read{" "}
         <Link href="/blog/get-more-website-enquiries">How Can a Small Business Get More Website Enquiries?</Link>
       </p>
+      <p>
+        To make sure every visitor can use your homepage, run through the{" "}
+        <Link href="/blog/website-accessibility-checklist-small-business">website accessibility checklist</Link>.
+      </p>
     </ArticleLayout>
   );
 }

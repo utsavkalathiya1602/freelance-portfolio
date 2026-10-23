@@ -223,6 +223,10 @@ export default function Article() {
         For a website that is simple to maintain from day one, see the{" "}
         <Link href="/services/web-development">Web Development service page</Link>.
       </p>
+      <p>
+        For the security tasks a maintenance plan should cover, see the{" "}
+        <Link href="/blog/website-security-checklist-small-business">website security checklist</Link>.
+      </p>
     </ArticleLayout>
   );
 }

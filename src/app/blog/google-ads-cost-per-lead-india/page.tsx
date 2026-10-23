@@ -247,6 +247,10 @@ export default function Article() {
         If many of your leads turn out to be fake or unreachable, read{" "}
         <Link href="/blog/google-ads-spam-leads">how to reduce spam leads from Google Ads</Link>.
       </p>
+      <p>
+        If you run a roofing, HVAC, plumbing or electrical business, see{" "}
+        <Link href="/blog/google-ads-for-home-service-businesses">Google Ads for home service businesses</Link>.
+      </p>
     </ArticleLayout>
   );
 }

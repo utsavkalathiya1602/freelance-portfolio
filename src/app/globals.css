@@ -129,22 +129,23 @@ summary::-webkit-details-marker {
   line-height: 1.75;
 }
 
-.article-body ul,
-.article-body ol {
+/* Plain article lists only — styled components (checklist, table of contents) set their own classes. */
+.article-body ul:not([class]),
+.article-body ol:not([class]) {
   padding-left: 1.5rem;
   color: var(--muted);
   line-height: 1.75;
 }
 
-.article-body ul {
+.article-body ul:not([class]) {
   list-style-type: disc;
 }
 
-.article-body ol {
+.article-body ol:not([class]) {
   list-style-type: decimal;
 }
 
-.article-body li {
+.article-body :is(ul, ol):not([class]) > li {
   margin-top: 0.375rem;
   margin-bottom: 0.375rem;
 }

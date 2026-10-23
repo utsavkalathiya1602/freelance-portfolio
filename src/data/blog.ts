@@ -236,7 +236,7 @@ export const blogPosts: BlogPost[] = [
     publishedAt: "2026-10-21",
     updatedAt: "2026-10-23",
     tag: "SEO",
-    readingMinutes: 7,
+    readingMinutes: 8,
   },
   {
     slug: "website-development-cost-india-2026",
@@ -264,7 +264,7 @@ export const blogPosts: BlogPost[] = [
     publishedAt: "2026-10-21",
     updatedAt: "2026-10-23",
     tag: "Website Development",
-    readingMinutes: 6,
+    readingMinutes: 8,
   },
   {
     slug: "local-seo-small-business-india-2026",
@@ -273,7 +273,7 @@ export const blogPosts: BlogPost[] = [
       "How local search and Google Maps work, how to set up and optimize your Google Business Profile, and how to track calls and enquiries from local SEO in India.",
     publishedAt: "2026-10-21",
     tag: "SEO",
-    readingMinutes: 7,
+    readingMinutes: 9,
   },
   {
     slug: "landing-page-vs-full-website-lead-generation",
@@ -283,7 +283,7 @@ export const blogPosts: BlogPost[] = [
     publishedAt: "2026-10-21",
     updatedAt: "2026-10-23",
     tag: "Website Development",
-    readingMinutes: 6,
+    readingMinutes: 7,
   },
   {
     slug: "website-maintenance-cost-india",
@@ -329,6 +329,42 @@ export const blogPosts: BlogPost[] = [
     publishedAt: "2026-10-22",
     tag: "SEO",
     readingMinutes: 4,
+  },
+  {
+    slug: "website-accessibility-checklist-small-business",
+    title: "Website Accessibility Checklist for Small Businesses (WCAG 2.2)",
+    description:
+      "A practical WCAG 2.2 checklist for small business websites — what to fix first, how to test it free, and how accessibility rules differ in the US, UK, EU, Canada and India.",
+    publishedAt: "2026-10-23",
+    tag: "Website Development",
+    readingMinutes: 6,
+  },
+  {
+    slug: "website-security-checklist-small-business",
+    title: "Website Security Checklist for Small Businesses",
+    description:
+      "A plain-English security checklist for small business websites — accounts, updates, backups, forms and hosting — with what to check monthly and what to do if you are hacked.",
+    publishedAt: "2026-10-23",
+    tag: "Website Development",
+    readingMinutes: 5,
+  },
+  {
+    slug: "landing-page-ab-testing-small-budget",
+    title: "Landing Page A/B Testing on a Small Budget: What Actually Works",
+    description:
+      "How to A/B test a landing page when you only get a few leads a week — what to test first, how long to run it, how to use Google Ads experiments, and when not to test at all.",
+    publishedAt: "2026-10-23",
+    tag: "Digital Marketing",
+    readingMinutes: 5,
+  },
+  {
+    slug: "google-ads-for-home-service-businesses",
+    title: "Google Ads for Home Service Businesses: Roofers, HVAC, Plumbers and Electricians",
+    description:
+      "How roofing, HVAC, plumbing and electrical companies can run Google Ads that bring booked jobs — Search vs Local Services Ads, keywords, call tracking and service-area targeting.",
+    publishedAt: "2026-10-23",
+    tag: "Digital Marketing",
+    readingMinutes: 5,
   },
 ];
 

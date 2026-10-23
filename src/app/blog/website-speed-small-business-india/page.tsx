@@ -265,6 +265,10 @@ export default function Article() {
         If you need a website built with speed as a priority from the start, see the{" "}
         <Link href="/services/web-development">Website Development service page</Link>.
       </p>
+      <p>
+        Speed is one part of a healthy website; the{" "}
+        <Link href="/blog/website-security-checklist-small-business">website security checklist</Link> covers keeping it safe.
+      </p>
     </ArticleLayout>
   );
 }

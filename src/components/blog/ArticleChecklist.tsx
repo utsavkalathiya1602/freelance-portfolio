@@ -42,7 +42,7 @@ export function ArticleChecklist({
       {/* Progress bar */}
       <div className="mb-5 h-2 w-full overflow-hidden rounded-full bg-stone">
         <div
-          className="h-full rounded-full bg-ink transition-all duration-300"
+          className="h-full rounded-full bg-ink"
           style={{ width: `${pct}%` }}
           role="progressbar"
           aria-valuenow={done}
@@ -86,7 +86,7 @@ export function ArticleChecklist({
                     </svg>
                   )}
                 </span>
-                <span>
+                <span className="leading-snug">
                   <span
                     className={`text-sm font-medium leading-snug transition-colors ${
                       isChecked ? "text-muted line-through" : "text-ink"

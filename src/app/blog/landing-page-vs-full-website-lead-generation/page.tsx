@@ -345,6 +345,10 @@ export default function Article() {
         </Link>{" "}
         covers this topic from a different angle with additional context.
       </p>
+      <p>
+        Once your landing page is live, learn how to improve it with{" "}
+        <Link href="/blog/landing-page-ab-testing-small-budget">landing page A/B testing on a small budget</Link>.
+      </p>
     </ArticleLayout>
   );
 }

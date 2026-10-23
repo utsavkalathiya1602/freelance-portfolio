@@ -151,6 +151,10 @@ export default function Article() {
         If you’d like help choosing and setting up the right channel, see the{" "}
         <Link href="/services/digital-marketing">Digital Marketing service page</Link>.
       </p>
+      <p>
+        For trades such as roofing, HVAC and plumbing, read{" "}
+        <Link href="/blog/google-ads-for-home-service-businesses">Google Ads for home service businesses</Link>.
+      </p>
     </ArticleLayout>
   );
 }
