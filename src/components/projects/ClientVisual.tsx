@@ -22,7 +22,7 @@ export function ClientVisual({ client, size = "card" }: ClientVisualProps) {
   const metaCampaign = isMeta(client.campaignType);
 
   return (
-    <div className={`bg-lavender ${hero ? "p-6 sm:p-10" : "p-5 sm:p-8"}`}>
+    <div className={`${metaCampaign ? "bg-rose-100" : "bg-lavender"} ${hero ? "p-6 sm:p-10" : "p-5 sm:p-8"}`}>
       <div className="flex items-center justify-between gap-3">
         <span className="inline-flex items-center gap-1.5 rounded-full bg-ink px-3 py-1 text-xs font-semibold text-white">
           <span aria-hidden="true" className="h-1.5 w-1.5 rounded-full bg-lime" />
@@ -52,7 +52,7 @@ export function ClientVisual({ client, size = "card" }: ClientVisualProps) {
             </span>
           </li>
           <li className="flex items-center gap-3 rounded-2xl bg-ink p-4 text-white">
-            <span className="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-lavender text-ink">
+            <span className="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-rose-200 text-ink">
               <MessageCircle aria-hidden="true" className="h-4 w-4" />
             </span>
             <span className="min-w-0">
