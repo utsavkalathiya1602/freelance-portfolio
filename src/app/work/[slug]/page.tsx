@@ -22,7 +22,11 @@ export async function generateMetadata({ params }: PageProps<"/work/[slug]">): P
   const title =
     item.kind === "website"
       ? `${item.title} — ${item.team ? "Product" : "Website"} Case Study`
-      : `${item.title} — Google Ads Case Study`;
+      : item.campaignType.toLowerCase().includes("meta") ||
+          item.campaignType.toLowerCase().includes("facebook") ||
+          item.campaignType.toLowerCase().includes("instagram")
+        ? `${item.title} — Meta Ads Case Study`
+        : `${item.title} — Google Ads Case Study`;
 
   const description = item.summary;
 
@@ -30,6 +34,12 @@ export async function generateMetadata({ params }: PageProps<"/work/[slug]">): P
   const locationStr = item.location.city
     ? `${item.location.city}, ${item.location.country}`
     : item.location.country;
+
+  const isMetaCampaign =
+    item.kind === "ads-client" &&
+    (item.campaignType.toLowerCase().includes("meta") ||
+      item.campaignType.toLowerCase().includes("facebook") ||
+      item.campaignType.toLowerCase().includes("instagram"));
 
   const keywords =
     item.kind === "website"
@@ -42,13 +52,24 @@ export async function generateMetadata({ params }: PageProps<"/work/[slug]">): P
           `business website developer Surat`,
           `freelance web developer case study India`,
         ]
-      : [
-          `Google Ads case study ${locationStr}`,
-          `Google Ads management Surat`,
-          `freelance digital marketer Surat`,
-          `local Google Ads specialist India`,
-          `small business Google Ads India`,
-        ];
+      : isMetaCampaign
+        ? [
+            `Meta Ads management India`,
+            `Facebook Ads for events India`,
+            `Instagram Ads event planner India`,
+            `Meta Ads case study event management`,
+            `Facebook Instagram advertising freelancer India`,
+            `social media ads for wedding planners India`,
+            `Meta Ads specialist freelancer Surat`,
+            `event marketing Facebook Instagram India`,
+          ]
+        : [
+            `Google Ads case study ${locationStr}`,
+            `Google Ads management Surat`,
+            `freelance digital marketer Surat`,
+            `local Google Ads specialist India`,
+            `small business Google Ads India`,
+          ];
 
   return pageMetadata({ title, description, path: `/work/${item.slug}`, keywords });
 }
@@ -77,11 +98,23 @@ export default async function WorkItemPage({ params }: PageProps<"/work/[slug]">
 
       <ContactCTA
         whatsappMessage={whatsappMessageFor(`/work/${item.slug}`)}
-        heading={item.kind === "website" ? "Want a website like this?" : "Want more local customers from Google?"}
+        heading={
+          item.kind === "website"
+            ? "Want a website like this?"
+            : item.campaignType?.toLowerCase().includes("meta") ||
+                item.campaignType?.toLowerCase().includes("facebook") ||
+                item.campaignType?.toLowerCase().includes("instagram")
+              ? "Want more enquiries from Facebook & Instagram?"
+              : "Want more local customers from Google?"
+        }
         text={
           item.kind === "website"
             ? "Tell me about your business and what your website needs to do. I'll suggest a structure and a realistic scope."
-            : "Tell me about your business, market and budget. I'll tell you honestly whether search ads are a sensible next step."
+            : item.campaignType?.toLowerCase().includes("meta") ||
+                item.campaignType?.toLowerCase().includes("facebook") ||
+                item.campaignType?.toLowerCase().includes("instagram")
+              ? "Tell me about your business, your audience and your goal. I'll tell you honestly whether Meta Ads can drive real enquiries for you."
+              : "Tell me about your business, market and budget. I'll tell you honestly whether search ads are a sensible next step."
         }
       />
     </>

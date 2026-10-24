@@ -50,4 +50,59 @@ export const adsClients: AdsClientProject[] = [
     profileUrl: "https://share.google/aQxpr1GBFDUSrF4uQ",
     profileLabel: "View on Google",
   },
+  {
+    kind: "ads-client",
+    slug: "devam-event-studio-meta-ads",
+    title: "Devam Event Studio — Meta Ads",
+    clientName: "Devam Event Studio",
+    industry: "Events · Event planning & management",
+    location: { country: "India" },
+    projectType: "Meta Ads management · Real client",
+    status: "Active",
+    campaignType: "Meta Ads · Facebook & Instagram",
+    summary:
+      "Facebook and Instagram advertising for an event planning studio — reaching couples, families and corporates at the right moment with the right creative, and turning social interest into enquiries.",
+    services: [
+      "Meta Ads management",
+      "Facebook & Instagram campaigns",
+      "Audience targeting",
+      "Ad creative strategy",
+      "Campaign optimisation",
+    ],
+    featured: true,
+    objective:
+      "Generate qualified enquiries from people actively planning weddings, corporate events and celebrations",
+    about:
+      "Devam Event Studio is an event planning and management studio based in India, covering weddings, corporate events, birthday parties, baby showers, anniversaries and festival celebrations. The studio serves clients who want a professionally managed event — handling everything from concept to execution.",
+    challenge:
+      "Event planning is a considered, high-intent purchase. Potential clients begin looking months in advance, often on social media, browsing inspiration and shortlisting vendors long before making contact. Ads need to reach people at this early discovery stage and keep the studio front-of-mind until they are ready to enquire — without appearing intrusive or generic.",
+    goals: [
+      "Reach people in the consideration phase of planning a wedding, corporate event or celebration",
+      "Showcase the studio's range of services and the quality of events it delivers",
+      "Generate enquiry actions — calls, WhatsApp messages and contact form submissions",
+      "Build brand visibility on Facebook and Instagram among the target audience",
+      "Keep campaigns relevant across both platforms with appropriate creative formats",
+    ],
+    approach: [
+      "Separate Facebook and Instagram campaigns tailored to each platform's creative format and user behaviour.",
+      "Audience targeting based on life-event signals (engaged, recently married, expecting) and interest clusters (weddings, event planning, celebrations).",
+      "Ad creative that leads with the studio's event work — real setups, décor and atmosphere rather than generic stock imagery.",
+      "Retargeting campaigns to re-engage people who engaged with earlier ads or visited the studio's website.",
+      "Regular review of creative performance and audience signals to shift spend toward what works.",
+    ],
+    responsibilities: [
+      "Managing Devam Event Studio's Facebook and Instagram ad accounts",
+      "Campaign and ad set structure across both platforms",
+      "Audience research and targeting — life events, interests and custom audiences",
+      "Ad creative strategy and copy direction",
+      "A/B testing creatives and audiences",
+      "Retargeting setup for website visitors and ad engagers",
+      "Ongoing monitoring, optimisation and budget management",
+      "Reporting on campaign performance",
+    ],
+    resultsNote:
+      "Performance figures for client accounts aren't published here. They can be shared on request, with the client's permission.",
+    profileUrl: "https://devamevent.onrender.com/",
+    profileLabel: "View Devam Event Studio",
+  },
 ];

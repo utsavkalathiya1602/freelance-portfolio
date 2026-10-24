@@ -7,7 +7,13 @@ import { ProjectOverview } from "./ProjectOverview";
 import { FeatureList } from "./FeatureList";
 import { ClientVisual } from "./ClientVisual";
 
+const isMeta = (campaignType: string) =>
+  campaignType.toLowerCase().includes("meta") ||
+  campaignType.toLowerCase().includes("facebook") ||
+  campaignType.toLowerCase().includes("instagram");
+
 export function AdsClientCaseStudy({ client }: { client: AdsClientProject }) {
+  const metaCampaign = isMeta(client.campaignType);
   return (
     <article>
       <ProjectHero item={client} />
@@ -28,8 +34,12 @@ export function AdsClientCaseStudy({ client }: { client: AdsClientProject }) {
             <SectionHeading
               eyebrow="Approach"
               id="approach-heading"
-              title="From a local search to the store."
-              description={`With no separate website, the ${client.campaignType} campaigns are built around helping nearby customers identify the store and visit it.`}
+              title={metaCampaign ? "From a scroll to an enquiry." : "From a local search to the store."}
+              description={
+                metaCampaign
+                  ? `The ${client.campaignType} campaigns are built around reaching the right audience on Facebook and Instagram — at the right moment in their planning journey — and converting social attention into real enquiries.`
+                  : `With no separate website, the ${client.campaignType} campaigns are built around helping nearby customers identify the store and visit it.`
+              }
             />
             <ul className="mt-8 space-y-4">
               {client.approach.map((item) => (
@@ -52,7 +62,7 @@ export function AdsClientCaseStudy({ client }: { client: AdsClientProject }) {
             eyebrow="My role"
             id="role-heading"
             title="What I manage."
-            description={`I manage ${client.clientName}'s Google Ads account on an ongoing basis.`}
+            description={`I manage ${client.clientName}'s ${metaCampaign ? "Meta Ads (Facebook & Instagram) account" : "Google Ads account"} on an ongoing basis.`}
           />
           <FeatureList items={client.responsibilities} columns={1} />
         </div>
