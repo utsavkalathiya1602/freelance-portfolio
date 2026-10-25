@@ -139,7 +139,10 @@ export function TopicsAutoScroll({ topics }: { topics: Topic[] }) {
 
       {/* ── ▲ ▼ pill control on the right ── */}
       {showArrows && (
-        <div className="flex flex-col items-center justify-center gap-1 self-center">
+        <div
+          style={{ height: `${containerH}rem` }}
+          className="flex flex-col items-center justify-between py-1"
+        >
           <button
             type="button"
             aria-label="Show previous topics"
