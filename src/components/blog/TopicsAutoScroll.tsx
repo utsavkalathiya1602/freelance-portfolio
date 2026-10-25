@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { topicId } from "@/data/blog";
 
 type Topic = { tag: string; count: number };
@@ -12,25 +12,42 @@ const SLIDE_MS = 400;   // slide animation duration
 /**
  * Shows VISIBLE topics at a time and auto-cycles through all topics
  * with a smooth slide-up ticker animation.
+ *
+ * Auto-scroll pauses when the user hovers over the list so they can
+ * read or click a topic without the list moving under them.
  */
 export function TopicsAutoScroll({ topics }: { topics: Topic[] }) {
   const [startIdx, setStartIdx] = useState(0);
   const [sliding, setSliding] = useState(false);
+  const pausedRef = useRef(false);
+  const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
   useEffect(() => {
     // No cycling needed if topics fit in the window
     if (topics.length <= VISIBLE) return;
 
-    const id = setInterval(() => {
+    function tick() {
+      if (pausedRef.current) return;
       setSliding(true);
       setTimeout(() => {
         setStartIdx((prev) => (prev + 1) % topics.length);
         setSliding(false);
       }, SLIDE_MS);
-    }, HOLD_MS + SLIDE_MS);
+    }
 
-    return () => clearInterval(id);
+    intervalRef.current = setInterval(tick, HOLD_MS + SLIDE_MS);
+    return () => {
+      if (intervalRef.current) clearInterval(intervalRef.current);
+    };
   }, [topics.length]);
+
+  function handleMouseEnter() {
+    pausedRef.current = true;
+  }
+
+  function handleMouseLeave() {
+    pausedRef.current = false;
+  }
 
   // Render VISIBLE + 1 items so the "next" item is ready below the fold
   const items = Array.from({ length: Math.min(VISIBLE + 1, topics.length) }, (_, i) =>
@@ -45,6 +62,8 @@ export function TopicsAutoScroll({ topics }: { topics: Topic[] }) {
       style={{ height: `${containerH}rem`, overflow: "hidden" }}
       aria-live="polite"
       aria-atomic="false"
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
     >
       <ul
         style={{
