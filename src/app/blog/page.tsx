@@ -36,7 +36,7 @@ export default function BlogIndexPage() {
         aside={<BlogHeroAside startHereSlug="why-website-not-getting-customers" />}
       />
 
-      <section aria-label="Articles" className="py-14 sm:py-20">
+      <section id="articles" aria-label="Articles" className="py-14 sm:py-20">
         <Container>
           <BlogList posts={sortedBlogPosts()} topics={blogTopics()} />
         </Container>

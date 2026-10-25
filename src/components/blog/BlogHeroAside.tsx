@@ -37,18 +37,6 @@ export function BlogHeroAside({ startHereSlug }: { startHereSlug: string }) {
             <p className="text-xs font-semibold uppercase tracking-[0.14em] text-muted">
               Topics
             </p>
-            {topics.length > 4 && (
-              <span className="flex items-center gap-1">
-                {/* animated dot indicator */}
-                {Array.from({ length: Math.min(topics.length, 6) }).map((_, i) => (
-                  <span
-                    key={i}
-                    className="h-1 w-1 rounded-full bg-stone"
-                    aria-hidden="true"
-                  />
-                ))}
-              </span>
-            )}
           </div>
 
           <TopicsAutoScroll topics={topics} />
