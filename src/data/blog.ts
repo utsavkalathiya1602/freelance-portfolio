@@ -605,6 +605,52 @@ export const blogPosts: BlogPost[] = [
     tag: "Tech News",
     readingMinutes: 7,
   },
+  // ── Finance & Technology Series ──────────────────────────────────
+  {
+    slug: "ai-financial-fraud-detection",
+    title: "AI Financial Fraud Detection in 2026: How Banks Catch Suspicious Transactions",
+    description:
+      "How banks and payment providers use AI and machine learning to detect suspicious transactions in real time — anomaly detection, risk scoring, false positives, privacy, and what consumers and businesses can do to protect themselves.",
+    publishedAt: "2026-10-28",
+    tag: "Finance & Technology",
+    readingMinutes: 10,
+  },
+  {
+    slug: "upi-merchant-charges-explained",
+    title: "UPI Merchant Charges Explained (2026): What the MDR Rules Actually Mean",
+    description:
+      "A clear guide to UPI Merchant Discount Rate rules for 2026 — which transactions are free, which attract charges, what the deferred rollout means for merchants, and the questions to ask your payment provider.",
+    publishedAt: "2026-10-28",
+    tag: "Finance & Technology",
+    readingMinutes: 8,
+  },
+  {
+    slug: "ai-personal-finance-tools",
+    title: "Can AI Manage Your Money? Benefits, Risks, and Limitations of AI Finance Tools",
+    description:
+      "An honest guide to AI personal finance tools — what they can do, where they fall short, the privacy risks of connecting banking data, and a practical checklist for evaluating any finance app.",
+    publishedAt: "2026-10-28",
+    tag: "Finance & Technology",
+    readingMinutes: 9,
+  },
+  {
+    slug: "agentic-payments-explained",
+    title: "Agentic Payments Explained: Can AI Agents Make Purchases on Your Behalf?",
+    description:
+      "What agentic payments are, how AI agents interact with payment systems, which implementations exist today versus which are pilot programmes, and what security controls matter most.",
+    publishedAt: "2026-10-28",
+    tag: "Finance & Technology",
+    readingMinutes: 9,
+  },
+  {
+    slug: "ai-voice-cloning-financial-scams",
+    title: "AI Voice Cloning Financial Scams: How They Work and How to Protect Yourself",
+    description:
+      "How scammers use AI voice cloning to impersonate executives, family members, and bank staff — warning signs, verification procedures, what to do if targeted, and how to report in India and internationally.",
+    publishedAt: "2026-10-28",
+    tag: "Finance & Technology",
+    readingMinutes: 9,
+  },
 ];
 
 export function getBlogPost(slug: string): BlogPost | undefined {

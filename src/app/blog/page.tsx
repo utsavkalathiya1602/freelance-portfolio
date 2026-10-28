@@ -7,9 +7,9 @@ import { PageHeader } from "@/components/ui/PageHeader";
 import { Container } from "@/components/ui/Container";
 import { ContactCTA } from "@/components/home/ContactCTA";
 
-const title = "Blog — Website & Marketing Guides";
+const title = "Blog — Website, Marketing & Finance Technology Guides";
 const description =
-  "Practical guides to website development, SEO, Google Ads, AI search and lead generation for small businesses — in India and around the world.";
+  "Practical guides to website development, SEO, Google Ads, AI finance tools, UPI, digital payments and fintech — for small businesses, developers, and entrepreneurs in India and internationally.";
 
 export const metadata: Metadata = pageMetadata({
   title,
@@ -23,6 +23,10 @@ export const metadata: Metadata = pageMetadata({
     "lead generation for small business",
     "website cost India",
     "local SEO India",
+    "AI finance tools",
+    "UPI merchant charges India",
+    "fintech blog India",
+    "digital payments explained",
   ],
 });
 
@@ -32,7 +36,7 @@ export default function BlogIndexPage() {
       <PageHeader
         eyebrow="Blog"
         title="Guides for small businesses."
-        description="Practical guides to website development, SEO, Google Ads, AI search and digital growth for businesses around the world — plus India-specific pricing and local guides where the advice depends on the market."
+        description="Practical guides to website development, SEO, Google Ads, AI search, fintech, digital payments, and financial technology — for small businesses, developers, and entrepreneurs around the world. Includes India-specific pricing, UPI guides, and local market advice."
         aside={<BlogHeroAside startHereSlug="why-website-not-getting-customers" />}
       />
 
